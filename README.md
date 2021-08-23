@@ -10,7 +10,15 @@
 
 ## ✨ [Demo](https://dapp-starter.productsway.com)
 
-<br>
+## Screenshot
+
+### Connect to MetaMask
+
+![https://gyazo.com/1fe5ed77da50835e77e1eae5d5c4ad04.gif](https://gyazo.com/1fe5ed77da50835e77e1eae5d5c4ad04.gif)
+
+### Show balance and sign message
+
+![https://gyazo.com/ee30b9c5b33d7f13e63ea6a8b01f70b5.gif](https://gyazo.com/ee30b9c5b33d7f13e63ea6a8b01f70b5.gif)
 
 ## Features
 
