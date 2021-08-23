@@ -30,8 +30,6 @@
   Tailwind CSS Components](https://daisyui.com/) - clean HTML
   with component classes
 
-<br>
-
 ## Install
 
 ```sh
@@ -100,6 +98,10 @@ npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Hello, Hardhat!"
 - Website: https://productsway.com/
 - Twitter: [@jellydn](https://twitter.com/jellydn)
 - Github: [@jellydn](https://github.com/jellydn)
+
+## Stargazers 🌟
+
+[![Stargazers repo roster for jellydn/dapp-starter](https://reporoster.com/stars/jellydn/dapp-starter)](https://github.com/jellydn/dapp-starter/stargazers)
 
 ## Show your support
 
