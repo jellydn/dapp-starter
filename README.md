@@ -1,4 +1,4 @@
-# Welcome to dapp-stater 👋
+# Welcome to dapp-starter 👋
 
 ![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
@@ -79,7 +79,7 @@ npx solhint 'contracts/**/*.sol' --fix
 
 To try out Etherscan verification, you first need to deploy a contract to an Ethereum network that's supported by Etherscan, such as Ropsten.
 
-In this project, copy the .env.template file to a file named .env, and then edit it to fill in the details. Enter your Etherscan API key, your Ropsten node URL (eg from Alchemy), and the private key of the account which will send the deployment transaction. With a valid .env file in place, first deploy your contract:
+In this project, copy the .env.example file to a file named .env, and then edit it to fill in the details. Enter your Etherscan API key, your Ropsten node URL (eg from Alchemy), and the private key of the account which will send the deployment transaction. With a valid .env file in place, first deploy your contract:
 
 ```shell
 hardhat run --network ropsten scripts/deploy.js
