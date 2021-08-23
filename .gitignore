@@ -12,3 +12,4 @@ cache
 artifacts
 
 coverage
+.eslintcache
