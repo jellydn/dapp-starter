@@ -58,7 +58,7 @@
     "tailwindcss": "2.2.7",
     "typechain": "5.1.2",
     "typescript": "4.3.5",
-    "vite": "2.5.0"
+    "vite": "2.5.1"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
