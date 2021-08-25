@@ -55,10 +55,13 @@ function App() {
             </a>
           </div>
           <div>
-            <span className="footer-title">Company</span>
-          </div>
-          <div>
-            <span className="footer-title">Legal</span>
+            <span className="footer-title">1-click Deployment</span>
+            <a
+              className="pl-2"
+              href="https://vercel.com/new/git/external?repository-url=https://github.com/jellydn/dapp-starter/"
+            >
+              <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+            </a>
           </div>
         </footer>
       </div>
