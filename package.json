@@ -54,7 +54,7 @@
     "prettier": "2.3.2",
     "prettier-plugin-solidity": "1.0.0-beta.17",
     "solhint": "3.3.6",
-    "solidity-coverage": "0.7.16",
+    "solidity-coverage": "0.7.17",
     "tailwindcss": "2.2.8",
     "typechain": "5.1.2",
     "typescript": "4.3.5",
