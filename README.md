@@ -57,7 +57,7 @@ Try running some of the following tasks:
 
 ```shell
 npx hardhat accounts
-npx hardhat compile
+npx hardhat compile --network localhost
 npx hardhat clean
 npx hardhat test
 npx hardhat node
