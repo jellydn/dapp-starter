@@ -4,7 +4,7 @@
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
 // eslint-disable-next-line import/no-extraneous-dependencies
-const hre = require("hardhat");
+const { ethers, upgrades } = require("hardhat");
 
 async function main() {
   // Hardhat always runs the compile task when running scripts with its command
@@ -15,12 +15,10 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const Greeter = await hre.ethers.getContractFactory("Greeter");
-  const greeter = await Greeter.deploy("Hello, Hardhat!");
-
-  await greeter.deployed();
-
-  console.log("Greeter deployed to:", greeter.address);
+  const BoxV2 = await ethers.getContractFactory("BoxV2");
+  console.log("Upgrading Box...");
+  await upgrades.upgradeProxy("0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0", BoxV2);
+  console.log("Box upgraded");
 }
 
 // We recommend this pattern to be able to use async/await everywhere

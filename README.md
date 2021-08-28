@@ -26,10 +26,8 @@
 - 📦 [Hardhat](https://hardhat.org/) - Ethereum development environment for professionals
 - 🦾 [TypeChain Hardhat plugin](https://github.com/ethereum-ts/TypeChain/tree/master/packages/hardhat) - Automatically generate TypeScript bindings for smartcontracts while using Hardhat.
 - 🔥 [web3-react](https://github.com/NoahZinsmeister/web3-react/) - A simple, maximally extensible, dependency minimized framework for building modern Ethereum dApps
-
-- 🎨 [daisyUI
-  Tailwind CSS Components](https://daisyui.com/) - clean HTML
-  with component classes
+- 🎨 [daisyUI Tailwind CSS Components](https://daisyui.com/) - clean HTML with component classes
+- 🎨 [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/) - standard for secure blockchain applications
 
 ## Install
 
@@ -66,7 +64,7 @@ npx hardhat node
 npx hardhat help
 REPORT_GAS=true npx hardhat test
 npx hardhat coverage
-npx hardhat run scripts/deploy.js
+npx hardhat run scripts/deploy_greeter.js
 node scripts/deploy.js
 npx eslint '**/*.js'
 npx eslint '**/*.js' --fix
@@ -83,13 +81,31 @@ To try out Etherscan verification, you first need to deploy a contract to an Eth
 In this project, copy the .env.example file to a file named .env, and then edit it to fill in the details. Enter your Etherscan API key, your Ropsten node URL (eg from Alchemy), and the private key of the account which will send the deployment transaction. With a valid .env file in place, first deploy your contract:
 
 ```shell
-hardhat run --network ropsten scripts/deploy.js
+npx hardhat run --network ropsten scripts/deploy_greeter.js
 ```
 
 Then, copy the deployment address and paste it in to replace `DEPLOYED_CONTRACT_ADDRESS` in this command:
 
 ```shell
 npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Hello, Hardhat!"
+```
+
+## Contract upgrade
+
+OpenZeppelin provides tooling for deploying and securing [upgradeable smart contracts](https://docs.openzeppelin.com/learn/upgrading-smart-contracts).
+
+Smart contracts deployed using OpenZeppelin Upgrades Plugins can be upgraded to modify their code, while preserving their address, state, and balance. This allows you to iteratively add new features to your project, or fix any bugs you may find in production.
+
+In this project, there are a 2 versions of contract: Box and BoxV2 which is improvement of Box. First deploy your contract:
+
+```shell
+npx hardhat run --network localhost scripts/deploy_upgradeable_box.js
+```
+
+Then, deploy the upgrade smart contract
+
+```shell
+npx hardhat run --network localhost scripts/upgrade_box.js
 ```
 
 ## Author

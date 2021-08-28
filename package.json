@@ -6,7 +6,8 @@
     "build": "npx hardhat compile --network localhost && tsc && vite build",
     "serve": "vite preview",
     "prepare": "husky install",
-    "lint:sol": "npx solhint 'contracts/**/*.sol'"
+    "lint:sol": "npx solhint 'contracts/**/*.sol'",
+    "test": "mocha --exit --recursive"
   },
   "dependencies": {
     "@tailwindcss/typography": "0.4.1",
@@ -24,6 +25,9 @@
     "@nomiclabs/hardhat-ethers": "2.0.2",
     "@nomiclabs/hardhat-etherscan": "2.1.5",
     "@nomiclabs/hardhat-waffle": "2.0.1",
+    "@openzeppelin/contracts": "4.3.1",
+    "@openzeppelin/contracts-upgradeable": "4.3.1",
+    "@openzeppelin/hardhat-upgrades": "^1.10.0",
     "@trivago/prettier-plugin-sort-imports": "2.0.4",
     "@typechain/ethers-v5": "7.0.1",
     "@typechain/hardhat": "2.3.0",
@@ -45,7 +49,7 @@
     "eslint-plugin-react": "7.24.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "ethereum-waffle": "3.4.0",
-    "ethers": "5.4.5",
+    "ethers": "5.4.6",
     "hardhat": "2.6.1",
     "hardhat-gas-reporter": "1.0.4",
     "husky": "7.0.2",
