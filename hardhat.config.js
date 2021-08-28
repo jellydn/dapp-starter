@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 require("dotenv").config();
 
+require("@typechain/hardhat");
 require("@nomiclabs/hardhat-etherscan");
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-ethers");
