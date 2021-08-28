@@ -64,7 +64,7 @@ npx hardhat node
 npx hardhat help
 REPORT_GAS=true npx hardhat test
 npx hardhat coverage
-npx hardhat run scripts/deploy_greeter.js
+npx hardhat run scripts/deploy_greeter.js --network localhost
 node scripts/deploy.js
 npx eslint '**/*.js'
 npx eslint '**/*.js' --fix
