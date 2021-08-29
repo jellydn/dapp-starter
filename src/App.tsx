@@ -2,9 +2,11 @@ import { Web3ReactProvider } from "@web3-react/core";
 import React from "react";
 
 import "./App.css";
+import SimpleStoreApp from "./SimpleStoreApp";
 import Demo from "./components/Demo";
 import { getLibrary } from "./components/Demo";
-import logo from "./logo.svg";
+
+const VITE_BOX_ADDRESS = import.meta.env.VITE_BOX_ADDRESS;
 
 function App() {
   return (
@@ -12,11 +14,7 @@ function App() {
       <div className="App">
         <Demo />
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>Hello Dapp Starter!</p>
-          <p>
-            Edit <code>App.tsx</code> and save to test HMR updates.
-          </p>
+          <SimpleStoreApp contractAddress={VITE_BOX_ADDRESS} />
         </header>
         <footer className="p-10 footer bg-base-200 text-base-content">
           <div>
