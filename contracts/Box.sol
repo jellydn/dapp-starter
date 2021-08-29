@@ -1,8 +1,13 @@
 // SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
-contract Box {
+contract Box is Initializable{
     uint256 private _value;
+
+     function initialize(uint256 value) public initializer {
+         _value = value;
+    }
 
     // Emitted when the stored value changes
     event ValueChanged(uint256 value);
