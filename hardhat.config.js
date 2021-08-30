@@ -46,6 +46,11 @@ module.exports = {
       url: process.env.NETWORK_PROVIDER_URL || "",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    tomotestnet: {
+      chainId: 89,
+      url: "https://rpc.testnet.tomochain.com",
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
