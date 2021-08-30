@@ -1,0 +1,8 @@
+strict digraph {
+  constructor
+  log
+  greet [color=yellow]
+  setGreeting
+  constructor -> log
+  setGreeting -> log
+}

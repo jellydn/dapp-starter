@@ -1,0 +1,6 @@
+strict digraph {
+  store
+  ValueChanged
+  retrieve [color=yellow]
+  store -> ValueChanged
+}
