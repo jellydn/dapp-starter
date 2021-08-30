@@ -48,7 +48,13 @@ module.exports = {
     },
     tomotestnet: {
       chainId: 89,
-      url: "https://rpc.testnet.tomochain.com",
+      url: process.env.TOMO_PROVIDER_URL || "https://rpc.testnet.tomochain.com",
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    matictestnet: {
+      chainId: 80001,
+      url:
+        process.env.MATIC_PROVIDER_URL || "https://speedy-nodes-nyc.moralis.io/036063875a28828fa0c00596/polygon/mumbai",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
   },
