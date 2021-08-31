@@ -1,0 +1,10 @@
+strict digraph {
+  initialize
+  __ERC20_init
+  __Ownable_init
+  __UUPSUpgradeable_init
+  _authorizeUpgrade [color=gray]
+  initialize -> __ERC20_init
+  initialize -> __Ownable_init
+  initialize -> __UUPSUpgradeable_init
+}
