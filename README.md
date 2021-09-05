@@ -111,6 +111,7 @@ npx hardhat run --network localhost scripts/upgrade_box.js
 ## Examples
 
 - [Simple Store App](https://github.com/jellydn/dapp-starter/pull/20): counter-like smart contract, read/write value and listen to event from smart contract.
+- [ICO Token App](https://github.com/jellydn/dapp-token-ico): How to create An ERC20 token and implement ICO smart contract (CrowdSale).
 
 ## Author
 
