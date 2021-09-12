@@ -4,7 +4,7 @@
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
 // eslint-disable-next-line import/no-extraneous-dependencies
-const { ethers, upgrades } = require("hardhat");
+import { ethers, upgrades } from "hardhat";
 
 async function main() {
   // Hardhat always runs the compile task when running scripts with its command

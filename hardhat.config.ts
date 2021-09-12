@@ -1,13 +1,14 @@
-/* eslint-disable import/no-extraneous-dependencies */
-require("dotenv").config();
+import "@nomiclabs/hardhat-ethers";
+import "@nomiclabs/hardhat-etherscan";
+import "@nomiclabs/hardhat-waffle";
+import "@openzeppelin/hardhat-upgrades";
+import "@typechain/hardhat";
+import { config } from "dotenv";
+import "hardhat-gas-reporter";
+import { task } from "hardhat/config";
+import "solidity-coverage";
 
-require("@typechain/hardhat");
-require("@nomiclabs/hardhat-etherscan");
-require("@nomiclabs/hardhat-waffle");
-require("@nomiclabs/hardhat-ethers");
-require("@openzeppelin/hardhat-upgrades");
-require("hardhat-gas-reporter");
-require("solidity-coverage");
+config();
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html

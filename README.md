@@ -64,10 +64,10 @@ npx hardhat node
 npx hardhat help
 REPORT_GAS=true npx hardhat test
 npx hardhat coverage
-npx hardhat run scripts/deploy_greeter.js --network localhost
-node scripts/deploy.js
-npx eslint '**/*.js'
-npx eslint '**/*.js' --fix
+npx hardhat run scripts/deploy_greeter.ts --network localhost
+node scripts/deploy.ts
+npx eslint '**/*.ts'
+npx eslint '**/*.ts' --fix
 npx prettier '**/*.{json,sol,md}' --check
 npx prettier '**/*.{json,sol,md}' --write
 npx solhint 'contracts/**/*.sol'
@@ -81,7 +81,7 @@ To try out Etherscan verification, you first need to deploy a contract to an Eth
 In this project, copy the .env.example file to a file named .env, and then edit it to fill in the details. Enter your Etherscan API key, your Ropsten node URL (eg from Alchemy), and the private key of the account which will send the deployment transaction. With a valid .env file in place, first deploy your contract:
 
 ```shell
-npx hardhat run --network ropsten scripts/deploy_greeter.js
+npx hardhat run --network ropsten scripts/deploy_greeter.ts
 ```
 
 Then, copy the deployment address and paste it in to replace `DEPLOYED_CONTRACT_ADDRESS` in this command:
@@ -99,19 +99,20 @@ Smart contracts deployed using OpenZeppelin Upgrades Plugins can be upgraded to 
 In this project, there are a 2 versions of contract: Box and BoxV2 which is improvement of Box. First deploy your contract:
 
 ```shell
-npx hardhat run --network localhost scripts/deploy_upgradeable_box.js
+npx hardhat run --network localhost scripts/deploy_upgradeable_box.ts
 ```
 
 Then, deploy the upgrade smart contract
 
 ```shell
-npx hardhat run --network localhost scripts/upgrade_box.js
+npx hardhat run --network localhost scripts/upgrade_box.ts
 ```
 
 ## Examples
 
 - [Simple Store App](https://github.com/jellydn/dapp-starter/pull/20): counter-like smart contract, read/write value and listen to event from smart contract.
 - [ICO Token App](https://github.com/jellydn/dapp-token-ico): How to create An ERC20 token and implement ICO smart contract (CrowdSale).
+- [NFT App](https://github.com/jellydn/nft-app): How to create An ERC721 token.
 
 ## Author
 
