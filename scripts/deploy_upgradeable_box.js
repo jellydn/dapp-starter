@@ -20,6 +20,9 @@ async function main() {
   const box = await upgrades.deployProxy(Box, [42], { initializer: "store" });
   await box.deployed();
   console.log("Box deployed to:", box.address);
+
+  const value = await box.retrieve();
+  console.log("Box value:", value);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

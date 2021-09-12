@@ -1,9 +1,10 @@
+/* eslint-disable import/no-extraneous-dependencies */
 // We require the Hardhat Runtime Environment explicitly here. This is optional
 // but useful for running the script in a standalone fashion through `node <script>`.
 //
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
-// eslint-disable-next-line import/no-extraneous-dependencies
+require("dotenv").config();
 const { ethers, upgrades } = require("hardhat");
 
 async function main() {
@@ -17,7 +18,7 @@ async function main() {
   // We get the contract to deploy
   const BoxV2 = await ethers.getContractFactory("BoxV2");
   console.log("Upgrading Box...");
-  await upgrades.upgradeProxy("0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0", BoxV2);
+  await upgrades.upgradeProxy(process.env.VITE_BOX_ADDRESS || "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0", BoxV2);
   console.log("Box upgraded");
 }
 

@@ -23,15 +23,21 @@ import {
 interface BoxV2Interface extends ethers.utils.Interface {
   functions: {
     "increment()": FunctionFragment;
+    "initialize(uint256)": FunctionFragment;
     "retrieve()": FunctionFragment;
     "store(uint256)": FunctionFragment;
   };
 
   encodeFunctionData(functionFragment: "increment", values?: undefined): string;
+  encodeFunctionData(
+    functionFragment: "initialize",
+    values: [BigNumberish]
+  ): string;
   encodeFunctionData(functionFragment: "retrieve", values?: undefined): string;
   encodeFunctionData(functionFragment: "store", values: [BigNumberish]): string;
 
   decodeFunctionResult(functionFragment: "increment", data: BytesLike): Result;
+  decodeFunctionResult(functionFragment: "initialize", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "retrieve", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "store", data: BytesLike): Result;
 
@@ -90,6 +96,11 @@ export class BoxV2 extends BaseContract {
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<ContractTransaction>;
 
+    initialize(
+      value: BigNumberish,
+      overrides?: Overrides & { from?: string | Promise<string> }
+    ): Promise<ContractTransaction>;
+
     retrieve(overrides?: CallOverrides): Promise<[BigNumber]>;
 
     store(
@@ -102,6 +113,11 @@ export class BoxV2 extends BaseContract {
     overrides?: Overrides & { from?: string | Promise<string> }
   ): Promise<ContractTransaction>;
 
+  initialize(
+    value: BigNumberish,
+    overrides?: Overrides & { from?: string | Promise<string> }
+  ): Promise<ContractTransaction>;
+
   retrieve(overrides?: CallOverrides): Promise<BigNumber>;
 
   store(
@@ -111,6 +127,8 @@ export class BoxV2 extends BaseContract {
 
   callStatic: {
     increment(overrides?: CallOverrides): Promise<void>;
+
+    initialize(value: BigNumberish, overrides?: CallOverrides): Promise<void>;
 
     retrieve(overrides?: CallOverrides): Promise<BigNumber>;
 
@@ -128,6 +146,11 @@ export class BoxV2 extends BaseContract {
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<BigNumber>;
 
+    initialize(
+      value: BigNumberish,
+      overrides?: Overrides & { from?: string | Promise<string> }
+    ): Promise<BigNumber>;
+
     retrieve(overrides?: CallOverrides): Promise<BigNumber>;
 
     store(
@@ -138,6 +161,11 @@ export class BoxV2 extends BaseContract {
 
   populateTransaction: {
     increment(
+      overrides?: Overrides & { from?: string | Promise<string> }
+    ): Promise<PopulatedTransaction>;
+
+    initialize(
+      value: BigNumberish,
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<PopulatedTransaction>;
 
