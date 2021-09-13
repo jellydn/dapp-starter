@@ -28,7 +28,7 @@
 
 ## Features
 
-- ⚡️ React TypeScript template with [Vite 2](https://vitejs.dev/)
+- ⚡️ The React Framework for Production [NextJs](https://https://nextjs.org//)
 - 📦 [Hardhat](https://hardhat.org/) - Ethereum development environment for professionals
 - 🦾 [TypeChain Hardhat plugin](https://github.com/ethereum-ts/TypeChain/tree/master/packages/hardhat) - Automatically generate TypeScript bindings for smartcontracts while using Hardhat.
 - 🔥 [web3-react](https://github.com/NoahZinsmeister/web3-react/) - A simple, maximally extensible, dependency minimized framework for building modern Ethereum dApps

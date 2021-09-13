@@ -1,5 +1,5 @@
+/* eslint-disable no-nested-ternary */
 import { useWeb3React } from "@web3-react/core";
-import React from "react";
 
 import { Account } from "./Account";
 import { Balance } from "./Balance";
@@ -23,3 +23,5 @@ export function Header() {
     </div>
   );
 }
+
+export default Header;
