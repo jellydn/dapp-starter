@@ -7,7 +7,7 @@ import {
 import { UserRejectedRequestError as UserRejectedRequestErrorWalletConnect } from "@web3-react/walletconnect-connector";
 import React from "react";
 
-import { injected, POLLING_INTERVAL } from "../dapp/connectors";
+import { injected, walletconnect, POLLING_INTERVAL } from "../dapp/connectors";
 import { useEagerConnect, useInactiveListener } from "../dapp/hooks";
 import logger from "../logger";
 import { Header } from "./Header";
@@ -52,9 +52,9 @@ export default function Demo() {
   // handle logic to connect in reaction to certain events on the injected ethereum provider, if it exists
   useInactiveListener(!triedEager || !!activatingConnector);
 
-  const activating = injected === activatingConnector;
-  const connected = injected === connector;
-  const disabled = !triedEager || !!activatingConnector || connected || !!error;
+  const activating = (connection: typeof injected | typeof walletconnect) => connection === activatingConnector;
+  const connected = (connection: typeof injected | typeof walletconnect) => connection === connector;
+  const disabled = !triedEager || !!activatingConnector || connected(injected) || connected(walletconnect) || !!error;
   return (
     <>
       <Header />
@@ -68,14 +68,32 @@ export default function Demo() {
           }}
         >
           <div>
-            {activating && <p className="btn loading">loading...</p>}
-            {connected && (
+            {activating(injected) && <p className="btn loading">loading...</p>}
+            {connected(injected) && (
               <span role="img" aria-label="check">
                 ✅
               </span>
             )}
           </div>
           Connect with MetaMask
+        </button>
+        <button
+          className="btn btn-primary"
+          disabled={disabled}
+          onClick={() => {
+            setActivatingConnector(walletconnect);
+            activate(walletconnect);
+          }}
+        >
+          <div>
+            {activating(walletconnect) && <p className="btn loading">loading...</p>}
+            {connected(walletconnect) && (
+              <span role="img" aria-label="check">
+                ✅
+              </span>
+            )}
+          </div>
+          Wallet Connect
         </button>
       </div>
       <div>
@@ -96,22 +114,35 @@ export default function Demo() {
       <div className="divider" />
       <div>
         {!!(library && account) && (
-          <button
-            className="btn btn-primary"
-            onClick={() => {
-              library
-                .getSigner(account)
-                .signMessage("👋")
-                .then((signature: any) => {
-                  window.alert(`Success!\n\n${signature}`);
-                })
-                .catch((error: any) => {
-                  window.alert("Failure!" + (error && error.message ? `\n\n${error.message}` : ""));
-                });
-            }}
-          >
-            Sign Message
-          </button>
+          <>
+            <button
+              className="btn btn-primary"
+              onClick={() => {
+                library
+                  .getSigner(account)
+                  .signMessage("👋")
+                  .then((signature: any) => {
+                    window.alert(`Success!\n\n${signature}`);
+                  })
+                  .catch((error: any) => {
+                    window.alert("Failure!" + (error && error.message ? `\n\n${error.message}` : ""));
+                  });
+              }}
+            >
+              Sign Message
+            </button>
+
+            {connected(walletconnect) && (
+              <button
+                className="btn btn-secondary"
+                onClick={() => {
+                  (connector as any).close();
+                }}
+              >
+                Kill WalletConnect Session
+              </button>
+            )}
+          </>
         )}
       </div>
     </>
