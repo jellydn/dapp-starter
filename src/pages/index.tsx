@@ -35,12 +35,12 @@ function App() {
         <div>
           <span className="footer-title">Document</span>
           <a
-            href="https://vitejs.dev/guide/features.html"
+            href="https://nextjs.org/docs/getting-started"
             target="_blank"
             rel="noopener noreferrer"
             className="link link-hover"
           >
-            Vite Docs
+            Nextjs Docs
           </a>
           <a href="https://hardhat.org/" target="_blank" rel="noopener noreferrer" className="link link-hover">
             Hardhat
