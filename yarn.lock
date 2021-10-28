@@ -2462,10 +2462,10 @@
     lodash.merge "^4.6.2"
     lodash.uniq "^4.5.0"
 
-"@trivago/prettier-plugin-sort-imports@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-2.0.4.tgz#2e5bbf80bd87e919202f791008a2fbcdbb2a566f"
-  integrity sha512-SCVUhQdbjn/Z4AY7b9JO00fZCeXxiVuarVxYP0n6cX2ijiQkE5HmGrOk32n0u385OebzQ9bZcrc51lAGLjXnFQ==
+"@trivago/prettier-plugin-sort-imports@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-3.0.0.tgz#8e5a6c6f0ba5898cad4afed67bb3709da2651ff4"
+  integrity sha512-6n+shLUWKPZpSdY25VyDO+AKc5lCAuugDLtatWNrCBB2H7dJHmO4HO9EMRALrry9P4jBNi1T1orGQ/Fxm7pkNg==
   dependencies:
     "@babel/core" "7.13.10"
     "@babel/generator" "7.13.9"

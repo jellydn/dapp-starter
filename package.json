@@ -32,7 +32,7 @@
     "@openzeppelin/contracts": "4.3.2",
     "@openzeppelin/contracts-upgradeable": "4.3.2",
     "@openzeppelin/hardhat-upgrades": "1.11.0",
-    "@trivago/prettier-plugin-sort-imports": "2.0.4",
+    "@trivago/prettier-plugin-sort-imports": "3.0.0",
     "@typechain/ethers-v5": "7.2.0",
     "@typechain/hardhat": "3.0.0",
     "@types/chai": "4.2.22",
