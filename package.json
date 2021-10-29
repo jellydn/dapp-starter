@@ -67,7 +67,7 @@
     "solgraph": "0.3.3",
     "solhint": "3.3.6",
     "solidity-coverage": "0.7.17",
-    "tailwindcss": "2.2.18",
+    "tailwindcss": "2.2.19",
     "ts-node": "10.4.0",
     "typechain": "6.0.0",
     "typescript": "4.4.4"
