@@ -13335,10 +13335,10 @@ table@^5.2.3:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwindcss@2.2.18:
-  version "2.2.18"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.2.18.tgz#39da8c3fd991976f1d711befeb950e37864c8c90"
-  integrity sha512-qc3UOx8W0XyGMFnqdL6Z5zu89py2XRHmyCeMGJDtwFwNiA5KQUBqxIg2KoSnOa8FUeNg1rB6Cp/WGGs6bxurXw==
+tailwindcss@2.2.19:
+  version "2.2.19"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.2.19.tgz#540e464832cd462bb9649c1484b0a38315c2653c"
+  integrity sha512-6Ui7JSVtXadtTUo2NtkBBacobzWiQYVjYW0ZnKaP9S1ZCKQ0w7KVNz+YSDI/j7O7KCMHbOkz94ZMQhbT9pOqjw==
   dependencies:
     arg "^5.0.1"
     bytes "^3.0.0"
