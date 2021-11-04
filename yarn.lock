@@ -409,10 +409,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@7.13.10":
-  version "7.13.10"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.13.10.tgz#8f8f9bf7b3afa3eabd061f7a5bcdf4fec3c48409"
-  integrity sha512-0s7Mlrw9uTWkYua7xWr99Wpk2bnGa0ANleKfksYAES8LpWH4gW1OUr42vqKNf0us5UQNfru2wPqMqRITzq/SIQ==
+"@babel/parser@7.14.6":
+  version "7.14.6"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.14.6.tgz#d85cc68ca3cac84eae384c06f032921f5227f4b2"
+  integrity sha512-oG0ej7efjEXxb4UgE+klVx+3j4MVo+A2vCzm7OUN4CLo6WhQ+vSOD2yJ8m7B+DghObxtLxt3EfgMWpq+AsWehQ==
 
 "@babel/parser@^7.13.0", "@babel/parser@^7.13.10", "@babel/parser@^7.14.5", "@babel/parser@^7.15.0":
   version "7.15.3"
@@ -2455,14 +2455,14 @@
     lodash.merge "^4.6.2"
     lodash.uniq "^4.5.0"
 
-"@trivago/prettier-plugin-sort-imports@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-3.0.0.tgz#8e5a6c6f0ba5898cad4afed67bb3709da2651ff4"
-  integrity sha512-6n+shLUWKPZpSdY25VyDO+AKc5lCAuugDLtatWNrCBB2H7dJHmO4HO9EMRALrry9P4jBNi1T1orGQ/Fxm7pkNg==
+"@trivago/prettier-plugin-sort-imports@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-3.1.0.tgz#9f1f6c0c4dc2a1287f4a9158f55db9634faa8c36"
+  integrity sha512-m4gzqPazpVJ7NCK2vX2YXMwuMwJg0dpqhL2bX/jItrVerdNPIsPMxw+d6RGT3spkUOOYwqfZfht0sBPVi7lkPQ==
   dependencies:
     "@babel/core" "7.13.10"
     "@babel/generator" "7.13.9"
-    "@babel/parser" "7.13.10"
+    "@babel/parser" "7.14.6"
     "@babel/traverse" "7.13.0"
     "@babel/types" "7.13.0"
     "@types/lodash" "4.14.168"
