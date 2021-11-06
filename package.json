@@ -20,7 +20,7 @@
     "@web3-react/walletconnect-connector": "6.2.8",
     "daisyui": "1.16.1",
     "loglevel": "1.7.1",
-    "next": "12.0.2",
+    "next": "12.0.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "web3-react": "5.0.5"
@@ -47,7 +47,7 @@
     "dotenv": "10.0.0",
     "eslint": "8.1.0",
     "eslint-config-airbnb": "18.2.1",
-    "eslint-config-next": "12.0.2",
+    "eslint-config-next": "12.0.3",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.25.2",
     "eslint-plugin-jsx-a11y": "6.4.1",
