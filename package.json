@@ -54,7 +54,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "5.1.1",
     "eslint-plugin-react": "7.26.1",
-    "eslint-plugin-react-hooks": "4.2.0",
+    "eslint-plugin-react-hooks": "4.3.0",
     "ethereum-waffle": "3.4.0",
     "ethers": "5.5.1",
     "hardhat": "2.6.8",
