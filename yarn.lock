@@ -2455,17 +2455,16 @@
     lodash.merge "^4.6.2"
     lodash.uniq "^4.5.0"
 
-"@trivago/prettier-plugin-sort-imports@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-3.1.0.tgz#9f1f6c0c4dc2a1287f4a9158f55db9634faa8c36"
-  integrity sha512-m4gzqPazpVJ7NCK2vX2YXMwuMwJg0dpqhL2bX/jItrVerdNPIsPMxw+d6RGT3spkUOOYwqfZfht0sBPVi7lkPQ==
+"@trivago/prettier-plugin-sort-imports@3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-3.1.1.tgz#101e34eadb252572ec32aea6d5487d93b90a0037"
+  integrity sha512-T9EJNEOugWts4WxdmpWeY+sp+2fUHhvGh9QSBCowEGJfcbnu355HQRqok5bKwejdieMaI1+uGZhuTNMZwjqOCQ==
   dependencies:
     "@babel/core" "7.13.10"
     "@babel/generator" "7.13.9"
     "@babel/parser" "7.14.6"
     "@babel/traverse" "7.13.0"
     "@babel/types" "7.13.0"
-    "@types/lodash" "4.14.168"
     javascript-natural-sort "0.7.1"
     lodash "4.17.21"
 
@@ -2629,11 +2628,6 @@
     "@types/abstract-leveldown" "*"
     "@types/level-errors" "*"
     "@types/node" "*"
-
-"@types/lodash@4.14.168":
-  version "4.14.168"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.168.tgz#fe24632e79b7ade3f132891afff86caa5e5ce008"
-  integrity sha512-oVfRvqHV/V6D1yifJbVRU3TMp8OT6o6BG+U9MkwuJ3U8/CsDHvalRpsxBqivn71ztOFZBTfJMvETbqHiaNSj7Q==
 
 "@types/lru-cache@^5.1.0":
   version "5.1.1"
