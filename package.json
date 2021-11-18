@@ -19,7 +19,7 @@
     "@web3-react/network-connector": "6.1.9",
     "@web3-react/walletconnect-connector": "6.2.8",
     "daisyui": "1.16.2",
-    "loglevel": "1.7.1",
+    "loglevel": "1.8.0",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
