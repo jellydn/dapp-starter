@@ -13868,10 +13868,10 @@ type@^2.0.0:
   resolved "https://registry.yarnpkg.com/type/-/type-2.5.0.tgz#0a2e78c2e77907b252abe5f298c1b01c63f0db3d"
   integrity sha512-180WMDQaIMm3+7hGXWf12GtdniDEy7nYcyFMKJn/eZz/6tSLXrUN9V0wKSbMjej0I1WHWbpREDEKHtqPQa9NNw==
 
-typechain@6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/typechain/-/typechain-6.0.3.tgz#c0663f024ed11c2c5ad730309334283078d0289d"
-  integrity sha512-NPyCl4bvUtcd2g5Xlqznv6w6i9N5nQLG/UOkazkkyMkjKmo7smpub5UIJ8DLUc/nrZSiV75jEmOjvC2W7d+qvg==
+typechain@6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/typechain/-/typechain-6.0.4.tgz#deee38a4813e3f86a8f46daeb1d3d2caa9c4e3e1"
+  integrity sha512-EnFqSLBIggmCzIL7OF3ogRCgRRf/TRE2HmG4WGmRpP0x+kqiLYW9nOQKjo2Hm3caS4/Ktr5R0FUiNGwSWtfBGg==
   dependencies:
     "@types/prettier" "^2.1.1"
     command-line-args "^4.0.7"
