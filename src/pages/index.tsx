@@ -1,10 +1,15 @@
 import { Web3ReactProvider } from "@web3-react/core";
+import { useEffect } from "react";
 
 import Demo, { getLibrary } from "../components/Demo";
 import useLocalStorage from "../hooks/useLocalStorage";
 
 function App() {
   const [theme, setTheme] = useLocalStorage<"dark" | "light">("theme", "dark");
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, []);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => {
