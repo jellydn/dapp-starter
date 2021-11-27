@@ -129,7 +129,11 @@ export default function Demo() {
         </div>
         <div className="card bordered">
           <figure>
-            <img className="h-24" src="https://walletconnect.org/walletconnect-logo.svg" alt="wallet connect" />
+            <img
+              className="h-24"
+              src="https://docs.walletconnect.com/img/walletconnect-logo.svg"
+              alt="wallet connect"
+            />
           </figure>
           <div className="card-body">
             <h2 className="card-title">
