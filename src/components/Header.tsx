@@ -5,7 +5,7 @@ import { Account } from "./Account";
 import { Balance } from "./Balance";
 import { ChainId } from "./ChainId";
 
-export function Header() {
+export const Header = function () {
   const { active, error } = useWeb3React();
 
   return (
@@ -22,6 +22,6 @@ export function Header() {
       </div>
     </div>
   );
-}
+};
 
 export default Header;

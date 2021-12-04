@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import { useWeb3React } from "@web3-react/core";
 
-export function Account() {
+export const Account = function Account() {
   const { account } = useWeb3React();
 
   return (
@@ -19,6 +19,6 @@ export function Account() {
       </span>
     </div>
   );
-}
+};
 
 export default Account;

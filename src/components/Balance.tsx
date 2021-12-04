@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 import logger from "../logger";
 
-export function Balance() {
+export const Balance = function () {
   const { account, library, chainId } = useWeb3React();
   const [balance, setBalance] = useState<number | null>();
 
@@ -56,6 +56,6 @@ export function Balance() {
       <span>{balance === null ? "Error" : balance ? `Ξ${formatEther(balance)}` : ""}</span>
     </div>
   );
-}
+};
 
 export default Balance;

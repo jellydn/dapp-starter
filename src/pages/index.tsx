@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Demo, { getLibrary } from "../components/Demo";
 import useLocalStorage from "../hooks/useLocalStorage";
 
-function App() {
+const App = function () {
   const [theme, setTheme] = useLocalStorage<"dark" | "light">("theme", "dark");
 
   useEffect(() => {
@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <div className="fixed top-0 right-0 mt-2 mr-4">
-        <button onClick={toggleTheme} className="btn">
+        <button type="button" onClick={toggleTheme} className="btn">
           {theme === "dark" ? "🌞" : "🌙"}
         </button>
       </div>
@@ -90,6 +90,6 @@ function App() {
       </Web3ReactProvider>
     </>
   );
-}
+};
 
 export default App;

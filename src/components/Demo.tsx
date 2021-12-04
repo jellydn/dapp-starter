@@ -32,7 +32,7 @@ export function getLibrary(provider: any): Web3Provider {
   return library;
 }
 
-export default function Demo() {
+export const Demo = function () {
   const context = useWeb3React<Web3Provider>();
   const { connector, library, account, activate, deactivate, active, error } = context;
 
@@ -203,4 +203,6 @@ export default function Demo() {
       </div>
     </>
   );
-}
+};
+
+export default Demo;
