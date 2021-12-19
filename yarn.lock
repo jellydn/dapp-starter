@@ -5582,10 +5582,10 @@ d@1, d@^1.0.1:
     es5-ext "^0.10.50"
     type "^1.0.1"
 
-daisyui@1.16.5:
-  version "1.16.5"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-1.16.5.tgz#f63680d7cc807379cd2e35afe3e6c4596cd7c902"
-  integrity sha512-34nXxyQ0M8CWv8OE8/+jEasBbw5pipBNgWkC4HVsOVDgZ0Y5jD7UgcvosOmm+pEBgZHWNze2Ocwi9NUDge6gHg==
+daisyui@1.16.6:
+  version "1.16.6"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-1.16.6.tgz#449ce87d0d336e70e1de87d46cf4e8797de0a9d3"
+  integrity sha512-kso740gqMVVqritCQliQCpfPwos9lxp7/TEiEev4w6GGQyLNRyfriWY+DWxfawMY/DwGDzBl2DZtekCMf73bzw==
 
 damerau-levenshtein@^1.0.7:
   version "1.0.7"
