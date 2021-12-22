@@ -2561,10 +2561,10 @@
   dependencies:
     ethers "^5.0.2"
 
-"@typechain/hardhat@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@typechain/hardhat/-/hardhat-3.0.0.tgz#a94396855506d42b98d6e7c09f87ca14180d6c64"
-  integrity sha512-FpnIIXkDXm54XCHI/Z2iOet7h1MrFSvZfuljX9Uzc6FEjEfb01Tuzu8ywe2iquD3g5JXqovgdv+M54L/2Z6jkg==
+"@typechain/hardhat@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@typechain/hardhat/-/hardhat-3.1.0.tgz#88bd9e9d55e30fbece6fbb34c03ecd40a8b2013a"
+  integrity sha512-C6Be6l+vTpao19PvMH2CB/lhL1TRLkhdPkvQCF/zqkY1e+0iqY2Bb9Jd3PTt6I8QvMm89ZDerrCJC9927ZHmlg==
   dependencies:
     fs-extra "^9.1.0"
 
