@@ -6,7 +6,6 @@ module.exports = {
     node: true,
   },
   extends: [
-    "airbnb",
     "next",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/errors",
@@ -26,7 +25,6 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint", "react-hooks"],
   settings: {
     "import/resolver": {
       node: {
