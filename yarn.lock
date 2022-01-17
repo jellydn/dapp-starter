@@ -12389,10 +12389,10 @@ solidity-comments-extractor@^0.0.7:
   resolved "https://registry.yarnpkg.com/solidity-comments-extractor/-/solidity-comments-extractor-0.0.7.tgz#99d8f1361438f84019795d928b931f4e5c39ca19"
   integrity sha512-wciNMLg/Irp8OKGrh3S2tfvZiZ0NEyILfcRCXCD4mp7SgK/i9gzLfhY2hY7VMCQJ3kH9UB9BzNdibIVMchzyYw==
 
-solidity-coverage@0.7.17:
-  version "0.7.17"
-  resolved "https://registry.yarnpkg.com/solidity-coverage/-/solidity-coverage-0.7.17.tgz#5139de8f6666d4755d88f453d8e35632a7bb3444"
-  integrity sha512-Erw2hd2xdACAvDX8jUdYkmgJlIIazGznwDJA5dhRaw4def2SisXN9jUjneeyOZnl/E7j6D3XJYug4Zg9iwodsg==
+solidity-coverage@0.7.18:
+  version "0.7.18"
+  resolved "https://registry.yarnpkg.com/solidity-coverage/-/solidity-coverage-0.7.18.tgz#3dac9e0bf97aadf028d989dacdc3159c7879d9c0"
+  integrity sha512-H1UhB9QqLISJPgttaulnStUyOaJm0wZXvBGWUN9+HH3dl2hYjSmo3RBBFRm7U+dBNpPysS835XFGe+hG4ZhMrA==
   dependencies:
     "@solidity-parser/parser" "^0.13.2"
     "@truffle/provider" "^0.2.24"
