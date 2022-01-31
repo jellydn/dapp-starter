@@ -11,7 +11,7 @@
     "test": "mocha --exit --recursive"
   },
   "dependencies": {
-    "@ethersproject/providers": "5.5.2",
+    "@ethersproject/providers": "5.5.3",
     "@ethersproject/units": "5.5.0",
     "@tailwindcss/typography": "0.5.1",
     "@web3-react/core": "6.1.9",
