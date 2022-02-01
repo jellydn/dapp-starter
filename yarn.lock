@@ -2239,18 +2239,18 @@
   resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.4.2.tgz#4e889c9c66e736f7de189a53f8ba5b8d789425c2"
   integrity sha512-NyJV7sJgoGYqbtNUWgzzOGW4T6rR19FmX1IJgXGdapGPWsuMelGJn9h03nos0iqfforCbCB0iYIR0MtIuIFLLw==
 
-"@openzeppelin/hardhat-upgrades@1.13.0":
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/@openzeppelin/hardhat-upgrades/-/hardhat-upgrades-1.13.0.tgz#c2b6a3e0a1694f877b501003b159cf4550452a8b"
-  integrity sha512-0pSSUimzd4JL/mKhdNcczDGhv6ELPcI8cWWyCYjTwKoI3wL+AnRrbIQ+yrpHVpia3dAmI/+1sLOz70HvFKNzNQ==
+"@openzeppelin/hardhat-upgrades@1.14.0":
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/hardhat-upgrades/-/hardhat-upgrades-1.14.0.tgz#a84c4088061959164468ae10a2ae53faaa3163fd"
+  integrity sha512-dWLC+cgawHcZ5AbEblA3nTrBpcG9J7Z7J5UmM7qdsc/Yc97USJjXfcD6uYOQ+PhyFVBY0Ni83WGVll48d4QRWQ==
   dependencies:
-    "@openzeppelin/upgrades-core" "^1.11.0"
+    "@openzeppelin/upgrades-core" "^1.12.0"
     chalk "^4.1.0"
 
-"@openzeppelin/upgrades-core@^1.11.0":
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/@openzeppelin/upgrades-core/-/upgrades-core-1.11.0.tgz#42feb14767f424454c5ff117bee32b98c4c82f92"
-  integrity sha512-gZ5/hXpxmi/3JeURgcWshUBOIBaYwhZ/KbbHdu0VZuvF2Yg3VVRMhspA5mSR26uKrWBg6tgQQ67Shgbq+XbxqQ==
+"@openzeppelin/upgrades-core@^1.12.0":
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/upgrades-core/-/upgrades-core-1.12.0.tgz#847aeeba38780040672f8288795c824a4c9d97e6"
+  integrity sha512-gu/ijQW+RJqGlniNkpNmiwBus3R1cuJNT0/MEJASWRFNr4Qvn0d7LZONaAkhnvlBpxdiiPenMcFIrRlwvZL4iw==
   dependencies:
     bn.js "^5.1.2"
     cbor "^8.0.0"
