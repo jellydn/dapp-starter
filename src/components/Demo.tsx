@@ -60,7 +60,11 @@ export const Demo = function () {
       <div className="grid grid-cols-2 gap-2 px-2 py-4">
         <div className="card bordered">
           <figure>
-            <img className="h-24" src="https://metamask.io/images/mm-logo.svg" alt="metamask" />
+            <img
+              className="h-24"
+              src="https://images.ctfassets.net/9sy2a0egs6zh/4zJfzJbG3kTDSk5Wo4RJI1/1b363263141cf629b28155e2625b56c9/mm-logo.svg"
+              alt="metamask"
+            />
           </figure>
           <div className="card-body">
             <h2 className="card-title">
