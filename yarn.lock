@@ -3127,10 +3127,10 @@
   resolved "https://registry.yarnpkg.com/@web3-react/types/-/types-6.0.7.tgz#34a6204224467eedc6123abaf55fbb6baeb2809f"
   integrity sha512-ofGmfDhxmNT1/P/MgVa8IKSkCStFiyvXe+U5tyZurKdrtTDFU+wJ/LxClPDtFerWpczNFPUSrKcuhfPX1sI6+A==
 
-"@web3-react/walletconnect-connector@6.2.10":
-  version "6.2.10"
-  resolved "https://registry.yarnpkg.com/@web3-react/walletconnect-connector/-/walletconnect-connector-6.2.10.tgz#26b757664f1621e6212e46bac566ace5de861d9d"
-  integrity sha512-168/PwhMs1qL+PTNx66hb3MpJchWlw4RauLWHLDYYFcwmwn1kAg216p1o6m27XXjM0Kkmu1xc/0lUm2Z8DjC5g==
+"@web3-react/walletconnect-connector@6.2.13":
+  version "6.2.13"
+  resolved "https://registry.yarnpkg.com/@web3-react/walletconnect-connector/-/walletconnect-connector-6.2.13.tgz#b51cda088e8706e4fbff8da486ab6f09cf2980b1"
+  integrity sha512-rTsYLv2UpQZ92Yv5kyIwzrG+2aQkzE8ki2ElotJ6GmSl3yF9WSaGNfKpE8XI5+aPvbAk4mMn8lIy+os3a9gJgw==
   dependencies:
     "@walletconnect/ethereum-provider" "^1.7.1"
     "@walletconnect/types" "^1.7.1"
