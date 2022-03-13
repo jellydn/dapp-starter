@@ -5493,10 +5493,10 @@ d@1, d@^1.0.1:
     es5-ext "^0.10.50"
     type "^1.0.1"
 
-daisyui@2.6.4:
-  version "2.6.4"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.6.4.tgz#f6395306b4d2b4cca0b40291592c04c4f5824bc5"
-  integrity sha512-3l7WHgpOTdyUBVu2TD6uZH4+IbwaBnPXdoWjjvmzT6hxR5+WUHMl4vvPP+7/VB+CcoxSB296qaYWXQcoWcbISw==
+daisyui@2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.8.0.tgz#cd6b7fa840c9331ab645c77604be046e07cd4782"
+  integrity sha512-AU6JH6X5PI3ejM/w/1TdrWlyVGd7MgCweTCWVzmGvt5awoDSllg9fcsyXTfB48eDMRKUZ3IUC4KZv0Wde7MXjA==
   dependencies:
     color "^4.2"
     css-selector-tokenizer "^0.8.0"
