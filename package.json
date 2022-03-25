@@ -61,7 +61,7 @@
     "husky": "7.0.4",
     "lint-staged": "12.3.7",
     "postcss": "8.4.12",
-    "prettier": "2.6.0",
+    "prettier": "2.6.1",
     "prettier-plugin-solidity": "1.0.0-beta.19",
     "solgraph": "0.3.3",
     "solhint": "3.3.7",
