@@ -21,8 +21,8 @@
     "daisyui": "2.13.4",
     "loglevel": "1.8.0",
     "next": "12.1.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
     "web3-react": "5.0.5"
   },
   "devDependencies": {
