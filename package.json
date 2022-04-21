@@ -2,13 +2,18 @@
   "name": "dapp-starter",
   "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "dev": "next dev",
     "lint": "next lint",
-    "prepare": "husky install",
     "lint:sol": "npx solhint 'contracts/**/*.sol'",
+    "prepare": "husky install",
+    "start": "next start",
     "test": "mocha --exit --recursive"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write",
+    "package.json": "sort-package-json"
   },
   "dependencies": {
     "@ethersproject/providers": "5.6.4",
@@ -59,20 +64,17 @@
     "hardhat": "2.9.3",
     "hardhat-gas-reporter": "1.0.8",
     "husky": "7.0.4",
-    "lint-staged": "12.3.8",
+    "lint-staged": "12.4.0",
     "postcss": "8.4.12",
     "prettier": "2.6.2",
     "prettier-plugin-solidity": "1.0.0-beta.19",
     "solgraph": "0.3.3",
     "solhint": "3.3.7",
     "solidity-coverage": "0.7.20",
+    "sort-package-json": "^1.55.0",
     "tailwindcss": "3.0.24",
     "ts-node": "10.7.0",
     "typechain": "8.0.0",
     "typescript": "4.6.3"
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
   }
 }
