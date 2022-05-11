@@ -31,7 +31,7 @@
     "web3-react": "5.0.5"
   },
   "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "2.0.5",
+    "@nomiclabs/hardhat-ethers": "2.0.6",
     "@nomiclabs/hardhat-etherscan": "3.0.3",
     "@nomiclabs/hardhat-waffle": "2.0.3",
     "@openzeppelin/contracts": "4.6.0",
