@@ -61,7 +61,7 @@
     "eslint-plugin-react-hooks": "4.5.0",
     "ethereum-waffle": "3.4.4",
     "ethers": "5.6.6",
-    "hardhat": "2.9.5",
+    "hardhat": "2.9.6",
     "hardhat-gas-reporter": "1.0.8",
     "husky": "8.0.1",
     "lint-staged": "12.4.1",
