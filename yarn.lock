@@ -5888,10 +5888,10 @@ d@1, d@^1.0.1:
     es5-ext "^0.10.50"
     type "^1.0.1"
 
-daisyui@2.15.1:
-  version "2.15.1"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.15.1.tgz#e8720b113bc3c634248821525948e46f09b389ee"
-  integrity sha512-qu1cHTS7FXhITzvSgobV2wX12SzvWRbBKViZ5xI1Dio8MIF2pykOVd5sVCDK6Ca2sr8Ps0gycKWHQbESPr3JHg==
+daisyui@2.15.2:
+  version "2.15.2"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.15.2.tgz#4182942fde62d605ba95526a325e08bead70dbe9"
+  integrity sha512-12hjzlOUkGVzMPKhaBc8soqNY2mJWGTYJF8sTuCibDcdGbHDmYgBUY0OX1HHIVq/qh2vELh5yHb4QCgCDWUAwg==
   dependencies:
     color "^4.2"
     css-selector-tokenizer "^0.8.0"
