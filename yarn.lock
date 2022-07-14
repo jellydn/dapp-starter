@@ -8733,10 +8733,10 @@ hardhat-gas-reporter@1.0.8:
     eth-gas-reporter "^0.2.24"
     sha1 "^1.1.1"
 
-hardhat@2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/hardhat/-/hardhat-2.10.0.tgz#23a640293d52ce79388660b2872624b2c6f94e5d"
-  integrity sha512-9VUorKvWNyW96qFXkwkpDUSeWND3gOZpm0oJ8l63JQJvWhxyxTJ92BcOrNylOKy9hzNNGdMfM2QWNP80fGOjpA==
+hardhat@2.10.1:
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/hardhat/-/hardhat-2.10.1.tgz#37fdc0c96d6a5d16b322269db2ad8f9f115c4046"
+  integrity sha512-0FN9TyCtn7Lt25SB2ei2G7nA2rZjP+RN6MvFOm+zYwherxLZNo6RbD8nDz88eCbhRapevmXqOiL2nM8INKsjmA==
   dependencies:
     "@ethereumjs/block" "^3.6.2"
     "@ethereumjs/blockchain" "^5.5.2"
