@@ -14459,9 +14459,9 @@ underscore@1.9.1:
   integrity sha512-5/4etnCkd9c8gwgowi5/om/mYO5ajCaOgdzj/oW+0eQV9WxKBDZw5+ycmKmeaTXjInS/W0BzpGLo2xR2aBwZdg==
 
 undici@^5.4.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-5.4.0.tgz#c474fae02743d4788b96118d46008a24195024d2"
-  integrity sha512-A1SRXysDg7J+mVP46jF+9cKANw0kptqSFZ8tGyL+HBiv0K1spjxPX8Z4EGu+Eu6pjClJUBdnUPlxrOafR668/g==
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.7.0.tgz#979f89229c01505573cb274d0e11ea8d82b4004f"
+  integrity sha512-ORgxwDkiPS+gK2VxE7iyVeR7JliVn5DqhZ4LgQqYLBXsuK+lwOEmnJ66dhvlpLM0tC3fC7eYF1Bti2frbw2eAA==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
