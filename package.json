@@ -65,7 +65,7 @@
     "hardhat-gas-reporter": "1.0.8",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
-    "postcss": "8.4.14",
+    "postcss": "8.4.16",
     "prettier": "2.7.1",
     "prettier-plugin-solidity": "1.0.0-dev.23",
     "solgraph": "0.3.3",
