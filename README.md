@@ -138,7 +138,7 @@ npx hardhat run --network localhost scripts/upgrade_box.ts
 
 - Website: https://productsway.com/
 - Twitter: [@jellydn](https://twitter.com/jellydn)
-- Github: [@jellydn](https://github.com/jellydn)
+- GitHub: [@jellydn](https://github.com/jellydn)
 
 ## Stargazers 🌟
 
