@@ -62,7 +62,7 @@
     "ethereum-waffle": "3.4.4",
     "ethers": "5.7.0",
     "hardhat": "2.11.0",
-    "hardhat-gas-reporter": "1.0.8",
+    "hardhat-gas-reporter": "1.0.9",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
     "postcss": "8.4.16",
