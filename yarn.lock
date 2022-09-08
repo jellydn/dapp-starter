@@ -13417,10 +13417,10 @@ solidity-comments-extractor@^0.0.7:
   resolved "https://registry.yarnpkg.com/solidity-comments-extractor/-/solidity-comments-extractor-0.0.7.tgz#99d8f1361438f84019795d928b931f4e5c39ca19"
   integrity sha512-wciNMLg/Irp8OKGrh3S2tfvZiZ0NEyILfcRCXCD4mp7SgK/i9gzLfhY2hY7VMCQJ3kH9UB9BzNdibIVMchzyYw==
 
-solidity-coverage@0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/solidity-coverage/-/solidity-coverage-0.8.0.tgz#6dfde3867269a475c13b69c050e1f524fea9bd56"
-  integrity sha512-z5vXnaDzp66e7ik/UoOc5ViL1qXGZ0LrS0GDf1LRLX8F9TfNX/s9IdMwlV8wDh/ZJwYF5SbXG1nYeb0jfyyK3Q==
+solidity-coverage@0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/solidity-coverage/-/solidity-coverage-0.8.1.tgz#c6ec1209db6461b464782390812fdbf473638264"
+  integrity sha512-IsXuCmgofoph8gA5x93NWYoqHD1pNJBW/OfSXQsIqHL7g3n7/zKW7k9u4t9wJspJuXu+QcW3+oc/ryw7khoLzw==
   dependencies:
     "@ethersproject/abi" "^5.0.9"
     "@solidity-parser/parser" "^0.14.1"
@@ -13441,6 +13441,7 @@ solidity-coverage@0.8.0:
     sc-istanbul "^0.4.5"
     semver "^7.3.4"
     shelljs "^0.8.3"
+    web3-utils "1.3.0"
 
 solidity-parser-sc@^0.4.10:
   version "0.4.12"
@@ -15062,6 +15063,20 @@ web3-utils@1.2.11:
   version "1.2.11"
   resolved "https://registry.yarnpkg.com/web3-utils/-/web3-utils-1.2.11.tgz#af1942aead3fb166ae851a985bed8ef2c2d95a82"
   integrity sha512-3Tq09izhD+ThqHEaWYX4VOT7dNPdZiO+c/1QMA0s5X2lDFKK/xHJb7cyTRRVzN2LvlHbR7baS1tmQhSua51TcQ==
+  dependencies:
+    bn.js "^4.11.9"
+    eth-lib "0.2.8"
+    ethereum-bloom-filters "^1.0.6"
+    ethjs-unit "0.1.6"
+    number-to-bn "1.7.0"
+    randombytes "^2.1.0"
+    underscore "1.9.1"
+    utf8 "3.0.0"
+
+web3-utils@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/web3-utils/-/web3-utils-1.3.0.tgz#5bac16e5e0ec9fe7bdcfadb621655e8aa3cf14e1"
+  integrity sha512-2mS5axFCbkhicmoDRuJeuo0TVGQDgC2sPi/5dblfVC+PMtX0efrb8Xlttv/eGkq7X4E83Pds34FH98TP2WOUZA==
   dependencies:
     bn.js "^4.11.9"
     eth-lib "0.2.8"
