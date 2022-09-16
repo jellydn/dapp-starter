@@ -16,7 +16,7 @@
     "package.json": "sort-package-json"
   },
   "dependencies": {
-    "@ethersproject/providers": "5.7.0",
+    "@ethersproject/providers": "5.7.1",
     "@ethersproject/units": "5.7.0",
     "@tailwindcss/typography": "0.5.7",
     "@web3-react/core": "6.1.9",
