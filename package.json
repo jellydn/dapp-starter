@@ -43,7 +43,7 @@
     "@types/chai": "4.3.3",
     "@types/mocha": "9.1.1",
     "@types/node": "16.11.60",
-    "@types/react": "18.0.20",
+    "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "5.38.0",
     "@typescript-eslint/parser": "5.38.0",
