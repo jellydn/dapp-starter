@@ -2885,10 +2885,10 @@
     "@nomicfoundation/solidity-analyzer-win32-ia32-msvc" "0.0.3"
     "@nomicfoundation/solidity-analyzer-win32-x64-msvc" "0.0.3"
 
-"@nomiclabs/hardhat-ethers@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@nomiclabs/hardhat-ethers/-/hardhat-ethers-2.1.1.tgz#3f1d1ab49813d1bae4c035cc1adec224711e528b"
-  integrity sha512-Gg0IFkT/DW3vOpih4/kMjeZCLYqtfgECLeLXTs7ZDPzcK0cfoc5wKk4nq5n/izCUzdhidO/Utd6ptF9JrWwWVA==
+"@nomiclabs/hardhat-ethers@2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@nomiclabs/hardhat-ethers/-/hardhat-ethers-2.2.0.tgz#f55ace2752d0effcf583e754960e9fa89fbe12cd"
+  integrity sha512-kKCW7xawuD/lw69Yr1yqUUrF0IKmnLNGf+pTVbJ/ctHaRcPrwKI0EPkO1RNXBHlOOZkv6v4DK2PPvq0lL2ykig==
 
 "@nomiclabs/hardhat-etherscan@3.1.0":
   version "3.1.0"
