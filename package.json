@@ -2,7 +2,7 @@
   "name": "dapp-starter",
   "version": "0.0.1",
   "scripts": {
-    "build": "next build",
+    "build": "npx hardhat compile --network localhost && next build",
     "dev": "next dev",
     "lint": "next lint",
     "lint:sol": "npx solhint 'contracts/**/*.sol'",
