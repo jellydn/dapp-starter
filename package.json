@@ -67,7 +67,7 @@
     "lint-staged": "13.0.3",
     "postcss": "8.4.18",
     "prettier": "2.7.1",
-    "prettier-plugin-solidity": "1.0.0-beta.24",
+    "prettier-plugin-solidity": "1.0.0-rc.1",
     "solgraph": "0.3.3",
     "solhint": "3.3.7",
     "solidity-coverage": "0.8.2",
