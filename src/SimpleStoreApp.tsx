@@ -5,8 +5,7 @@ import React from "react";
 import BoxArtifacts from "./artifacts/contracts/Box.sol/Box.json";
 import BoxV2Artifacts from "./artifacts/contracts/BoxV2.sol/BoxV2.json";
 import logger from "./logger";
-import { Box } from "./types/Box";
-import { BoxV2 } from "./types/BoxV2";
+import { Box, BoxV2 } from "./types";
 
 interface Props {
   contractAddress: string;

@@ -13,6 +13,10 @@ import { ethers } from "ethers";
 declare module "hardhat/types/runtime" {
   interface HardhatEthersHelpers extends HardhatEthersHelpersBase {
     getContractFactory(
+      name: "Initializable",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Initializable__factory>;
+    getContractFactory(
       name: "Box",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Box__factory>;
@@ -25,6 +29,27 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Greeter__factory>;
 
+    getContractAt(
+      name: "Initializable",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Initializable>;
+    getContractAt(
+      name: "Box",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Box>;
+    getContractAt(
+      name: "BoxV2",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.BoxV2>;
+    getContractAt(
+      name: "Greeter",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Greeter>;
+
     // default types
     getContractFactory(
       name: string,
@@ -35,5 +60,10 @@ declare module "hardhat/types/runtime" {
       bytecode: ethers.utils.BytesLike,
       signer?: ethers.Signer
     ): Promise<ethers.ContractFactory>;
+    getContractAt(
+      nameOrAbi: string | any[],
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<ethers.Contract>;
   }
 }
