@@ -35,17 +35,7 @@
 yarn install
 ```
 
-## Usage
-
-```sh
-yarn dev
-```
-
-## Run tests
-
-```sh
-yarn test
-```
+Remember to create `.env` file from `.env.example` then deploy smart contract and open web app.
 
 ## Hardhat guideline
 
@@ -72,6 +62,18 @@ npx prettier '**/*.{json,sol,md}' --check
 npx prettier '**/*.{json,sol,md}' --write
 npx solhint 'contracts/**/*.sol'
 npx solhint 'contracts/**/*.sol' --fix
+```
+
+## Usage
+
+```sh
+yarn dev
+```
+
+## Run tests
+
+```sh
+yarn test
 ```
 
 ## Etherscan verification
