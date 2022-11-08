@@ -63,7 +63,7 @@
     "ethers": "5.7.2",
     "hardhat": "2.12.2",
     "hardhat-gas-reporter": "1.0.9",
-    "husky": "8.0.1",
+    "husky": "8.0.2",
     "lint-staged": "13.0.3",
     "postcss": "8.4.18",
     "prettier": "2.7.1",
