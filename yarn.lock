@@ -12848,7 +12848,7 @@ rustbn.js@~0.2.0:
   resolved "https://registry.yarnpkg.com/rustbn.js/-/rustbn.js-0.2.0.tgz#8082cb886e707155fd1cb6f23bd591ab8d55d0ca"
   integrity sha512-4VlvkRUuCJvr2J6Y0ImW7NvTCriMi7ErOAqWk1y69vAdoNIzCF3yPmgeNzx+RQTLEDFq5sHfscn1MwHxP9hNfA==
 
-rustywind@^0.15.1:
+rustywind@0.15.1:
   version "0.15.1"
   resolved "https://registry.yarnpkg.com/rustywind/-/rustywind-0.15.1.tgz#85f79cd8d6dde07dc36ca4534f72900f7aebba13"
   integrity sha512-v6aYevbeKO2YGaymUM6zWAANz6CQqVDhXBklZEx/dYo9xEd49Yc+4S6srbB6Cb+gZTVs8KinhmIC0L4RoZ4IyA==
