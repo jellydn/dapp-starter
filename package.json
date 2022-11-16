@@ -10,11 +10,6 @@
     "start": "next start",
     "test": "mocha --exit --recursive"
   },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write",
-    "package.json": "sort-package-json"
-  },
   "dependencies": {
     "@ethersproject/providers": "5.7.2",
     "@ethersproject/units": "5.7.0",
@@ -64,10 +59,11 @@
     "hardhat": "2.12.2",
     "hardhat-gas-reporter": "1.0.9",
     "husky": "8.0.2",
-    "lint-staged": "13.0.3",
+    "nano-staged": "0.8.0",
     "postcss": "8.4.19",
     "prettier": "2.7.1",
     "prettier-plugin-solidity": "1.0.0-rc.1",
+    "rustywind": "^0.15.1",
     "solgraph": "0.3.3",
     "solhint": "3.3.7",
     "solidity-coverage": "0.8.2",
@@ -76,5 +72,16 @@
     "ts-node": "10.9.1",
     "typechain": "8.1.1",
     "typescript": "4.9.3"
+  },
+  "nano-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --cache --quiet --fix",
+      "prettier --write",
+      "rustywind --write"
+    ],
+    "*.{css,json,md,yml,yaml}": [
+      "prettier --write"
+    ],
+    "package.json": "sort-package-json"
   }
 }

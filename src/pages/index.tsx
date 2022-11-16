@@ -25,11 +25,11 @@ const App = function () {
         </button>
       </div>
       <Web3ReactProvider getLibrary={getLibrary}>
-        <div className="container min-h-screen mx-auto">
+        <div className="container mx-auto min-h-screen">
           <Demo />
           <div className="hero">
             <div className="text-center hero-content">
-              <div className="max-w-md px-4 py-8">
+              <div className="py-8 px-4 max-w-md">
                 <figure className="mb-5">
                   <img src="/logo.png" alt="logo" className="mask mask-squircle" />
                 </figure>

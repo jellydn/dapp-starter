@@ -57,7 +57,7 @@ export const Demo = function () {
     <>
       <Header />
       <div>{!!error && <h4 style={{ marginTop: "1rem", marginBottom: "0" }}>{getErrorMessage(error)}</h4>}</div>
-      <div className="grid grid-cols-2 gap-2 px-2 py-4">
+      <div className="grid grid-cols-2 gap-2 py-4 px-2">
         <div className="card bordered">
           <figure>
             <img
@@ -83,7 +83,7 @@ export const Demo = function () {
                   activate(injected);
                 }}
               >
-                <div className="px-2 py-4">
+                <div className="py-4 px-2">
                   {activating(injected) && <p className="btn loading">loading...</p>}
                   {connected(injected) && (
                     <span role="img" aria-label="check">
@@ -156,7 +156,7 @@ export const Demo = function () {
                   activate(walletconnect);
                 }}
               >
-                <div className="px-2 py-4">
+                <div className="py-4 px-2">
                   {activating(walletconnect) && <p className="btn loading">loading...</p>}
                   {connected(walletconnect) && (
                     <span role="img" aria-label="check">
