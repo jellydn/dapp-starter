@@ -60,7 +60,7 @@
     "hardhat-gas-reporter": "1.0.9",
     "husky": "8.0.2",
     "nano-staged": "0.8.0",
-    "postcss": "8.4.19",
+    "postcss": "8.4.20",
     "prettier": "2.8.1",
     "prettier-plugin-solidity": "1.0.0",
     "rustywind": "0.15.1",
