@@ -2482,10 +2482,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.13.tgz#dff34f226ec1ac0432ae3b136ec5552bd3b9c0fe"
   integrity sha512-IASpMGVcWpUsx5xBOrxMj7Bl8lqfuTY7FKAnPmu5cHkfQVWF8GulWS1jbRqA934qZL35xh5xN/+Xe/i26Bod4w==
 
-"@types/node@18.11.14":
-  version "18.11.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.14.tgz#a8571b25f3a31e9ded14e3ab9488509adef831d8"
-  integrity sha512-0KXV57tENYmmJMl+FekeW9V3O/rlcqGQQJ/hNh9r8pKIj304pskWuEd8fCyNT86g/TpO0gcOTiLzsHLEURFMIQ==
+"@types/node@18.11.15":
+  version "18.11.15"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.15.tgz#de0e1fbd2b22b962d45971431e2ae696643d3f5d"
+  integrity sha512-VkhBbVo2+2oozlkdHXLrb3zjsRkpdnaU2bXmX8Wgle3PUi569eLRaHGlgETQHR7lLL1w7GiG3h9SnePhxNDecw==
 
 "@types/node@^10.0.3":
   version "10.17.60"
@@ -10612,10 +10612,10 @@ prepend-http@^2.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha512-ravE6m9Atw9Z/jjttRUZ+clIXogdghyZAuWJ3qEzjT+jI/dL1ifAqhZeC5VHzQp1MSt1+jxKkFNemj/iO7tVUA==
 
-prettier-plugin-solidity@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-solidity/-/prettier-plugin-solidity-1.0.0.tgz#5b23f48cc9c28a1246c6dd89af117234b813f48b"
-  integrity sha512-gRJCeZ7imbWtNYN2SudjJoPmka5r6jcd2cSTV6FC3pVCtY6LFZbeQQjpKufUEp88hXBAAnkOTOh7TA5xwj9M3A==
+prettier-plugin-solidity@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-solidity/-/prettier-plugin-solidity-1.1.0.tgz#a417d104b48a43af3adbfb96b65dbce34fd21429"
+  integrity sha512-5gq0T49ifvXH/6x1STuKyWjTUgi6ICoV65yNtKlg/vZEvocFtSpByJOJICBfqPwNsnv4vhhWIqkLGSUJmWum2w==
   dependencies:
     "@solidity-parser/parser" "^0.14.5"
     emoji-regex "^10.2.1"
