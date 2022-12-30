@@ -62,7 +62,7 @@
     "nano-staged": "0.8.0",
     "postcss": "8.4.20",
     "prettier": "2.8.1",
-    "prettier-plugin-solidity": "1.1.0",
+    "prettier-plugin-solidity": "1.1.1",
     "rustywind": "0.15.1",
     "solgraph": "1.0.2",
     "solhint": "3.3.7",
