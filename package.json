@@ -58,7 +58,7 @@
     "ethers": "5.7.2",
     "hardhat": "2.12.5",
     "hardhat-gas-reporter": "1.0.9",
-    "husky": "8.0.2",
+    "husky": "8.0.3",
     "nano-staged": "0.8.0",
     "postcss": "8.4.20",
     "prettier": "2.8.1",
