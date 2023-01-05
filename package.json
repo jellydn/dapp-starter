@@ -63,7 +63,7 @@
     "postcss": "8.4.20",
     "prettier": "2.8.1",
     "prettier-plugin-solidity": "1.1.1",
-    "rustywind": "0.15.1",
+    "rustywind": "0.15.3",
     "solgraph": "1.0.2",
     "solhint": "3.3.7",
     "solidity-coverage": "0.8.2",
