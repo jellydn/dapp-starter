@@ -61,7 +61,7 @@
     "husky": "8.0.3",
     "nano-staged": "0.8.0",
     "postcss": "8.4.21",
-    "prettier": "2.8.4",
+    "prettier": "2.8.5",
     "prettier-plugin-solidity": "1.1.3",
     "rustywind": "0.15.3",
     "solgraph": "1.0.2",
