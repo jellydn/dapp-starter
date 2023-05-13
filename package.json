@@ -37,7 +37,7 @@
     "@typechain/hardhat": "6.1.6",
     "@types/chai": "4.3.5",
     "@types/mocha": "10.0.1",
-    "@types/node": "18.16.8",
+    "@types/node": "18.16.9",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "@typescript-eslint/eslint-plugin": "5.59.5",
