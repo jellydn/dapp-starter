@@ -7,9 +7,9 @@ import type { Provider } from "@ethersproject/providers";
 import { Contract, Signer, utils } from "ethers";
 
 import type {
-  ERC1967UpgradeUpgradeable,
-  ERC1967UpgradeUpgradeableInterface,
-} from "../../../../../@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable";
+  IERC1967Upgradeable,
+  IERC1967UpgradeableInterface,
+} from "../../../../@openzeppelin/contracts-upgradeable/interfaces/IERC1967Upgradeable";
 
 const _abi = [
   {
@@ -48,19 +48,6 @@ const _abi = [
     anonymous: false,
     inputs: [
       {
-        indexed: false,
-        internalType: "uint8",
-        name: "version",
-        type: "uint8",
-      },
-    ],
-    name: "Initialized",
-    type: "event",
-  },
-  {
-    anonymous: false,
-    inputs: [
-      {
         indexed: true,
         internalType: "address",
         name: "implementation",
@@ -72,12 +59,12 @@ const _abi = [
   },
 ] as const;
 
-export class ERC1967UpgradeUpgradeable__factory {
+export class IERC1967Upgradeable__factory {
   static readonly abi = _abi;
-  static createInterface(): ERC1967UpgradeUpgradeableInterface {
-    return new utils.Interface(_abi) as ERC1967UpgradeUpgradeableInterface;
+  static createInterface(): IERC1967UpgradeableInterface {
+    return new utils.Interface(_abi) as IERC1967UpgradeableInterface;
   }
-  static connect(address: string, signerOrProvider: Signer | Provider): ERC1967UpgradeUpgradeable {
-    return new Contract(address, _abi, signerOrProvider) as ERC1967UpgradeUpgradeable;
+  static connect(address: string, signerOrProvider: Signer | Provider): IERC1967Upgradeable {
+    return new Contract(address, _abi, signerOrProvider) as IERC1967Upgradeable;
   }
 }

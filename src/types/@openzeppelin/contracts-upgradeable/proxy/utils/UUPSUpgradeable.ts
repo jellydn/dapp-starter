@@ -18,7 +18,7 @@ import type {
   utils,
 } from "ethers";
 
-import type { TypedEventFilter, TypedEvent, TypedListener, OnEvent, PromiseOrValue } from "../../../../common";
+import type { TypedEventFilter, TypedEvent, TypedListener, OnEvent } from "../../../../common";
 
 export interface UUPSUpgradeableInterface extends utils.Interface {
   functions: {
@@ -30,11 +30,8 @@ export interface UUPSUpgradeableInterface extends utils.Interface {
   getFunction(nameOrSignatureOrTopic: "proxiableUUID" | "upgradeTo" | "upgradeToAndCall"): FunctionFragment;
 
   encodeFunctionData(functionFragment: "proxiableUUID", values?: undefined): string;
-  encodeFunctionData(functionFragment: "upgradeTo", values: [PromiseOrValue<string>]): string;
-  encodeFunctionData(
-    functionFragment: "upgradeToAndCall",
-    values: [PromiseOrValue<string>, PromiseOrValue<BytesLike>]
-  ): string;
+  encodeFunctionData(functionFragment: "upgradeTo", values: [string]): string;
+  encodeFunctionData(functionFragment: "upgradeToAndCall", values: [string, BytesLike]): string;
 
   decodeFunctionResult(functionFragment: "proxiableUUID", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "upgradeTo", data: BytesLike): Result;
@@ -107,84 +104,68 @@ export interface UUPSUpgradeable extends BaseContract {
   functions: {
     proxiableUUID(overrides?: CallOverrides): Promise<[string]>;
 
-    upgradeTo(
-      newImplementation: PromiseOrValue<string>,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<ContractTransaction>;
+    upgradeTo(newImplementation: string, overrides?: Overrides & { from?: string }): Promise<ContractTransaction>;
 
     upgradeToAndCall(
-      newImplementation: PromiseOrValue<string>,
-      data: PromiseOrValue<BytesLike>,
-      overrides?: PayableOverrides & { from?: PromiseOrValue<string> }
+      newImplementation: string,
+      data: BytesLike,
+      overrides?: PayableOverrides & { from?: string }
     ): Promise<ContractTransaction>;
   };
 
   proxiableUUID(overrides?: CallOverrides): Promise<string>;
 
-  upgradeTo(
-    newImplementation: PromiseOrValue<string>,
-    overrides?: Overrides & { from?: PromiseOrValue<string> }
-  ): Promise<ContractTransaction>;
+  upgradeTo(newImplementation: string, overrides?: Overrides & { from?: string }): Promise<ContractTransaction>;
 
   upgradeToAndCall(
-    newImplementation: PromiseOrValue<string>,
-    data: PromiseOrValue<BytesLike>,
-    overrides?: PayableOverrides & { from?: PromiseOrValue<string> }
+    newImplementation: string,
+    data: BytesLike,
+    overrides?: PayableOverrides & { from?: string }
   ): Promise<ContractTransaction>;
 
   callStatic: {
     proxiableUUID(overrides?: CallOverrides): Promise<string>;
 
-    upgradeTo(newImplementation: PromiseOrValue<string>, overrides?: CallOverrides): Promise<void>;
+    upgradeTo(newImplementation: string, overrides?: CallOverrides): Promise<void>;
 
-    upgradeToAndCall(
-      newImplementation: PromiseOrValue<string>,
-      data: PromiseOrValue<BytesLike>,
-      overrides?: CallOverrides
-    ): Promise<void>;
+    upgradeToAndCall(newImplementation: string, data: BytesLike, overrides?: CallOverrides): Promise<void>;
   };
 
   filters: {
     "AdminChanged(address,address)"(previousAdmin?: null, newAdmin?: null): AdminChangedEventFilter;
     AdminChanged(previousAdmin?: null, newAdmin?: null): AdminChangedEventFilter;
 
-    "BeaconUpgraded(address)"(beacon?: PromiseOrValue<string> | null): BeaconUpgradedEventFilter;
-    BeaconUpgraded(beacon?: PromiseOrValue<string> | null): BeaconUpgradedEventFilter;
+    "BeaconUpgraded(address)"(beacon?: string | null): BeaconUpgradedEventFilter;
+    BeaconUpgraded(beacon?: string | null): BeaconUpgradedEventFilter;
 
     "Initialized(uint8)"(version?: null): InitializedEventFilter;
     Initialized(version?: null): InitializedEventFilter;
 
-    "Upgraded(address)"(implementation?: PromiseOrValue<string> | null): UpgradedEventFilter;
-    Upgraded(implementation?: PromiseOrValue<string> | null): UpgradedEventFilter;
+    "Upgraded(address)"(implementation?: string | null): UpgradedEventFilter;
+    Upgraded(implementation?: string | null): UpgradedEventFilter;
   };
 
   estimateGas: {
     proxiableUUID(overrides?: CallOverrides): Promise<BigNumber>;
 
-    upgradeTo(
-      newImplementation: PromiseOrValue<string>,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<BigNumber>;
+    upgradeTo(newImplementation: string, overrides?: Overrides & { from?: string }): Promise<BigNumber>;
 
     upgradeToAndCall(
-      newImplementation: PromiseOrValue<string>,
-      data: PromiseOrValue<BytesLike>,
-      overrides?: PayableOverrides & { from?: PromiseOrValue<string> }
+      newImplementation: string,
+      data: BytesLike,
+      overrides?: PayableOverrides & { from?: string }
     ): Promise<BigNumber>;
   };
 
   populateTransaction: {
     proxiableUUID(overrides?: CallOverrides): Promise<PopulatedTransaction>;
 
-    upgradeTo(
-      newImplementation: PromiseOrValue<string>,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<PopulatedTransaction>;
+    upgradeTo(newImplementation: string, overrides?: Overrides & { from?: string }): Promise<PopulatedTransaction>;
 
     upgradeToAndCall(
-      newImplementation: PromiseOrValue<string>,
-      data: PromiseOrValue<BytesLike>,
-      overrides?: PayableOverrides & { from?: PromiseOrValue<string> }
+      newImplementation: string,
+      data: BytesLike,
+      overrides?: PayableOverrides & { from?: string }
     ): Promise<PopulatedTransaction>;
   };
 }

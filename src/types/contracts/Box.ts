@@ -18,7 +18,7 @@ import type {
   utils,
 } from "ethers";
 
-import type { TypedEventFilter, TypedEvent, TypedListener, OnEvent, PromiseOrValue } from "../common";
+import type { TypedEventFilter, TypedEvent, TypedListener, OnEvent } from "../common";
 
 export interface BoxInterface extends utils.Interface {
   functions: {
@@ -29,7 +29,7 @@ export interface BoxInterface extends utils.Interface {
   getFunction(nameOrSignatureOrTopic: "retrieve" | "store"): FunctionFragment;
 
   encodeFunctionData(functionFragment: "retrieve", values?: undefined): string;
-  encodeFunctionData(functionFragment: "store", values: [PromiseOrValue<BigNumberish>]): string;
+  encodeFunctionData(functionFragment: "store", values: [BigNumberish]): string;
 
   decodeFunctionResult(functionFragment: "retrieve", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "store", data: BytesLike): Result;
@@ -73,23 +73,17 @@ export interface Box extends BaseContract {
   functions: {
     retrieve(overrides?: CallOverrides): Promise<[BigNumber]>;
 
-    store(
-      value: PromiseOrValue<BigNumberish>,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<ContractTransaction>;
+    store(value: BigNumberish, overrides?: Overrides & { from?: string }): Promise<ContractTransaction>;
   };
 
   retrieve(overrides?: CallOverrides): Promise<BigNumber>;
 
-  store(
-    value: PromiseOrValue<BigNumberish>,
-    overrides?: Overrides & { from?: PromiseOrValue<string> }
-  ): Promise<ContractTransaction>;
+  store(value: BigNumberish, overrides?: Overrides & { from?: string }): Promise<ContractTransaction>;
 
   callStatic: {
     retrieve(overrides?: CallOverrides): Promise<BigNumber>;
 
-    store(value: PromiseOrValue<BigNumberish>, overrides?: CallOverrides): Promise<void>;
+    store(value: BigNumberish, overrides?: CallOverrides): Promise<void>;
   };
 
   filters: {
@@ -100,18 +94,12 @@ export interface Box extends BaseContract {
   estimateGas: {
     retrieve(overrides?: CallOverrides): Promise<BigNumber>;
 
-    store(
-      value: PromiseOrValue<BigNumberish>,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<BigNumber>;
+    store(value: BigNumberish, overrides?: Overrides & { from?: string }): Promise<BigNumber>;
   };
 
   populateTransaction: {
     retrieve(overrides?: CallOverrides): Promise<PopulatedTransaction>;
 
-    store(
-      value: PromiseOrValue<BigNumberish>,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<PopulatedTransaction>;
+    store(value: BigNumberish, overrides?: Overrides & { from?: string }): Promise<PopulatedTransaction>;
   };
 }

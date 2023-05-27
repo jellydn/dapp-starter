@@ -25,7 +25,7 @@ const _abi = [
     name: "Initialized",
     type: "event",
   },
-];
+] as const;
 
 export class ContextUpgradeable__factory {
   static readonly abi = _abi;

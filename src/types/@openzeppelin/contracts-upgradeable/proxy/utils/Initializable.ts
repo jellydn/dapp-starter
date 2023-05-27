@@ -7,7 +7,7 @@ import type { EventFragment } from "@ethersproject/abi";
 import type { Listener, Provider } from "@ethersproject/providers";
 import type { BaseContract, Signer, utils } from "ethers";
 
-import type { TypedEventFilter, TypedEvent, TypedListener, OnEvent, PromiseOrValue } from "../../../../common";
+import type { TypedEventFilter, TypedEvent, TypedListener, OnEvent } from "../../../../common";
 
 export interface InitializableInterface extends utils.Interface {
   functions: {};

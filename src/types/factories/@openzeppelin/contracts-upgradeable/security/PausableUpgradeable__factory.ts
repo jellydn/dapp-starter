@@ -64,7 +64,7 @@ const _abi = [
     stateMutability: "view",
     type: "function",
   },
-];
+] as const;
 
 export class PausableUpgradeable__factory {
   static readonly abi = _abi;

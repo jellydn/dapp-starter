@@ -14,6 +14,8 @@ export type { OwnableUpgradeable } from "./@openzeppelin/contracts-upgradeable/a
 export { OwnableUpgradeable__factory } from "./factories/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable__factory";
 export type { IERC1822ProxiableUpgradeable } from "./@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol/IERC1822ProxiableUpgradeable";
 export { IERC1822ProxiableUpgradeable__factory } from "./factories/@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol/IERC1822ProxiableUpgradeable__factory";
+export type { IERC1967Upgradeable } from "./@openzeppelin/contracts-upgradeable/interfaces/IERC1967Upgradeable";
+export { IERC1967Upgradeable__factory } from "./factories/@openzeppelin/contracts-upgradeable/interfaces/IERC1967Upgradeable__factory";
 export type { IBeaconUpgradeable } from "./@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable";
 export { IBeaconUpgradeable__factory } from "./factories/@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable__factory";
 export type { ERC1967UpgradeUpgradeable } from "./@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable";

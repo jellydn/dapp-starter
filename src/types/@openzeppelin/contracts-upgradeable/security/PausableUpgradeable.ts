@@ -7,7 +7,7 @@ import type { FunctionFragment, Result, EventFragment } from "@ethersproject/abi
 import type { Listener, Provider } from "@ethersproject/providers";
 import type { BaseContract, BigNumber, BytesLike, CallOverrides, PopulatedTransaction, Signer, utils } from "ethers";
 
-import type { TypedEventFilter, TypedEvent, TypedListener, OnEvent, PromiseOrValue } from "../../../common";
+import type { TypedEventFilter, TypedEvent, TypedListener, OnEvent } from "../../../common";
 
 export interface PausableUpgradeableInterface extends utils.Interface {
   functions: {

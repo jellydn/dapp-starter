@@ -18,7 +18,7 @@ import type {
   utils,
 } from "ethers";
 
-import type { TypedEventFilter, TypedEvent, TypedListener, OnEvent, PromiseOrValue } from "../common";
+import type { TypedEventFilter, TypedEvent, TypedListener, OnEvent } from "../common";
 
 export interface BoxV2Interface extends utils.Interface {
   functions: {
@@ -31,7 +31,7 @@ export interface BoxV2Interface extends utils.Interface {
 
   encodeFunctionData(functionFragment: "increment", values?: undefined): string;
   encodeFunctionData(functionFragment: "retrieve", values?: undefined): string;
-  encodeFunctionData(functionFragment: "store", values: [PromiseOrValue<BigNumberish>]): string;
+  encodeFunctionData(functionFragment: "store", values: [BigNumberish]): string;
 
   decodeFunctionResult(functionFragment: "increment", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "retrieve", data: BytesLike): Result;
@@ -74,31 +74,25 @@ export interface BoxV2 extends BaseContract {
   removeListener: OnEvent<this>;
 
   functions: {
-    increment(overrides?: Overrides & { from?: PromiseOrValue<string> }): Promise<ContractTransaction>;
+    increment(overrides?: Overrides & { from?: string }): Promise<ContractTransaction>;
 
     retrieve(overrides?: CallOverrides): Promise<[BigNumber]>;
 
-    store(
-      value: PromiseOrValue<BigNumberish>,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<ContractTransaction>;
+    store(value: BigNumberish, overrides?: Overrides & { from?: string }): Promise<ContractTransaction>;
   };
 
-  increment(overrides?: Overrides & { from?: PromiseOrValue<string> }): Promise<ContractTransaction>;
+  increment(overrides?: Overrides & { from?: string }): Promise<ContractTransaction>;
 
   retrieve(overrides?: CallOverrides): Promise<BigNumber>;
 
-  store(
-    value: PromiseOrValue<BigNumberish>,
-    overrides?: Overrides & { from?: PromiseOrValue<string> }
-  ): Promise<ContractTransaction>;
+  store(value: BigNumberish, overrides?: Overrides & { from?: string }): Promise<ContractTransaction>;
 
   callStatic: {
     increment(overrides?: CallOverrides): Promise<void>;
 
     retrieve(overrides?: CallOverrides): Promise<BigNumber>;
 
-    store(value: PromiseOrValue<BigNumberish>, overrides?: CallOverrides): Promise<void>;
+    store(value: BigNumberish, overrides?: CallOverrides): Promise<void>;
   };
 
   filters: {
@@ -107,24 +101,18 @@ export interface BoxV2 extends BaseContract {
   };
 
   estimateGas: {
-    increment(overrides?: Overrides & { from?: PromiseOrValue<string> }): Promise<BigNumber>;
+    increment(overrides?: Overrides & { from?: string }): Promise<BigNumber>;
 
     retrieve(overrides?: CallOverrides): Promise<BigNumber>;
 
-    store(
-      value: PromiseOrValue<BigNumberish>,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<BigNumber>;
+    store(value: BigNumberish, overrides?: Overrides & { from?: string }): Promise<BigNumber>;
   };
 
   populateTransaction: {
-    increment(overrides?: Overrides & { from?: PromiseOrValue<string> }): Promise<PopulatedTransaction>;
+    increment(overrides?: Overrides & { from?: string }): Promise<PopulatedTransaction>;
 
     retrieve(overrides?: CallOverrides): Promise<PopulatedTransaction>;
 
-    store(
-      value: PromiseOrValue<BigNumberish>,
-      overrides?: Overrides & { from?: PromiseOrValue<string> }
-    ): Promise<PopulatedTransaction>;
+    store(value: BigNumberish, overrides?: Overrides & { from?: string }): Promise<PopulatedTransaction>;
   };
 }

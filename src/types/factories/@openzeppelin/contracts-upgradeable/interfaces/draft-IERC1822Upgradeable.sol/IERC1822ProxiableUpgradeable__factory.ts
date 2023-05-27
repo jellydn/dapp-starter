@@ -25,7 +25,7 @@ const _abi = [
     stateMutability: "view",
     type: "function",
   },
-];
+] as const;
 
 export class IERC1822ProxiableUpgradeable__factory {
   static readonly abi = _abi;
