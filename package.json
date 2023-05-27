@@ -1,6 +1,6 @@
 {
   "name": "dapp-starter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "build": "npx hardhat compile --network localhost && next build",
     "dev": "next dev",
@@ -8,7 +8,7 @@
     "lint:sol": "npx solhint 'contracts/**/*.sol'",
     "prepare": "husky install",
     "start": "next start",
-    "test": "mocha --exit --recursive"
+    "test": "npx hardhat test"
   },
   "dependencies": {
     "@ethersproject/providers": "5.7.2",
