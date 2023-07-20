@@ -5563,10 +5563,10 @@ d@1, d@^1.0.1:
     es5-ext "^0.10.50"
     type "^1.0.1"
 
-daisyui@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.2.1.tgz#7fac542b03023adbde2afc869518840dbef509ee"
-  integrity sha512-gIqE6wiqoJt9G8+n3R/SwLeUnpNCE2eDhT73rP0yZYVaM7o6zVcakBH3aEW5RGpx3UkonPiLuvcgxRcb2lE8TA==
+daisyui@3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.3.1.tgz#3ebec616b3f37b43903d9c935026b1aaed5542c1"
+  integrity sha512-0PVNl+0r2Ie+FRkDNQABYcv8qLc0bt0lhUfSf8PxGocqpDsCB6cNQ5k8jOlnZIjUhc1EXMIDPU9r0pVrfRGftw==
   dependencies:
     colord "^2.9"
     css-selector-tokenizer "^0.8"
@@ -6362,7 +6362,28 @@ eslint-plugin-react-hooks@5.0.0-canary-7118f5dd7-20230705:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.0.0-canary-7118f5dd7-20230705.tgz#4d55c50e186f1a2b0636433d2b0b2f592ddbccfd"
   integrity sha512-AZYbMo/NW9chdL7vk6HQzQhT+PvTAEVqWk9ziruUoW2kAOcN5qNyelv70e0F1VNQAbvutOC9oc+xfWycI9FxDw==
 
-eslint-plugin-react@7.32.2, eslint-plugin-react@^7.31.7:
+eslint-plugin-react@7.33.0:
+  version "7.33.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.33.0.tgz#6c356fb0862fec2cd1b04426c669ea746e9b6eb3"
+  integrity sha512-qewL/8P34WkY8jAqdQxsiL82pDUeT7nhs8IsuXgfgnsEloKCT4miAV9N9kGtx7/KM9NH/NCGUE7Edt9iGxLXFw==
+  dependencies:
+    array-includes "^3.1.6"
+    array.prototype.flatmap "^1.3.1"
+    array.prototype.tosorted "^1.1.1"
+    doctrine "^2.1.0"
+    estraverse "^5.3.0"
+    jsx-ast-utils "^2.4.1 || ^3.0.0"
+    minimatch "^3.1.2"
+    object.entries "^1.1.6"
+    object.fromentries "^2.0.6"
+    object.hasown "^1.1.2"
+    object.values "^1.1.6"
+    prop-types "^15.8.1"
+    resolve "^2.0.0-next.4"
+    semver "^6.3.1"
+    string.prototype.matchall "^4.0.8"
+
+eslint-plugin-react@^7.31.7:
   version "7.32.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.32.2.tgz#e71f21c7c265ebce01bcbc9d0955170c55571f10"
   integrity sha512-t2fBMa+XzonrrNkyVirzKlvn5RXzzPwRHtMvLAtVZrt8oxgnTQaYbU6SXTOO1mwQgp1y5+toMSKInnzGr0Knqg==
