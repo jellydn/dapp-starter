@@ -2765,10 +2765,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.6.tgz#df929d1bb2eee5afdda598a41930fe50b43eaa6a"
   integrity sha512-Exw4yUWMBXM3X+8oqzJNRqZSwUAaS4+7NdvHqQuFi/d+synz++xmX3QIf+BFqneW8N31R8Ky+sikfZUXq07ggQ==
 
-"@types/node@20.4.5":
-  version "20.4.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.5.tgz#9dc0a5cb1ccce4f7a731660935ab70b9c00a5d69"
-  integrity sha512-rt40Nk13II9JwQBdeYqmbn2Q6IVTA5uPhvSO+JVqdXw/6/4glI6oR9ezty/A9Hg5u7JH4OmYmuQ+XvjKm0Datg==
+"@types/node@20.4.6":
+  version "20.4.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.6.tgz#b66b66c9bb5d49b199f03399e341c9d6036e9e88"
+  integrity sha512-q0RkvNgMweWWIvSMDiXhflGUKMdIxBo2M2tYM/0kEGDueQByFzK4KZAgu5YHGFNxziTlppNpTIBcqHQAxlfHdA==
 
 "@types/node@^10.0.3":
   version "10.17.60"
@@ -11820,10 +11820,10 @@ rustbn.js@~0.2.0:
   resolved "https://registry.yarnpkg.com/rustbn.js/-/rustbn.js-0.2.0.tgz#8082cb886e707155fd1cb6f23bd591ab8d55d0ca"
   integrity sha512-4VlvkRUuCJvr2J6Y0ImW7NvTCriMi7ErOAqWk1y69vAdoNIzCF3yPmgeNzx+RQTLEDFq5sHfscn1MwHxP9hNfA==
 
-rustywind@0.16.0:
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/rustywind/-/rustywind-0.16.0.tgz#b3355c23e84949608119ed4bb7fad2832b70b4cd"
-  integrity sha512-V3Z8eSY7eVpA8y+6LKVv4l6ary9aVzxYBp5oCu1Nj40PKOivfnGureeDYI9wnSw/qO2DLLpPo90WKlkbJwr7MQ==
+rustywind@0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/rustywind/-/rustywind-0.17.0.tgz#df5b2278cff85d89333d67eb52cd771b2c732b4f"
+  integrity sha512-T8wdV6G5haVWfnrgnwgf75NDOBBTEiW4Dy5FCYB2Hs786vYfin/b3AFh5MfOH4rrIy3zwkS6LALlgWA/LOzIsA==
   dependencies:
     https-proxy-agent "^4.0.0"
     proxy-from-env "^1.1.0"
