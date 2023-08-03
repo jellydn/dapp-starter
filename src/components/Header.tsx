@@ -1,4 +1,3 @@
-/* eslint-disable no-nested-ternary */
 import { useWeb3React } from "@web3-react/core";
 import Script from "next/script";
 
@@ -6,7 +5,7 @@ import { Account } from "./Account";
 import { Balance } from "./Balance";
 import { ChainId } from "./ChainId";
 
-export const Header = function () {
+export function Header() {
   const { active, error } = useWeb3React();
 
   return (
@@ -16,7 +15,12 @@ export const Header = function () {
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5337133458846513"
         crossOrigin="anonymous"
       />
-      <Script async defer src="https://analytics.umami.is/script.js" data-website-id="2b85d47b-5bd9-407e-b64d-61f1181a0860" />
+      <Script
+        async
+        defer
+        src="https://analytics.umami.is/script.js"
+        data-website-id="2b85d47b-5bd9-407e-b64d-61f1181a0860"
+      />
 
       <div className="flex-1 px-2 mx-2">
         <span className="text-lg font-bold">{active ? "🟢" : error ? "🔴" : "🟠"}</span>
@@ -30,6 +34,6 @@ export const Header = function () {
       </div>
     </div>
   );
-};
+}
 
 export default Header;

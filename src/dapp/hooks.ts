@@ -10,16 +10,20 @@ export function useEagerConnect() {
   const [tried, setTried] = useState(false);
 
   useEffect(() => {
-    injected.isAuthorized().then((isAuthorized: boolean) => {
-      if (isAuthorized) {
-        activate(injected, undefined, true).catch(() => {
+    injected
+      .isAuthorized()
+      .then((isAuthorized: boolean) => {
+        if (isAuthorized) {
+          activate(injected, undefined, true).catch(() => {
+            setTried(true);
+          });
+        } else {
           setTried(true);
-        });
-      } else {
-        setTried(true);
-      }
-    });
-  }, []); // intentionally only running on mount (make sure it's only mounted once :))
+        }
+      })
+      .catch(logger.error);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Intentionally only running on mount (make sure it's only mounted once :))
 
   // if the connection worked, wait until we get confirmation of that to flip the flag
   useEffect(() => {
@@ -36,24 +40,27 @@ export function useInactiveListener(suppress = false) {
 
   useEffect((): any => {
     const { ethereum } = window as any;
-    if (ethereum && ethereum.on && !active && !error && !suppress) {
+    if (ethereum?.on && !active && !error && !suppress) {
       const handleConnect = () => {
         logger.warn("Handling 'connect' event");
-        activate(injected);
+        activate(injected).catch(logger.error);
       };
+
       const handleChainChanged = (chainId: string | number) => {
         logger.warn("Handling 'chainChanged' event with payload", chainId);
-        activate(injected);
+        activate(injected).catch(logger.error);
       };
+
       const handleAccountsChanged = (accounts: string[]) => {
         logger.warn("Handling 'accountsChanged' event with payload", accounts);
         if (accounts.length > 0) {
-          activate(injected);
+          activate(injected).catch(logger.error);
         }
       };
+
       const handleNetworkChanged = (networkId: string | number) => {
         logger.warn("Handling 'networkChanged' event with payload", networkId);
-        activate(injected);
+        activate(injected).catch(logger.error);
       };
 
       ethereum.on("connect", handleConnect);

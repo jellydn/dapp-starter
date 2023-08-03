@@ -1,28 +1,27 @@
-/* eslint-disable no-nested-ternary */
 import { formatEther } from "@ethersproject/units";
 import { useWeb3React } from "@web3-react/core";
 import { useEffect, useState } from "react";
 
 import logger from "../logger";
 
-export const Balance = function () {
+export function Balance() {
   const { account, library, chainId } = useWeb3React();
-  const [balance, setBalance] = useState<number | null>();
+  const [balance, setBalance] = useState<number | undefined>();
 
   useEffect((): any => {
-    if (!!account && !!library) {
+    if (Boolean(account) && Boolean(library)) {
       let stale = false;
 
       library
         .getBalance(account)
-        .then((accountBalance: any) => {
-          if (!stale) {
-            setBalance(accountBalance);
+        .then((accountBalance) => {
+          if (!stale && accountBalance) {
+            setBalance(Number(accountBalance));
           }
         })
         .catch(() => {
           if (!stale) {
-            setBalance(null);
+            setBalance(undefined);
           }
         });
 
@@ -31,10 +30,11 @@ export const Balance = function () {
         setBalance(undefined);
       };
     }
+
     return () => {
       logger.warn("Balance component not initialized");
     };
-  }, [account, library, chainId]); // ensures refresh if referential identity of library doesn't change across chainIds
+  }, [account, library, chainId]); // Ensures refresh if referential identity of library doesn't change across chainIds
 
   return (
     <div className="btn btn-ghost btn-sm rounded-btn">
@@ -56,6 +56,6 @@ export const Balance = function () {
       <span>{balance === null ? "Error" : balance ? `Ξ${formatEther(balance)}` : ""}</span>
     </div>
   );
-};
+}
 
 export default Balance;

@@ -1,6 +1,6 @@
 import { useWeb3React } from "@web3-react/core";
 
-export const ChainId = function () {
+export function ChainId() {
   const { chainId } = useWeb3React();
 
   return (
@@ -23,6 +23,6 @@ export const ChainId = function () {
       <span>{chainId ?? ""}</span>
     </div>
   );
-};
+}
 
 export default ChainId;

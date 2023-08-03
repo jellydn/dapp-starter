@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 
+import logger from "../logger";
 // See: https://usehooks-ts.com/react-hook/use-event-listener
 import { useEventListener } from "./useEventListener";
 
-type Value<T> = T | null;
+type Value<T> = T | undefined;
 
 export function useReadLocalStorage<T>(key: string): Value<T> {
   // Get from local storage then
@@ -11,15 +12,15 @@ export function useReadLocalStorage<T>(key: string): Value<T> {
   const readValue = (): Value<T> => {
     // Prevent build error "window is undefined" but keep keep working
     if (typeof window === "undefined") {
-      return null;
+      return undefined;
     }
 
     try {
       const item = window.localStorage.getItem(key);
-      return item ? (JSON.parse(item) as T) : null;
+      return item ? (JSON.parse(item) as T) : undefined;
     } catch (error) {
-      console.warn(`Error reading localStorage key “${key}”:`, error);
-      return null;
+      logger.warn(`Error reading localStorage key “${key}”:`, error);
+      return undefined;
     }
   };
 
@@ -37,10 +38,10 @@ export function useReadLocalStorage<T>(key: string): Value<T> {
     setStoredValue(readValue());
   };
 
-  // this only works for other documents, not the current one
+  // This only works for other documents, not the current one
   useEventListener("storage", handleStorageChange);
 
-  // this is a custom event, triggered in writeValueToLocalStorage
+  // This is a custom event, triggered in writeValueToLocalStorage
   // See: useLocalStorage()
   useEventListener("local-storage", handleStorageChange);
 

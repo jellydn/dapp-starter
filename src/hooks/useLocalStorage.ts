@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { type Dispatch, type SetStateAction, useEffect, useState } from "react";
 
 // See: https://usehooks-ts.com/react-hook/use-event-listener
 import { useEventListener } from "./useEventListener";
@@ -31,7 +31,7 @@ export function useLocalStorage<T>(key: string, initialValue: T): [T, SetValue<T
   // ... persists the new value to localStorage.
   const setValue: SetValue<T> = (value) => {
     // Prevent build error "window is undefined" but keeps working
-    if (typeof window == "undefined") {
+    if (typeof window === "undefined") {
       console.warn(`Tried setting localStorage key “${key}” even though environment is not a client`);
     }
 
@@ -61,10 +61,10 @@ export function useLocalStorage<T>(key: string, initialValue: T): [T, SetValue<T
     setStoredValue(readValue());
   };
 
-  // this only works for other documents, not the current one
+  // This only works for other documents, not the current one
   useEventListener("storage", handleStorageChange);
 
-  // this is a custom event, triggered in writeValueToLocalStorage
+  // This is a custom event, triggered in writeValueToLocalStorage
   // See: useLocalStorage()
   useEventListener("local-storage", handleStorageChange);
 
@@ -74,7 +74,7 @@ export function useLocalStorage<T>(key: string, initialValue: T): [T, SetValue<T
 export default useLocalStorage;
 
 // A wrapper for "JSON.parse()"" to support "undefined" value
-function parseJSON<T>(value: string | null): T | undefined {
+function parseJSON<T>(value: string | undefined): T | undefined {
   try {
     return value === "undefined" ? undefined : JSON.parse(value ?? "");
   } catch (error) {

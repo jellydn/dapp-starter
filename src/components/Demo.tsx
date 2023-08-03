@@ -1,4 +1,5 @@
-import { Web3Provider } from "@ethersproject/providers";
+/* eslint-disable no-alert */
+import { type ExternalProvider, type JsonRpcFetchFunc, Web3Provider } from "@ethersproject/providers";
 import { useWeb3React, UnsupportedChainIdError } from "@web3-react/core";
 import {
   NoEthereumProviderError,
@@ -12,31 +13,34 @@ import { useEagerConnect, useInactiveListener } from "../dapp/hooks";
 import logger from "../logger";
 import { Header } from "./Header";
 
-function getErrorMessage(error: Error) {
+function getErrorMessage(error?: Error) {
   if (error instanceof NoEthereumProviderError) {
     return "No Ethereum browser extension detected, install MetaMask on desktop or visit from a dApp browser on mobile.";
   }
+
   if (error instanceof UnsupportedChainIdError) {
     return "You're connected to an unsupported network.";
   }
+
   if (error instanceof UserRejectedRequestErrorInjected || error instanceof UserRejectedRequestErrorWalletConnect) {
     return "Please authorize this website to access your Ethereum account.";
   }
+
   logger.error(error);
   return "An unknown error occurred. Check the console for more details.";
 }
 
-export function getLibrary(provider: any): Web3Provider {
+export function getLibrary(provider: ExternalProvider | JsonRpcFetchFunc): Web3Provider {
   const library = new Web3Provider(provider);
   library.pollingInterval = POLLING_INTERVAL;
   return library;
 }
 
-export const Demo = function () {
+export function Demo() {
   const context = useWeb3React<Web3Provider>();
   const { connector, library, account, activate, deactivate, active, error } = context;
 
-  // handle logic to recognize the connector currently being activated
+  // Handle logic to recognize the connector currently being activated
   const [activatingConnector, setActivatingConnector] = useState<any>();
   useEffect(() => {
     if (activatingConnector && activatingConnector === connector) {
@@ -44,19 +48,20 @@ export const Demo = function () {
     }
   }, [activatingConnector, connector]);
 
-  // handle logic to eagerly connect to the injected ethereum provider, if it exists and has granted access already
+  // Handle logic to eagerly connect to the injected ethereum provider, if it exists and has granted access already
   const triedEager = useEagerConnect();
 
-  // handle logic to connect in reaction to certain events on the injected ethereum provider, if it exists
-  useInactiveListener(!triedEager || !!activatingConnector);
+  // Handle logic to connect in reaction to certain events on the injected ethereum provider, if it exists
+  useInactiveListener(!triedEager || Boolean(activatingConnector));
 
   const activating = (connection: typeof injected | typeof walletconnect) => connection === activatingConnector;
   const connected = (connection: typeof injected | typeof walletconnect) => connection === connector;
-  const disabled = !triedEager || !!activatingConnector || connected(injected) || connected(walletconnect) || !!error;
+  const disabled =
+    !triedEager || Boolean(activatingConnector) || connected(injected) || connected(walletconnect) || Boolean(error);
   return (
     <>
       <Header />
-      <div>{!!error && <h4 style={{ marginTop: "1rem", marginBottom: "0" }}>{getErrorMessage(error)}</h4>}</div>
+      <div>{Boolean(error) && <h4 style={{ marginTop: "1rem", marginBottom: "0" }}>{getErrorMessage(error)}</h4>}</div>
       <div className="grid grid-cols-2 gap-2 py-4 px-2">
         <div className="card bordered">
           <figure>
@@ -80,7 +85,7 @@ export const Demo = function () {
                 disabled={disabled}
                 onClick={() => {
                   setActivatingConnector(injected);
-                  activate(injected);
+                  activate(injected).catch(logger.error);
                 }}
               >
                 <div className="py-4 px-2">
@@ -95,11 +100,12 @@ export const Demo = function () {
               </button>
               {(active || error) && connected(injected) && (
                 <>
-                  {!!(library && account) && (
+                  {Boolean(library && account) && (
                     <button
                       type="button"
                       className="btn btn-primary"
                       onClick={() => {
+                        if (!library || !account) return;
                         library
                           .getSigner(account)
                           .signMessage("👋")
@@ -107,7 +113,7 @@ export const Demo = function () {
                             window.alert(`Success!\n\n${signature}`);
                           })
                           .catch((err: Error) => {
-                            window.alert(`Failure!${err && err.message ? `\n\n${err.message}` : ""}`);
+                            window.alert(`Failure!${JSON.stringify(err, null, 2)}`);
                           });
                       }}
                     >
@@ -121,6 +127,7 @@ export const Demo = function () {
                       if (connected(walletconnect)) {
                         (connector as any).close();
                       }
+
                       deactivate();
                     }}
                   >
@@ -153,7 +160,7 @@ export const Demo = function () {
                 disabled={disabled}
                 onClick={() => {
                   setActivatingConnector(walletconnect);
-                  activate(walletconnect);
+                  activate(walletconnect).catch(logger.error);
                 }}
               >
                 <div className="py-4 px-2">
@@ -168,11 +175,12 @@ export const Demo = function () {
               </button>
               {(active || error) && connected(walletconnect) && (
                 <>
-                  {!!(library && account) && (
+                  {Boolean(library && account) && (
                     <button
                       type="button"
                       className="btn btn-primary"
                       onClick={() => {
+                        if (!library || !account) return;
                         library
                           .getSigner(account)
                           .signMessage("👋")
@@ -180,7 +188,7 @@ export const Demo = function () {
                             window.alert(`Success!\n\n${signature}`);
                           })
                           .catch((err: Error) => {
-                            window.alert(`Failure!${err && err.message ? `\n\n${err.message}` : ""}`);
+                            window.alert(`Failure!${JSON.stringify(err, null, 2)}`);
                           });
                       }}
                     >
@@ -194,6 +202,7 @@ export const Demo = function () {
                       if (connected(walletconnect)) {
                         (connector as any).close();
                       }
+
                       deactivate();
                     }}
                   >
@@ -207,6 +216,6 @@ export const Demo = function () {
       </div>
     </>
   );
-};
+}
 
 export default Demo;

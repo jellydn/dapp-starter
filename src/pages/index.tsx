@@ -4,11 +4,12 @@ import { useEffect } from "react";
 import Demo, { getLibrary } from "../components/Demo";
 import useLocalStorage from "../hooks/useLocalStorage";
 
-const App = function () {
+function App() {
   const [theme, setTheme] = useLocalStorage<"dark" | "light">("theme", "dark");
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const toggleTheme = () => {
@@ -17,10 +18,11 @@ const App = function () {
       return prevTheme === "dark" ? "light" : "dark";
     });
   };
+
   return (
     <>
       <div className="fixed top-0 right-0 mt-2 mr-4">
-        <button type="button" onClick={toggleTheme} className="btn">
+        <button type="button" className="btn" onClick={toggleTheme}>
           {theme === "dark" ? "🌞" : "🌙"}
         </button>
       </div>
@@ -90,6 +92,6 @@ const App = function () {
       </Web3ReactProvider>
     </>
   );
-};
+}
 
 export default App;
