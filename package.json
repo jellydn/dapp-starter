@@ -31,7 +31,7 @@
     "@nomiclabs/hardhat-waffle": "2.0.6",
     "@openzeppelin/contracts": "4.9.3",
     "@openzeppelin/contracts-upgradeable": "4.9.3",
-    "@openzeppelin/hardhat-upgrades": "1.28.0",
+    "@openzeppelin/hardhat-upgrades": "2.1.1",
     "@trivago/prettier-plugin-sort-imports": "4.2.0",
     "@typechain/ethers-v5": "11.1.1",
     "@typechain/hardhat": "8.0.3",
