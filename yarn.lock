@@ -2607,10 +2607,10 @@
     lodash "^4.17.15"
     ts-essentials "^7.0.1"
 
-"@typechain/hardhat@8.0.3":
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/@typechain/hardhat/-/hardhat-8.0.3.tgz#a114825f130405bbb8e535314003733b7ce3f91c"
-  integrity sha512-MytSmJJn+gs7Mqrpt/gWkTCOpOQ6ZDfRrRT2gtZL0rfGe4QrU4x9ZdW15fFbVM/XTa+5EsKiOMYXhRABibNeng==
+"@typechain/hardhat@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@typechain/hardhat/-/hardhat-9.0.0.tgz#c92d562566db9b933ac6899c0a0a2ae1871ad5c1"
+  integrity sha512-oCGRvcsryRHEDZ4KO2lenB7wdf8WMDS+f9KGcRFiQWcRLpWWD0ruBGRxNjzkTqyPLtgQ9MvZsXquAFPEw7gAEA==
   dependencies:
     fs-extra "^9.1.0"
 
