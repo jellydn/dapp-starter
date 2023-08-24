@@ -1,31 +1,14 @@
 import { Web3ReactProvider } from "@web3-react/core";
-import { useEffect } from "react";
+import dynamic from "next/dynamic";
 
 import Demo, { getLibrary } from "../components/Demo";
-import useLocalStorage from "../hooks/useLocalStorage";
+
+const ThemeTogger = dynamic(async () => import("../components/ThemeTogger"), { ssr: false });
 
 function App() {
-  const [theme, setTheme] = useLocalStorage<"dark" | "light">("theme", "dark");
-
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const toggleTheme = () => {
-    setTheme((prevTheme) => {
-      document.documentElement.setAttribute("data-theme", prevTheme === "dark" ? "light" : "dark");
-      return prevTheme === "dark" ? "light" : "dark";
-    });
-  };
-
   return (
     <>
-      <div className="fixed top-0 right-0 mt-2 mr-4">
-        <button type="button" className="btn" onClick={toggleTheme}>
-          {theme === "dark" ? "🌞" : "🌙"}
-        </button>
-      </div>
+      <ThemeTogger />
       <Web3ReactProvider getLibrary={getLibrary}>
         <div className="container mx-auto min-h-screen">
           <Demo />
