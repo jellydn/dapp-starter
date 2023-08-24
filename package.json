@@ -1,6 +1,6 @@
 {
   "name": "dapp-starter",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "scripts": {
     "build": "npx hardhat compile --network localhost && next build",
     "dev": "next dev",
@@ -26,6 +26,8 @@
     "web3-react": "5.0.5"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
+    "@nomicfoundation/hardhat-verify": "^1.1.1",
     "@nomiclabs/hardhat-ethers": "2.2.3",
     "@nomiclabs/hardhat-etherscan": "3.1.7",
     "@nomiclabs/hardhat-waffle": "2.0.6",
@@ -34,7 +36,8 @@
     "@openzeppelin/hardhat-upgrades": "1.28.0",
     "@trivago/prettier-plugin-sort-imports": "4.2.0",
     "@typechain/ethers-v5": "11.1.1",
-    "@typechain/hardhat": "8.0.3",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "9.0.0",
     "@types/chai": "4.3.5",
     "@types/mocha": "10.0.1",
     "@types/node": "20.5.4",
@@ -43,11 +46,11 @@
     "@typescript-eslint/eslint-plugin": "6.4.1",
     "@typescript-eslint/parser": "6.4.1",
     "autoprefixer": "10.4.15",
-    "chai": "4.3.7",
+    "chai": "4.3.8",
     "dotenv": "16.3.1",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
-    "eslint-config-productsway": "1.2.0",
+    "eslint-config-productsway": "1.3.0",
     "ethereum-waffle": "4.0.10",
     "ethers": "5.7.2",
     "hardhat": "2.17.1",
