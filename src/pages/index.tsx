@@ -3,12 +3,12 @@ import dynamic from "next/dynamic";
 
 import Demo, { getLibrary } from "../components/Demo";
 
-const ThemeTogger = dynamic(async () => import("../components/ThemeTogger"), { ssr: false });
+const ThemeToggle = dynamic(async () => import("../components/ThemeToggle"), { ssr: false });
 
 function App() {
   return (
     <>
-      <ThemeTogger />
+      <ThemeToggle />
       <Web3ReactProvider getLibrary={getLibrary}>
         <div className="container mx-auto min-h-screen">
           <Demo />

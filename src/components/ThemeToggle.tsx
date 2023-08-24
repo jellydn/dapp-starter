@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import useLocalStorage from "../hooks/useLocalStorage";
 
-export default function ThemeTogger() {
+export default function ThemeToggle() {
   const [theme, setTheme] = useLocalStorage<"dark" | "light">("theme", "dark");
 
   useEffect(() => {
