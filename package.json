@@ -26,8 +26,8 @@
     "web3-react": "5.0.5"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-ethers": "^3.0.4",
-    "@nomicfoundation/hardhat-verify": "^1.1.1",
+    "@nomicfoundation/hardhat-ethers": "3.0.4",
+    "@nomicfoundation/hardhat-verify": "1.1.1",
     "@nomiclabs/hardhat-ethers": "2.2.3",
     "@nomiclabs/hardhat-etherscan": "3.1.7",
     "@nomiclabs/hardhat-waffle": "2.0.6",
@@ -36,7 +36,7 @@
     "@openzeppelin/hardhat-upgrades": "1.28.0",
     "@trivago/prettier-plugin-sort-imports": "4.2.0",
     "@typechain/ethers-v5": "11.1.1",
-    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/ethers-v6": "0.5.0",
     "@typechain/hardhat": "9.0.0",
     "@types/chai": "4.3.5",
     "@types/mocha": "10.0.1",
