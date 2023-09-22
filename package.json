@@ -63,7 +63,7 @@
     "rustywind": "0.19.0",
     "solgraph": "1.0.2",
     "solhint": "3.6.2",
-    "solidity-coverage": "0.8.4",
+    "solidity-coverage": "0.8.5",
     "sort-package-json": "2.5.1",
     "tailwindcss": "3.3.3",
     "ts-node": "10.9.1",
