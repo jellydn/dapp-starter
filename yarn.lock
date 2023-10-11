@@ -8155,10 +8155,10 @@ hardhat-gas-reporter@1.0.9:
     eth-gas-reporter "^0.2.25"
     sha1 "^1.1.1"
 
-hardhat@2.18.0:
-  version "2.18.0"
-  resolved "https://registry.yarnpkg.com/hardhat/-/hardhat-2.18.0.tgz#b28dee1a0faf24a3b1cc0cb2ebf4f94fd69ef2ae"
-  integrity sha512-Com3SPFgk6v73LlE3rypuh32DYxOWvNbVBm5xfPUEzGVEW54Fcc4j3Uq7j6COj7S8Jc27uNihLFsveHYM0YJkQ==
+hardhat@2.18.1:
+  version "2.18.1"
+  resolved "https://registry.yarnpkg.com/hardhat/-/hardhat-2.18.1.tgz#6339d656dbf0510b51457b0f0746e5b9cc7a1756"
+  integrity sha512-b55rW7Ka+fvJeg6oWuBTXoYQEUurevCCankjGNTwczwD3GnkhV9GEei7KUT+9IKmWx3lC+zyxlFxeDbg0gUoHw==
   dependencies:
     "@ethersproject/abi" "^5.1.2"
     "@metamask/eth-sig-util" "^4.0.0"
