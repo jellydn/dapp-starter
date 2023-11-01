@@ -13,45 +13,71 @@ import type {
 
 const _abi = [
   {
-    anonymous: false,
     inputs: [
       {
-        indexed: false,
         internalType: "address",
-        name: "previousAdmin",
-        type: "address",
-      },
-      {
-        indexed: false,
-        internalType: "address",
-        name: "newAdmin",
+        name: "target",
         type: "address",
       },
     ],
-    name: "AdminChanged",
-    type: "event",
+    name: "AddressEmptyCode",
+    type: "error",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "implementation",
+        type: "address",
+      },
+    ],
+    name: "ERC1967InvalidImplementation",
+    type: "error",
+  },
+  {
+    inputs: [],
+    name: "ERC1967NonPayable",
+    type: "error",
+  },
+  {
+    inputs: [],
+    name: "FailedInnerCall",
+    type: "error",
+  },
+  {
+    inputs: [],
+    name: "InvalidInitialization",
+    type: "error",
+  },
+  {
+    inputs: [],
+    name: "NotInitializing",
+    type: "error",
+  },
+  {
+    inputs: [],
+    name: "UUPSUnauthorizedCallContext",
+    type: "error",
+  },
+  {
+    inputs: [
+      {
+        internalType: "bytes32",
+        name: "slot",
+        type: "bytes32",
+      },
+    ],
+    name: "UUPSUnsupportedProxiableUUID",
+    type: "error",
   },
   {
     anonymous: false,
     inputs: [
       {
-        indexed: true,
-        internalType: "address",
-        name: "beacon",
-        type: "address",
-      },
-    ],
-    name: "BeaconUpgraded",
-    type: "event",
-  },
-  {
-    anonymous: false,
-    inputs: [
-      {
         indexed: false,
-        internalType: "uint8",
+        internalType: "uint64",
         name: "version",
-        type: "uint8",
+        type: "uint64",
       },
     ],
     name: "Initialized",
@@ -72,6 +98,19 @@ const _abi = [
   },
   {
     inputs: [],
+    name: "UPGRADE_INTERFACE_VERSION",
+    outputs: [
+      {
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
     name: "proxiableUUID",
     outputs: [
       {
@@ -81,19 +120,6 @@ const _abi = [
       },
     ],
     stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [
-      {
-        internalType: "address",
-        name: "newImplementation",
-        type: "address",
-      },
-    ],
-    name: "upgradeTo",
-    outputs: [],
-    stateMutability: "nonpayable",
     type: "function",
   },
   {

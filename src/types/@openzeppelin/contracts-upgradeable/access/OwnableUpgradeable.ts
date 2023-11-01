@@ -37,7 +37,7 @@ export interface OwnableUpgradeableInterface extends utils.Interface {
   decodeFunctionResult(functionFragment: "transferOwnership", data: BytesLike): Result;
 
   events: {
-    "Initialized(uint8)": EventFragment;
+    "Initialized(uint64)": EventFragment;
     "OwnershipTransferred(address,address)": EventFragment;
   };
 
@@ -46,9 +46,9 @@ export interface OwnableUpgradeableInterface extends utils.Interface {
 }
 
 export interface InitializedEventObject {
-  version: number;
+  version: BigNumber;
 }
-export type InitializedEvent = TypedEvent<[number], InitializedEventObject>;
+export type InitializedEvent = TypedEvent<[BigNumber], InitializedEventObject>;
 
 export type InitializedEventFilter = TypedEventFilter<InitializedEvent>;
 
@@ -105,7 +105,7 @@ export interface OwnableUpgradeable extends BaseContract {
   };
 
   filters: {
-    "Initialized(uint8)"(version?: null): InitializedEventFilter;
+    "Initialized(uint64)"(version?: null): InitializedEventFilter;
     Initialized(version?: null): InitializedEventFilter;
 
     "OwnershipTransferred(address,address)"(

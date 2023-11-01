@@ -5,7 +5,7 @@
 /* eslint-disable */
 import type { EventFragment } from "@ethersproject/abi";
 import type { Listener, Provider } from "@ethersproject/providers";
-import type { BaseContract, Signer, utils } from "ethers";
+import type { BaseContract, BigNumber, Signer, utils } from "ethers";
 
 import type { TypedEventFilter, TypedEvent, TypedListener, OnEvent } from "../../../../common";
 
@@ -13,16 +13,16 @@ export interface InitializableInterface extends utils.Interface {
   functions: {};
 
   events: {
-    "Initialized(uint8)": EventFragment;
+    "Initialized(uint64)": EventFragment;
   };
 
   getEvent(nameOrSignatureOrTopic: "Initialized"): EventFragment;
 }
 
 export interface InitializedEventObject {
-  version: number;
+  version: BigNumber;
 }
-export type InitializedEvent = TypedEvent<[number], InitializedEventObject>;
+export type InitializedEvent = TypedEvent<[BigNumber], InitializedEventObject>;
 
 export type InitializedEventFilter = TypedEventFilter<InitializedEvent>;
 
@@ -53,7 +53,7 @@ export interface Initializable extends BaseContract {
   callStatic: {};
 
   filters: {
-    "Initialized(uint8)"(version?: null): InitializedEventFilter;
+    "Initialized(uint64)"(version?: null): InitializedEventFilter;
     Initialized(version?: null): InitializedEventFilter;
   };
 
