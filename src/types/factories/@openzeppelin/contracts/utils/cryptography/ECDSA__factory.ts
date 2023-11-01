@@ -7,6 +7,7 @@ import type { Provider, TransactionRequest } from "@ethersproject/providers";
 import { Signer, utils, Contract, ContractFactory, Overrides } from "ethers";
 
 import type { ECDSA, ECDSAInterface } from "../../../../../@openzeppelin/contracts/utils/cryptography/ECDSA";
+import type { PromiseOrValue } from "../../../../../common";
 
 const _abi = [
   {
@@ -54,10 +55,10 @@ export class ECDSA__factory extends ContractFactory {
     }
   }
 
-  override deploy(overrides?: Overrides & { from?: string }): Promise<ECDSA> {
+  override deploy(overrides?: Overrides & { from?: PromiseOrValue<string> }): Promise<ECDSA> {
     return super.deploy(overrides || {}) as Promise<ECDSA>;
   }
-  override getDeployTransaction(overrides?: Overrides & { from?: string }): TransactionRequest {
+  override getDeployTransaction(overrides?: Overrides & { from?: PromiseOrValue<string> }): TransactionRequest {
     return super.getDeployTransaction(overrides || {});
   }
   override attach(address: string): ECDSA {

@@ -10,6 +10,7 @@ import type {
   ERC1967Utils,
   ERC1967UtilsInterface,
 } from "../../../../../@openzeppelin/contracts/proxy/ERC1967/ERC1967Utils";
+import type { PromiseOrValue } from "../../../../../common";
 
 const _abi = [
   {
@@ -114,10 +115,10 @@ export class ERC1967Utils__factory extends ContractFactory {
     }
   }
 
-  override deploy(overrides?: Overrides & { from?: string }): Promise<ERC1967Utils> {
+  override deploy(overrides?: Overrides & { from?: PromiseOrValue<string> }): Promise<ERC1967Utils> {
     return super.deploy(overrides || {}) as Promise<ERC1967Utils>;
   }
-  override getDeployTransaction(overrides?: Overrides & { from?: string }): TransactionRequest {
+  override getDeployTransaction(overrides?: Overrides & { from?: PromiseOrValue<string> }): TransactionRequest {
     return super.getDeployTransaction(overrides || {});
   }
   override attach(address: string): ERC1967Utils {

@@ -1,12 +1,9 @@
+import "@nomicfoundation/hardhat-toolbox";
 import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-etherscan";
-import "@nomiclabs/hardhat-waffle";
 import "@openzeppelin/hardhat-upgrades";
-import "@typechain/hardhat";
 import { config } from "dotenv";
-import "hardhat-gas-reporter";
-import { task } from "hardhat/config";
-import "solidity-coverage";
+import { type HardhatUserConfig, task } from "hardhat/config";
 
 config();
 
@@ -21,11 +18,7 @@ task("accounts", "Prints the list of accounts", async (_taskArgs, hre) => {
 
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
-
-/**
- * @type import('hardhat/config').HardhatUserConfig
- */
-module.exports = {
+const hardHatConfig: HardhatUserConfig = {
   solidity: "0.8.20",
   paths: {
     artifacts: "./src/artifacts",
@@ -70,3 +63,5 @@ module.exports = {
     apiKey: process.env.ETHERSCAN_API_KEY,
   },
 };
+
+export default hardHatConfig;

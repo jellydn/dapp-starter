@@ -9,44 +9,53 @@ import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 
 /// @custom:security-contact dung@productsway.com
-contract ITManTokenW is Initializable, ERC20Upgradeable, ERC20PausableUpgradeable, OwnableUpgradeable, ERC20PermitUpgradeable, UUPSUpgradeable {
-    /// @custom:oz-upgrades-unsafe-allow constructor
-    constructor() {
-        _disableInitializers();
-    }
+contract ITManToken is
+	Initializable,
+	ERC20Upgradeable,
+	ERC20PausableUpgradeable,
+	OwnableUpgradeable,
+	ERC20PermitUpgradeable,
+	UUPSUpgradeable
+{
+	/// @custom:oz-upgrades-unsafe-allow constructor
+	constructor() {
+		_disableInitializers();
+	}
 
-    function initialize(address initialOwner) initializer public {
-        __ERC20_init("ITManToken w", "ITM");
-        __ERC20Pausable_init();
-        __Ownable_init(initialOwner);
-        __ERC20Permit_init("ITManToken w");
-        __UUPSUpgradeable_init();
-    }
+	function initialize(address initialOwner) public initializer {
+		__ERC20_init("ITManToken", "ITM");
+		__ERC20Pausable_init();
+		__Ownable_init(initialOwner);
+		__ERC20Permit_init("ITManToken");
+		__UUPSUpgradeable_init();
+		_mint(msg.sender, 1000000 * 10 ** decimals());
+	}
 
-    function pause() public onlyOwner {
-        _pause();
-    }
+	function pause() public onlyOwner {
+		_pause();
+	}
 
-    function unpause() public onlyOwner {
-        _unpause();
-    }
+	function unpause() public onlyOwner {
+		_unpause();
+	}
 
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
-    }
+	function mint(address to, uint256 amount) public onlyOwner {
+		_mint(to, amount);
+	}
 
-    function _authorizeUpgrade(address newImplementation)
-        internal
-        onlyOwner
-        override
-    {}
+	function _authorizeUpgrade(address newImplementation)
+		internal
+		override
+		onlyOwner
+	{}
 
-    // The following functions are overrides required by Solidity.
+	// The following functions are overrides required by Solidity.
 
-    function _update(address from, address to, uint256 value)
-        internal
-        override(ERC20Upgradeable, ERC20PausableUpgradeable)
-    {
-        super._update(from, to, value);
-    }
+	function _update(
+		address from,
+		address to,
+		uint256 value
+	) internal override(ERC20Upgradeable, ERC20PausableUpgradeable) {
+		super._update(from, to, value);
+	}
 }

@@ -7,6 +7,7 @@ import type { Provider, TransactionRequest } from "@ethersproject/providers";
 import { Signer, utils, Contract, ContractFactory, Overrides } from "ethers";
 
 import type { Address, AddressInterface } from "../../../../@openzeppelin/contracts/utils/Address";
+import type { PromiseOrValue } from "../../../../common";
 
 const _abi = [
   {
@@ -55,10 +56,10 @@ export class Address__factory extends ContractFactory {
     }
   }
 
-  override deploy(overrides?: Overrides & { from?: string }): Promise<Address> {
+  override deploy(overrides?: Overrides & { from?: PromiseOrValue<string> }): Promise<Address> {
     return super.deploy(overrides || {}) as Promise<Address>;
   }
-  override getDeployTransaction(overrides?: Overrides & { from?: string }): TransactionRequest {
+  override getDeployTransaction(overrides?: Overrides & { from?: PromiseOrValue<string> }): TransactionRequest {
     return super.getDeployTransaction(overrides || {});
   }
   override attach(address: string): Address {

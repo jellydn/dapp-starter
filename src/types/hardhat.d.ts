@@ -116,9 +116,9 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions,
     ): Promise<Contracts.Greeter__factory>;
     getContractFactory(
-      name: "ITManTokenW",
+      name: "ITManToken",
       signerOrOptions?: ethers.Signer | FactoryOptions,
-    ): Promise<Contracts.ITManTokenW__factory>;
+    ): Promise<Contracts.ITManToken__factory>;
 
     getContractAt(
       name: "OwnableUpgradeable",
@@ -183,7 +183,7 @@ declare module "hardhat/types/runtime" {
     getContractAt(name: "Box", address: string, signer?: ethers.Signer): Promise<Contracts.Box>;
     getContractAt(name: "BoxV2", address: string, signer?: ethers.Signer): Promise<Contracts.BoxV2>;
     getContractAt(name: "Greeter", address: string, signer?: ethers.Signer): Promise<Contracts.Greeter>;
-    getContractAt(name: "ITManTokenW", address: string, signer?: ethers.Signer): Promise<Contracts.ITManTokenW>;
+    getContractAt(name: "ITManToken", address: string, signer?: ethers.Signer): Promise<Contracts.ITManToken>;
 
     // default types
     getContractFactory(name: string, signerOrOptions?: ethers.Signer | FactoryOptions): Promise<ethers.ContractFactory>;

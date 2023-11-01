@@ -6,6 +6,7 @@
 import type { Provider, TransactionRequest } from "@ethersproject/providers";
 import { Signer, utils, Contract, ContractFactory, Overrides } from "ethers";
 
+import type { PromiseOrValue } from "../../common";
 import type { Box, BoxInterface } from "../../contracts/Box";
 
 const _abi = [
@@ -66,10 +67,10 @@ export class Box__factory extends ContractFactory {
     }
   }
 
-  override deploy(overrides?: Overrides & { from?: string }): Promise<Box> {
+  override deploy(overrides?: Overrides & { from?: PromiseOrValue<string> }): Promise<Box> {
     return super.deploy(overrides || {}) as Promise<Box>;
   }
-  override getDeployTransaction(overrides?: Overrides & { from?: string }): TransactionRequest {
+  override getDeployTransaction(overrides?: Overrides & { from?: PromiseOrValue<string> }): TransactionRequest {
     return super.getDeployTransaction(overrides || {});
   }
   override attach(address: string): Box {

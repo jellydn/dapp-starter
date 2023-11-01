@@ -7,6 +7,7 @@ import type { Provider, TransactionRequest } from "@ethersproject/providers";
 import { Signer, utils, Contract, ContractFactory, Overrides } from "ethers";
 
 import type { Math, MathInterface } from "../../../../../@openzeppelin/contracts/utils/math/Math";
+import type { PromiseOrValue } from "../../../../../common";
 
 const _abi = [
   {
@@ -32,10 +33,10 @@ export class Math__factory extends ContractFactory {
     }
   }
 
-  override deploy(overrides?: Overrides & { from?: string }): Promise<Math> {
+  override deploy(overrides?: Overrides & { from?: PromiseOrValue<string> }): Promise<Math> {
     return super.deploy(overrides || {}) as Promise<Math>;
   }
-  override getDeployTransaction(overrides?: Overrides & { from?: string }): TransactionRequest {
+  override getDeployTransaction(overrides?: Overrides & { from?: PromiseOrValue<string> }): TransactionRequest {
     return super.getDeployTransaction(overrides || {});
   }
   override attach(address: string): Math {

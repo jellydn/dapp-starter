@@ -11,7 +11,7 @@ describe("BoxV2", () => {
 
     const setStoreTx = await box.store(42);
 
-    // wait until the transaction is mined
+    // Wait until the transaction is mined
     await setStoreTx.wait();
 
     expect(await box.retrieve()).to.equal(42);
@@ -25,7 +25,7 @@ describe("BoxV2", () => {
 
     const setStoreTx = await box.increment();
 
-    // wait until the transaction is mined
+    // Wait until the transaction is mined
     await setStoreTx.wait();
 
     expect(await box.retrieve()).to.equal(1);

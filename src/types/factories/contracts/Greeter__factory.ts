@@ -6,6 +6,7 @@
 import type { Provider, TransactionRequest } from "@ethersproject/providers";
 import { Signer, utils, Contract, ContractFactory, Overrides } from "ethers";
 
+import type { PromiseOrValue } from "../../common";
 import type { Greeter, GreeterInterface } from "../../contracts/Greeter";
 
 const _abi = [
@@ -65,10 +66,16 @@ export class Greeter__factory extends ContractFactory {
     }
   }
 
-  override deploy(_greeting: string, overrides?: Overrides & { from?: string }): Promise<Greeter> {
+  override deploy(
+    _greeting: PromiseOrValue<string>,
+    overrides?: Overrides & { from?: PromiseOrValue<string> },
+  ): Promise<Greeter> {
     return super.deploy(_greeting, overrides || {}) as Promise<Greeter>;
   }
-  override getDeployTransaction(_greeting: string, overrides?: Overrides & { from?: string }): TransactionRequest {
+  override getDeployTransaction(
+    _greeting: PromiseOrValue<string>,
+    overrides?: Overrides & { from?: PromiseOrValue<string> },
+  ): TransactionRequest {
     return super.getDeployTransaction(_greeting, overrides || {});
   }
   override attach(address: string): Greeter {

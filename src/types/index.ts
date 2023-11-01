@@ -64,5 +64,5 @@ export type { BoxV2 } from "./contracts/BoxV2";
 export { BoxV2__factory } from "./factories/contracts/BoxV2__factory";
 export type { Greeter } from "./contracts/Greeter";
 export { Greeter__factory } from "./factories/contracts/Greeter__factory";
-export type { ITManTokenW } from "./contracts/ITManToken.sol/ITManTokenW";
-export { ITManTokenW__factory } from "./factories/contracts/ITManToken.sol/ITManTokenW__factory";
+export type { ITManToken } from "./contracts/ITManToken";
+export { ITManToken__factory } from "./factories/contracts/ITManToken__factory";
