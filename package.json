@@ -3,7 +3,7 @@
   "version": "0.4.0",
   "scripts": {
     "build": "npx hardhat compile --network localhost && next build",
-    "clean": "hh clean && rimraf -rf src/types",
+    "clean": "npx hardhat clean && rimraf -rf src/types",
     "dev": "next dev",
     "lint": "next lint",
     "lint:sol": "npx solhint 'contracts/**/*.sol'",
