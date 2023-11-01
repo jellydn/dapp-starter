@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en",
+  "globRoot": ".",
+  "dictionaryDefinitions": [
+    {
+      "name": "dapp",
+      "path": "./dapp.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": ["dapp"],
+  "ignorePaths": ["node_modules", "dist", "build", "/dapp.txt"]
+}
