@@ -7191,7 +7191,7 @@ __metadata:
     eslint-config-next: "npm:14.0.1"
     eslint-config-productsway: "npm:1.3.0"
     ethers: "npm:5.7.2"
-    hardhat: "npm:2.18.3"
+    hardhat: "npm:2.19.0"
     hardhat-gas-reporter: "npm:1.0.9"
     husky: "npm:8.0.3"
     loglevel: "npm:1.8.1"
@@ -10313,9 +10313,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hardhat@npm:2.18.3":
-  version: 2.18.3
-  resolution: "hardhat@npm:2.18.3"
+"hardhat@npm:2.19.0":
+  version: 2.19.0
+  resolution: "hardhat@npm:2.19.0"
   dependencies:
     "@ethersproject/abi": "npm:^5.1.2"
     "@metamask/eth-sig-util": "npm:^4.0.0"
@@ -10375,7 +10375,7 @@ __metadata:
       optional: true
   bin:
     hardhat: internal/cli/bootstrap.js
-  checksum: a9822c14c6c7f73f1a3eaa9c8819eb6f9f18fc28a5367f11a98971ede341c0329972286e1e4f6b0071de704685d4d12bc10b328548e5fe134dad1049d556da74
+  checksum: 65d3626cec116d4897e254688f82bdb4caa1c586c9c51461d48e8195c1a3991ac5345e74714fdc89abb4d75b07ba923bbbe27432137f99aa5e194bf84993a307
   languageName: node
   linkType: hard
 
