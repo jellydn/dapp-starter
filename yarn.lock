@@ -3288,9 +3288,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typechain/ethers-v5@npm:10.2.1":
-  version: 10.2.1
-  resolution: "@typechain/ethers-v5@npm:10.2.1"
+"@typechain/ethers-v5@npm:11.1.2":
+  version: 11.1.2
+  resolution: "@typechain/ethers-v5@npm:11.1.2"
   dependencies:
     lodash: "npm:^4.17.15"
     ts-essentials: "npm:^7.0.1"
@@ -3298,9 +3298,9 @@ __metadata:
     "@ethersproject/abi": ^5.0.0
     "@ethersproject/providers": ^5.0.0
     ethers: ^5.1.3
-    typechain: ^8.1.1
+    typechain: ^8.3.2
     typescript: ">=4.3.0"
-  checksum: a576aa3ad7ff270fdff295b6929cc4b5076816740a6ca2bc01ba59f00fcc4b80626e4e05c4a4dc6a8caa61e26b6b939af99d2c6183799132260c068b1dcef72c
+  checksum: 5da6109ded6e02701e5ad718479b8a316011c5366adcbfbd8b7ee1c149c02960714c6906d823d76ab1839046aad127f9c8793f4b36a65f4299d7ce4314265ae1
   languageName: node
   linkType: hard
 
@@ -7273,7 +7273,7 @@ __metadata:
     "@openzeppelin/hardhat-upgrades": "npm:1.28.0"
     "@tailwindcss/typography": "npm:0.5.10"
     "@trivago/prettier-plugin-sort-imports": "npm:4.3.0"
-    "@typechain/ethers-v5": "npm:10.2.1"
+    "@typechain/ethers-v5": "npm:11.1.2"
     "@typechain/ethers-v6": "npm:0.5.1"
     "@typechain/hardhat": "npm:6.1.6"
     "@types/chai": "npm:4.3.10"
