@@ -3318,19 +3318,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typechain/hardhat@npm:6.1.6":
-  version: 6.1.6
-  resolution: "@typechain/hardhat@npm:6.1.6"
+"@typechain/hardhat@npm:9.1.0":
+  version: 9.1.0
+  resolution: "@typechain/hardhat@npm:9.1.0"
   dependencies:
     fs-extra: "npm:^9.1.0"
   peerDependencies:
-    "@ethersproject/abi": ^5.4.7
-    "@ethersproject/providers": ^5.4.7
-    "@typechain/ethers-v5": ^10.2.1
-    ethers: ^5.4.7
+    "@typechain/ethers-v6": ^0.5.1
+    ethers: ^6.1.0
     hardhat: ^2.9.9
-    typechain: ^8.1.1
-  checksum: b828f50978e7b2d4722057212d3086369720e8ef46880aa5aa0a42dc7674e69c8ca934c369fe4ca062a7d8ca22fac91705415944426018d0cb25f12b6858642a
+    typechain: ^8.3.2
+  checksum: 3a1220efefc7b02ca335696167f6c5332a33ff3fbf9f20552468566a1760f76bc88d330683e97ca6213eb9518a2a901391c31c84c0548006b72bd2ec62d4af9c
   languageName: node
   linkType: hard
 
@@ -7275,7 +7273,7 @@ __metadata:
     "@trivago/prettier-plugin-sort-imports": "npm:4.3.0"
     "@typechain/ethers-v5": "npm:11.1.2"
     "@typechain/ethers-v6": "npm:0.5.1"
-    "@typechain/hardhat": "npm:6.1.6"
+    "@typechain/hardhat": "npm:9.1.0"
     "@types/chai": "npm:4.3.10"
     "@types/mocha": "npm:10.0.4"
     "@types/node": "npm:20.9.0"
