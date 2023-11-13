@@ -7235,15 +7235,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:4.0.1":
-  version: 4.0.1
-  resolution: "daisyui@npm:4.0.1"
+"daisyui@npm:4.0.3":
+  version: 4.0.3
+  resolution: "daisyui@npm:4.0.3"
   dependencies:
     css-selector-tokenizer: "npm:^0.8"
     culori: "npm:^3"
     picocolors: "npm:^1"
     postcss-js: "npm:^4"
-  checksum: fad0d9933fbf567e79bba29a303d6d6d81ceafa8b989a7de1a86c7e63717141e0a69d5d3fd402546100179296129bc61811bcbc8a3793a197d96d0aceb8fa0f5
+  checksum: 63470d2f7efeb8ed35eb139e3f52f6cb943532915c358024796820a608ada9de37ea24d725838bb639ef5cd58c3bfc5ccfe43aec525be3f49a21fba37e7f5d90
   languageName: node
   linkType: hard
 
@@ -7286,7 +7286,7 @@ __metadata:
     "@web3-react/walletconnect-connector": "npm:6.2.13"
     autoprefixer: "npm:10.4.16"
     chai: "npm:4.3.10"
-    daisyui: "npm:4.0.1"
+    daisyui: "npm:4.0.3"
     dotenv: "npm:16.3.1"
     eslint: "npm:8.53.0"
     eslint-config-next: "npm:14.0.2"
@@ -7300,7 +7300,7 @@ __metadata:
     next: "npm:14.0.2"
     next-secure-headers: "npm:2.2.0"
     postcss: "npm:8.4.31"
-    prettier: "npm:3.0.3"
+    prettier: "npm:3.1.0"
     prettier-plugin-solidity: "npm:1.2.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
@@ -14310,12 +14310,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.0.3":
-  version: 3.0.3
-  resolution: "prettier@npm:3.0.3"
+"prettier@npm:3.1.0":
+  version: 3.1.0
+  resolution: "prettier@npm:3.1.0"
   bin:
     prettier: bin/prettier.cjs
-  checksum: f950887bc03c5b970d8c6dd129364acfbbc61e7b46aec5d5ce17f4adf6404e2ef43072c98b51c4786e0eaca949b307d362a773fd47502862d754b5a328fa2b26
+  checksum: a45ea70aa97fde162ea4c4aba3dfc7859aa6a732a1db34458d9535dc3c2c16d3bc3fb5689e6cd76aa835562555303b02d9449fd2e15af3b73c8053557e25c5b6
   languageName: node
   linkType: hard
 
