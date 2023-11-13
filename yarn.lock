@@ -6775,13 +6775,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colord@npm:^2.9":
-  version: 2.9.3
-  resolution: "colord@npm:2.9.3"
-  checksum: 9699e956894d8996b28c686afe8988720785f476f59335c80ce852ded76ab3ebe252703aec53d9bef54f6219aea6b960fb3d9a8300058a1d0c0d4026460cd110
-  languageName: node
-  linkType: hard
-
 "colors@npm:1.4.0, colors@npm:^1.1.2":
   version: 1.4.0
   resolution: "colors@npm:1.4.0"
@@ -7225,6 +7218,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"culori@npm:^3":
+  version: 3.2.0
+  resolution: "culori@npm:3.2.0"
+  checksum: c6c9189c7c4b5aa8db8697174e77fd86543fac55d85be2fdee613d22c85ed62147099b5011a58e8ccd16e39fcf58085ea28e073a0b93ec3d623c7701cc20e2e9
+  languageName: node
+  linkType: hard
+
 "d@npm:1, d@npm:^1.0.1":
   version: 1.0.1
   resolution: "d@npm:1.0.1"
@@ -7235,16 +7235,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:3.9.4":
-  version: 3.9.4
-  resolution: "daisyui@npm:3.9.4"
+"daisyui@npm:4.0.1":
+  version: 4.0.1
+  resolution: "daisyui@npm:4.0.1"
   dependencies:
-    colord: "npm:^2.9"
     css-selector-tokenizer: "npm:^0.8"
-    postcss: "npm:^8"
+    culori: "npm:^3"
+    picocolors: "npm:^1"
     postcss-js: "npm:^4"
-    tailwindcss: "npm:^3.1"
-  checksum: 243e1218b453ed0dc6772fd5f8291b86c121d90f4f789d0444605e26aa3aa66f02a6fe8ad5f8315b1dd962b36efcacb21a961c8c2d2a50ee1fb5907fff2d5dff
+  checksum: fad0d9933fbf567e79bba29a303d6d6d81ceafa8b989a7de1a86c7e63717141e0a69d5d3fd402546100179296129bc61811bcbc8a3793a197d96d0aceb8fa0f5
   languageName: node
   linkType: hard
 
@@ -7287,7 +7286,7 @@ __metadata:
     "@web3-react/walletconnect-connector": "npm:6.2.13"
     autoprefixer: "npm:10.4.16"
     chai: "npm:4.3.10"
-    daisyui: "npm:3.9.4"
+    daisyui: "npm:4.0.1"
     dotenv: "npm:16.3.1"
     eslint: "npm:8.53.0"
     eslint-config-next: "npm:14.0.2"
@@ -14075,7 +14074,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picocolors@npm:^1.0.0":
+"picocolors@npm:^1, picocolors@npm:^1.0.0":
   version: 1.0.0
   resolution: "picocolors@npm:1.0.0"
   checksum: 20a5b249e331c14479d94ec6817a182fd7a5680debae82705747b2db7ec50009a5f6648d0621c561b0572703f84dbef0858abcbd5856d3c5511426afcb1961f7
@@ -14227,7 +14226,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.31, postcss@npm:^8, postcss@npm:^8.4.23":
+"postcss@npm:8.4.31, postcss@npm:^8.4.23":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
   dependencies:
@@ -16632,7 +16631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:3.3.5, tailwindcss@npm:^3.1":
+"tailwindcss@npm:3.3.5":
   version: 3.3.5
   resolution: "tailwindcss@npm:3.3.5"
   dependencies:
