@@ -3505,12 +3505,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.9.4":
+"@types/node@npm:*":
   version: 20.9.4
   resolution: "@types/node@npm:20.9.4"
   dependencies:
     undici-types: "npm:~5.26.4"
   checksum: c8b48ace4c7e17715fa901201c98275f8e5268cf5895a8d149777eb0ec6c3ef6c831ff3917e92da5453a5dbe13f230caa50b348a0601b0d50eb9e628010c0364
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:20.9.5":
+  version: 20.9.5
+  resolution: "@types/node@npm:20.9.5"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 54b722195e3292d8b14b9aaac971044bf4f2e6d7263c2942fd088213216443878f47c3df441a0722a228cf823ea64c1a5923b362ea5db41f044b7f30ed140bce
   languageName: node
   linkType: hard
 
@@ -7152,15 +7161,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:4.4.4":
-  version: 4.4.4
-  resolution: "daisyui@npm:4.4.4"
+"daisyui@npm:4.4.6":
+  version: 4.4.6
+  resolution: "daisyui@npm:4.4.6"
   dependencies:
     css-selector-tokenizer: "npm:^0.8"
     culori: "npm:^3"
     picocolors: "npm:^1"
     postcss-js: "npm:^4"
-  checksum: f0d677b821b9e71a1e1b6b1e5d06ab8a59afa1fbc4f1be625668e817c77b2ff652d940dc9f5493119089ed44cd60b474614a19b3853177e92e1306839a734518
+  checksum: fb4e8de6937d08cb7b4adf613746bee2fad4e56c9e892e38a74ecf7dd16722c1dac3a8b1a2ab489c7159c4a8a2e99852fef31d55d02ca22c38e534721692ea1e
   languageName: node
   linkType: hard
 
@@ -7192,7 +7201,7 @@ __metadata:
     "@typechain/hardhat": "npm:9.1.0"
     "@types/chai": "npm:4.3.11"
     "@types/mocha": "npm:10.0.6"
-    "@types/node": "npm:20.9.4"
+    "@types/node": "npm:20.9.5"
     "@types/react": "npm:18.2.38"
     "@types/react-dom": "npm:18.2.17"
     "@typescript-eslint/eslint-plugin": "npm:6.12.0"
@@ -7203,7 +7212,7 @@ __metadata:
     "@web3-react/walletconnect-connector": "npm:6.2.13"
     autoprefixer: "npm:10.4.16"
     chai: "npm:4.3.10"
-    daisyui: "npm:4.4.4"
+    daisyui: "npm:4.4.6"
     dotenv: "npm:16.3.1"
     eslint: "npm:8.54.0"
     eslint-config-next: "npm:14.0.3"
