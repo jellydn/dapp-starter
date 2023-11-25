@@ -7161,15 +7161,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:4.4.6":
-  version: 4.4.6
-  resolution: "daisyui@npm:4.4.6"
+"daisyui@npm:4.4.7":
+  version: 4.4.7
+  resolution: "daisyui@npm:4.4.7"
   dependencies:
     css-selector-tokenizer: "npm:^0.8"
     culori: "npm:^3"
     picocolors: "npm:^1"
     postcss-js: "npm:^4"
-  checksum: fb4e8de6937d08cb7b4adf613746bee2fad4e56c9e892e38a74ecf7dd16722c1dac3a8b1a2ab489c7159c4a8a2e99852fef31d55d02ca22c38e534721692ea1e
+  checksum: 9c3e0d3d19ba4861f33ef72eaee54d7105ac4ef807b250f94a2d7d95593936da050c9d4b39084bb5ebafcd32d63dda2c24755144cf2a7ec12a32ab1cb7be0f56
   languageName: node
   linkType: hard
 
@@ -7212,7 +7212,7 @@ __metadata:
     "@web3-react/walletconnect-connector": "npm:6.2.13"
     autoprefixer: "npm:10.4.16"
     chai: "npm:4.3.10"
-    daisyui: "npm:4.4.6"
+    daisyui: "npm:4.4.7"
     dotenv: "npm:16.3.1"
     eslint: "npm:8.54.0"
     eslint-config-next: "npm:14.0.3"
