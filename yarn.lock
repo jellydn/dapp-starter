@@ -3505,16 +3505,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
-  version: 20.9.4
-  resolution: "@types/node@npm:20.9.4"
-  dependencies:
-    undici-types: "npm:~5.26.4"
-  checksum: c8b48ace4c7e17715fa901201c98275f8e5268cf5895a8d149777eb0ec6c3ef6c831ff3917e92da5453a5dbe13f230caa50b348a0601b0d50eb9e628010c0364
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.10.0":
+"@types/node@npm:*, @types/node@npm:20.10.0":
   version: 20.10.0
   resolution: "@types/node@npm:20.10.0"
   dependencies:
@@ -7737,9 +7728,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.47, electron-to-chromium@npm:^1.4.535":
-  version: 1.4.592
-  resolution: "electron-to-chromium@npm:1.4.592"
-  checksum: 94a4719f792243b5914ef3630c30827712e4ddb683f0b1ce6848f2e96ce1f33c29a7f4bf65ffe50d0ad8a3fa8c87f740c85d48dafe4297c770738125a9f2f494
+  version: 1.4.594
+  resolution: "electron-to-chromium@npm:1.4.594"
+  checksum: 3714e204c5dd00fa95aaddd636953c4e6b8b358f780c0b1ba94140fe1b3c25f54364fd818a2d501fbdae5f85903bfa64d634fa57d8b4160847fa0a0f6a53575f
   languageName: node
   linkType: hard
 
@@ -13259,13 +13250,13 @@ __metadata:
   linkType: hard
 
 "node-gyp-build@npm:^4.2.0, node-gyp-build@npm:^4.3.0":
-  version: 4.7.0
-  resolution: "node-gyp-build@npm:4.7.0"
+  version: 4.7.1
+  resolution: "node-gyp-build@npm:4.7.1"
   bin:
     node-gyp-build: bin.js
     node-gyp-build-optional: optional.js
     node-gyp-build-test: build-test.js
-  checksum: fe158b20ef63394d7c95d1d5a5e1eb5284e9e2d85c6e0499052baacef2221ad5bc1da3c1d67ec9406c603f5ab41a13402891fc042f6f990ab245d30aa4471807
+  checksum: b8e4a3f889237cd08edde3775e2b4e1e39a0571580584e33e29979f0c532a254ce3c5ec9435bd526254ad0b3f0b4a7e7fe14e53bd400f6ea9445f3bfd88a6b1e
   languageName: node
   linkType: hard
 
@@ -15886,11 +15877,11 @@ __metadata:
   linkType: hard
 
 "solidity-ast@npm:^0.4.51":
-  version: 0.4.53
-  resolution: "solidity-ast@npm:0.4.53"
+  version: 0.4.55
+  resolution: "solidity-ast@npm:0.4.55"
   dependencies:
     array.prototype.findlast: "npm:^1.2.2"
-  checksum: 18a598970490520713a71d6b69f6dce049fb1c1602b82f0471ce531884e63b38afe3b5473e0e28963e43f72c5bc70ceb7434cc1b32d54d9aef9bdedec1fc9fc4
+  checksum: 6f945f014a34ccc9fe8ffbbef286e9f12d52a92bee79d01f8f16e81e2ccd610bbb3e60ab4bebaea7a868382c235d0f01938e32103a68d374753c355849f2279f
   languageName: node
   linkType: hard
 
@@ -17226,11 +17217,11 @@ __metadata:
   linkType: hard
 
 "undici@npm:^5.14.0":
-  version: 5.27.2
-  resolution: "undici@npm:5.27.2"
+  version: 5.28.0
+  resolution: "undici@npm:5.28.0"
   dependencies:
     "@fastify/busboy": "npm:^2.0.0"
-  checksum: 0cb62c57edc938f242c116e41fb2a74f81ed20e7e2e554cf1ceae548520df0592385b53d444f8cf59e1e10e6b27acd153198d8a2353b3040d0a778a099aac92c
+  checksum: ad49ebe742bbfcb389a46d20e1ac38100856b7126c53c7083bdf4a85eba5c3e4df1955bc99226d004157017d52a0e158b7b58a9d1fab2db8158c6a4704b49193
   languageName: node
   linkType: hard
 
