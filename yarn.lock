@@ -7216,15 +7216,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:4.4.22":
-  version: 4.4.22
-  resolution: "daisyui@npm:4.4.22"
+"daisyui@npm:4.4.23":
+  version: 4.4.23
+  resolution: "daisyui@npm:4.4.23"
   dependencies:
     css-selector-tokenizer: "npm:^0.8"
     culori: "npm:^3"
     picocolors: "npm:^1"
     postcss-js: "npm:^4"
-  checksum: 92215243d611bc844e67eb87b44571593b99b5161b84ab4cbcb03e73eac7ee330d36930acf0ec3c7c2f8a2113f7d03db2cdafb9c740297fcda18ca69efebcb54
+  checksum: a972ffd88543e7a9cafe2824abcf1ad8486226990c1c839d89b320231d98e6fbdb9b6af29e0df7138f5d786751c3fae145cf9cc537b3f9b2db650602cc7a3eb7
   languageName: node
   linkType: hard
 
@@ -7267,7 +7267,7 @@ __metadata:
     "@web3-react/walletconnect-connector": "npm:6.2.13"
     autoprefixer: "npm:10.4.16"
     chai: "npm:4.3.10"
-    daisyui: "npm:4.4.22"
+    daisyui: "npm:4.4.23"
     dotenv: "npm:16.3.1"
     eslint: "npm:8.56.0"
     eslint-config-next: "npm:14.0.4"
@@ -7286,7 +7286,7 @@ __metadata:
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     rimraf: "npm:5.0.5"
-    rustywind: "npm:0.20.0"
+    rustywind: "npm:0.21.0"
     solgraph: "npm:1.0.2"
     solhint: "npm:4.0.0"
     solidity-coverage: "npm:0.8.5"
@@ -15310,15 +15310,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rustywind@npm:0.20.0":
-  version: 0.20.0
-  resolution: "rustywind@npm:0.20.0"
+"rustywind@npm:0.21.0":
+  version: 0.21.0
+  resolution: "rustywind@npm:0.21.0"
   dependencies:
     https-proxy-agent: "npm:^4.0.0"
     proxy-from-env: "npm:^1.1.0"
   bin:
     rustywind: bin/rustywind
-  checksum: d5da51e5f9b494c46d9aa46f7d0c24c47d161336455703759db8e658b01ad13d32a87ad929f5301bc867dc43c49fef2a9237101169cf3ef0459370f0d550375e
+  checksum: 62865681c38ad981afee823a02f55e7484a889a8caf48db92bf2f2cacd36932a59de8b9a40470622ee34cb6266117611afd27ad045c56b72f739c7b152b899bd
   languageName: node
   linkType: hard
 
