@@ -64,7 +64,7 @@
     "eslint-config-next": "14.0.4",
     "eslint-config-productsway": "1.3.1",
     "ethers": "5.7.2",
-    "hardhat": "2.19.3",
+    "hardhat": "2.19.4",
     "hardhat-gas-reporter": "1.0.9",
     "husky": "8.0.3",
     "nano-staged": "0.8.0",
