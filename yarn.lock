@@ -2684,21 +2684,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nomicfoundation/hardhat-chai-matchers@npm:1.0.6":
-  version: 1.0.6
-  resolution: "@nomicfoundation/hardhat-chai-matchers@npm:1.0.6"
+"@nomicfoundation/hardhat-chai-matchers@npm:2.0.3":
+  version: 2.0.3
+  resolution: "@nomicfoundation/hardhat-chai-matchers@npm:2.0.3"
   dependencies:
-    "@ethersproject/abi": "npm:^5.1.2"
     "@types/chai-as-promised": "npm:^7.1.3"
     chai-as-promised: "npm:^7.1.1"
     deep-eql: "npm:^4.0.1"
     ordinal: "npm:^1.0.3"
   peerDependencies:
-    "@nomiclabs/hardhat-ethers": ^2.0.0
+    "@nomicfoundation/hardhat-ethers": ^3.0.0
     chai: ^4.2.0
-    ethers: ^5.0.0
+    ethers: ^6.1.0
     hardhat: ^2.9.4
-  checksum: d5e0327aee476ddd1ff25ab6d0fb47af0ccf081a9ff072499dccba7656eea9911aab4bd7e19fe46e5dfb920d2690df3c64dbb324a83e15f8ec9dd13a56ebbe66
+  checksum: 7d69be31baf9182bf8fdebc41f622bfe817986862b9edc6ed1576c6212e93eef5ebd99460f7ea7c8f3d39f06d9fa974233882563b584ce634e8531ff1e5fc76d
   languageName: node
   linkType: hard
 
@@ -7249,7 +7248,7 @@ __metadata:
   dependencies:
     "@ethersproject/providers": "npm:5.7.2"
     "@ethersproject/units": "npm:5.7.0"
-    "@nomicfoundation/hardhat-chai-matchers": "npm:1.0.6"
+    "@nomicfoundation/hardhat-chai-matchers": "npm:2.0.3"
     "@nomicfoundation/hardhat-network-helpers": "npm:1.0.10"
     "@nomicfoundation/hardhat-toolbox": "npm:2.0.2"
     "@nomiclabs/hardhat-ethers": "npm:2.2.3"
