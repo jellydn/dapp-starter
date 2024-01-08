@@ -7233,7 +7233,7 @@ __metadata:
     rimraf: "npm:5.0.5"
     rustywind: "npm:0.21.0"
     solgraph: "npm:1.0.2"
-    solhint: "npm:4.0.0"
+    solhint: "npm:4.1.1"
     solidity-coverage: "npm:0.8.5"
     sort-package-json: "npm:2.6.0"
     tailwindcss: "npm:3.4.1"
@@ -15878,9 +15878,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"solhint@npm:4.0.0":
-  version: 4.0.0
-  resolution: "solhint@npm:4.0.0"
+"solhint@npm:4.1.1":
+  version: 4.1.1
+  resolution: "solhint@npm:4.1.1"
   dependencies:
     "@solidity-parser/parser": "npm:^0.16.0"
     ajv: "npm:^6.12.6"
@@ -15906,7 +15906,7 @@ __metadata:
       optional: true
   bin:
     solhint: solhint.js
-  checksum: 8d3a706d590637686240298ce0e0a608b7f659dc96b4ab162299cf510f071e8b6a4529466a6b0657456825e3adf0ca533af057020322f321c53695fc33161fe3
+  checksum: b4bdb21bdc13f7ba3436d571a30cae6cb8dfb58ab1387df8bef25eeca25c8fbb3f625c49a5dddea41f8361aaeb4d8e2e9f986f580663ddd4574fd3d5de5f66c9
   languageName: node
   linkType: hard
 
