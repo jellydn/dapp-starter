@@ -7308,7 +7308,7 @@ __metadata:
     hardhat: "npm:2.19.4"
     hardhat-gas-reporter: "npm:1.0.9"
     husky: "npm:8.0.3"
-    loglevel: "npm:1.8.1"
+    loglevel: "npm:1.9.0"
     nano-staged: "npm:0.8.0"
     next: "npm:14.1.0"
     next-secure-headers: "npm:2.2.0"
@@ -12339,10 +12339,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loglevel@npm:1.8.1":
-  version: 1.8.1
-  resolution: "loglevel@npm:1.8.1"
-  checksum: 21069436c97448a1801b154a77d19ada212225c513d94f0471bfe299c981ffd4dc0d21e6211f9250bd6209ba9837bfe0d40d9295c673d73e3c543ec6b1c5d9ef
+"loglevel@npm:1.9.0":
+  version: 1.9.0
+  resolution: "loglevel@npm:1.9.0"
+  checksum: dede641b5aa9c7069017648aeb8ae86b4580839766e0395462387a3deb3a2947053de263e132ae21e69b9e35481118db57827ba7139b9aa2a893d3c83d28fd54
   languageName: node
   linkType: hard
 
