@@ -3543,12 +3543,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.11.14":
-  version: 20.11.14
-  resolution: "@types/node@npm:20.11.14"
+"@types/node@npm:20.11.16":
+  version: 20.11.16
+  resolution: "@types/node@npm:20.11.16"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10c0/81a55ddf68811439e58bdc2e4b8e501c6c6ea3d5351aa6362a36f5829055f58195bc201b0992ffda306fcd848c84b1eca327befb71f12f24e0d356e997e17add
+  checksum: 10c0/4886b90278e9c877a84efd3edd4667cd990e032d77268d2a798b99ebc1901ea336fa7dfbe9eaf4ad6ad1da9ce2ec31baf300038a3905838692362eb19904ebde
   languageName: node
   linkType: hard
 
@@ -3623,14 +3623,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.50":
-  version: 18.2.50
-  resolution: "@types/react@npm:18.2.50"
+"@types/react@npm:18.2.52":
+  version: 18.2.52
+  resolution: "@types/react@npm:18.2.52"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/9866e5dc6d786b03842b1f39c49a5b750411cae4e15e17a86ee9a51209fb96c0c0d4b0a07ba58880e7ad998aa3f2b46197c982f42c28b3aaf0cf6011559acb3a
+  checksum: 10c0/1c7b2297deb09f31eb1d0c34107c89013022a9e1cba6d393f9a872bdc456da2f1ff25415c09f97dbf880cef98ade526681bd1d1b8300091b28651d23af7e7aac
   languageName: node
   linkType: hard
 
@@ -7338,8 +7338,8 @@ __metadata:
     "@typechain/hardhat": "npm:9.1.0"
     "@types/chai": "npm:4.3.11"
     "@types/mocha": "npm:10.0.6"
-    "@types/node": "npm:20.11.14"
-    "@types/react": "npm:18.2.50"
+    "@types/node": "npm:20.11.16"
+    "@types/react": "npm:18.2.52"
     "@types/react-dom": "npm:18.2.18"
     "@typescript-eslint/eslint-plugin": "npm:6.20.0"
     "@typescript-eslint/parser": "npm:6.20.0"
@@ -7357,7 +7357,7 @@ __metadata:
     ethers: "npm:5.7.2"
     hardhat: "npm:2.19.5"
     hardhat-gas-reporter: "npm:1.0.10"
-    husky: "npm:9.0.7"
+    husky: "npm:9.0.10"
     loglevel: "npm:1.9.1"
     nano-staged: "npm:0.8.0"
     next: "npm:14.1.0"
@@ -10867,12 +10867,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:9.0.7":
-  version: 9.0.7
-  resolution: "husky@npm:9.0.7"
+"husky@npm:9.0.10":
+  version: 9.0.10
+  resolution: "husky@npm:9.0.10"
   bin:
-    husky: bin.js
-  checksum: 10c0/ac36838bc230b42ca878eeb6993cba5499b858700581fa9e8b579227af9ad47bdbf4c050f4145f51f33f77c16d359f329622b7050150c78a7c52be26cc24174e
+    husky: bin.mjs
+  checksum: 10c0/585d95fec151d2e3fba1a8d97c1290dee40b83eb2b8850afae0805e183b3b3ec45bfeef97b2d0c4ae16f1c1bf19788b9129627d9ba02d924c874632207e33b93
   languageName: node
   linkType: hard
 
