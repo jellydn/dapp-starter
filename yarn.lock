@@ -7219,15 +7219,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:4.7.1":
-  version: 4.7.1
-  resolution: "daisyui@npm:4.7.1"
+"daisyui@npm:4.7.2":
+  version: 4.7.2
+  resolution: "daisyui@npm:4.7.2"
   dependencies:
     css-selector-tokenizer: "npm:^0.8"
     culori: "npm:^3"
     picocolors: "npm:^1"
     postcss-js: "npm:^4"
-  checksum: 10c0/0bb7ca0162626d0304c2e43c2ac83c5be64670685ee2d2b1a7e7e93c75f9e102dbd065e2e35d179c6605d5fff2212d07d50612db419fc76f998fc37856636a55
+  checksum: 10c0/6aa0c206049943b0558a95a0d828f2179714fd92e3d01ccc9d3386c1d816bbec10efea010fb7876a4c1387354a69c1627193304f3c49ca8d6e9102d0eda25727
   languageName: node
   linkType: hard
 
@@ -7270,7 +7270,7 @@ __metadata:
     "@web3-react/walletconnect-connector": "npm:6.2.13"
     autoprefixer: "npm:10.4.17"
     chai: "npm:4.4.1"
-    daisyui: "npm:4.7.1"
+    daisyui: "npm:4.7.2"
     dotenv: "npm:16.4.4"
     eslint: "npm:8.56.0"
     eslint-config-next: "npm:14.1.0"
@@ -7278,7 +7278,7 @@ __metadata:
     ethers: "npm:5.7.2"
     hardhat: "npm:2.19.5"
     hardhat-gas-reporter: "npm:1.0.10"
-    husky: "npm:9.0.10"
+    husky: "npm:9.0.11"
     loglevel: "npm:1.9.1"
     nano-staged: "npm:0.8.0"
     next: "npm:14.1.0"
@@ -10786,12 +10786,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:9.0.10":
-  version: 9.0.10
-  resolution: "husky@npm:9.0.10"
+"husky@npm:9.0.11":
+  version: 9.0.11
+  resolution: "husky@npm:9.0.11"
   bin:
     husky: bin.mjs
-  checksum: 10c0/585d95fec151d2e3fba1a8d97c1290dee40b83eb2b8850afae0805e183b3b3ec45bfeef97b2d0c4ae16f1c1bf19788b9129627d9ba02d924c874632207e33b93
+  checksum: 10c0/2c787dcf74a837fc9a4fea7da907509d4bd9a289f4ea10ecc9d86279e4d4542b0f5f6443a619bccae19e265f2677172cc2b86aae5c932a35a330cc227d914605
   languageName: node
   linkType: hard
 
