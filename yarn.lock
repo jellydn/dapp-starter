@@ -3501,12 +3501,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.11.17":
+"@types/node@npm:*":
   version: 20.11.17
   resolution: "@types/node@npm:20.11.17"
   dependencies:
     undici-types: "npm:~5.26.4"
   checksum: 10c0/1f30dae80b416cbf38f133a619ffb0e9fb9e7bc58f82d900bf73816ae5781740c4640892bf5971dd9c12570d5d05241646be3e7540bb4e059322ec6af4e51e15
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:20.11.19":
+  version: 20.11.19
+  resolution: "@types/node@npm:20.11.19"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 10c0/f451ef0a1d78f29c57bad7b77e49ebec945f2a6d0d7a89851d7e185ee9fe7ad94d651c0dfbcb7858c9fa791310c8b40a881e2260f56bd3c1b7e7ae92723373ae
   languageName: node
   linkType: hard
 
@@ -7174,7 +7183,7 @@ __metadata:
     "@typechain/hardhat": "npm:9.1.0"
     "@types/chai": "npm:4.3.11"
     "@types/mocha": "npm:10.0.6"
-    "@types/node": "npm:20.11.17"
+    "@types/node": "npm:20.11.19"
     "@types/react": "npm:18.2.55"
     "@types/react-dom": "npm:18.2.19"
     "@typescript-eslint/eslint-plugin": "npm:6.21.0"
@@ -7191,7 +7200,7 @@ __metadata:
     eslint-config-next: "npm:14.1.0"
     eslint-config-productsway: "npm:1.3.1"
     ethers: "npm:5.7.2"
-    hardhat: "npm:2.20.0"
+    hardhat: "npm:2.20.1"
     hardhat-gas-reporter: "npm:1.0.10"
     husky: "npm:9.0.11"
     loglevel: "npm:1.9.1"
@@ -10299,9 +10308,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hardhat@npm:2.20.0":
-  version: 2.20.0
-  resolution: "hardhat@npm:2.20.0"
+"hardhat@npm:2.20.1":
+  version: 2.20.1
+  resolution: "hardhat@npm:2.20.1"
   dependencies:
     "@ethersproject/abi": "npm:^5.1.2"
     "@metamask/eth-sig-util": "npm:^4.0.0"
@@ -10363,7 +10372,7 @@ __metadata:
       optional: true
   bin:
     hardhat: internal/cli/bootstrap.js
-  checksum: 10c0/2026ff71bff17b4e94944325e02e53e897daf4ce14d4bec22ed04fa2079e0217b3d3615d63ae2f3b7f11fbbe14546a5084e4fda6e8df9c89821fc386abcdac8b
+  checksum: 10c0/e27f1fc6b016d7ceb62795ff47384a02ad61722cdd2ab55c91d7ff2ce31973a1ea5e462431c7033ca53e66e4722c3597664b0ebaac70104622d227e94b4fb3e0
   languageName: node
   linkType: hard
 
