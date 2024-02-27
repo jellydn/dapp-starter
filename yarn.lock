@@ -3597,14 +3597,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.59":
-  version: 18.2.59
-  resolution: "@types/react@npm:18.2.59"
+"@types/react@npm:18.2.60":
+  version: 18.2.60
+  resolution: "@types/react@npm:18.2.60"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/adbac5d78d755ce0f05fc91917b49344e127aaadf0515fa28dd19e3050514eeae6988ab04610fe403a6d7eb58b8dee7816c019d960373dfa22b008f842d7eaf8
+  checksum: 10c0/e1d8763259c75ebcdf241dbbbfb7e8f606a8abdc98b1acf1a23e741681ebb20e82b490402a32ce10b81ce7e51f00f8009a162a72136333613b4f247549a3ab8d
   languageName: node
   linkType: hard
 
@@ -7203,7 +7203,7 @@ __metadata:
     "@types/chai": "npm:4.3.12"
     "@types/mocha": "npm:10.0.6"
     "@types/node": "npm:20.11.20"
-    "@types/react": "npm:18.2.59"
+    "@types/react": "npm:18.2.60"
     "@types/react-dom": "npm:18.2.19"
     "@typescript-eslint/eslint-plugin": "npm:6.21.0"
     "@typescript-eslint/parser": "npm:6.21.0"
@@ -7235,7 +7235,7 @@ __metadata:
     rustywind: "npm:0.21.0"
     solgraph: "npm:1.0.2"
     solhint: "npm:4.1.1"
-    solidity-coverage: "npm:0.8.8"
+    solidity-coverage: "npm:0.8.9"
     sort-package-json: "npm:2.8.0"
     tailwindcss: "npm:3.4.1"
     ts-node: "npm:10.9.2"
@@ -15875,9 +15875,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"solidity-coverage@npm:0.8.8":
-  version: 0.8.8
-  resolution: "solidity-coverage@npm:0.8.8"
+"solidity-coverage@npm:0.8.9":
+  version: 0.8.9
+  resolution: "solidity-coverage@npm:0.8.9"
   dependencies:
     "@ethersproject/abi": "npm:^5.0.9"
     "@solidity-parser/parser": "npm:^0.18.0"
@@ -15902,7 +15902,7 @@ __metadata:
     hardhat: ^2.11.0
   bin:
     solidity-coverage: plugins/bin.js
-  checksum: 10c0/b499bbdcb92f13c5db11f6f84bdbdf5f62608a95dc25d4060dd145b28c7f96fbd639d045a628ac005df7674389cc14d4480d101a5c7f007f88ed54a1000b36de
+  checksum: 10c0/666953ea36d76f4d1e75519c6211015559c8fa2d40b0e8360315f79fcde398151ea1ad85b57a624962a9a657bcb0ab3f8fdfe60cd92fc3437e9e7b4008b0c0a5
   languageName: node
   linkType: hard
 
