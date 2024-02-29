@@ -2866,12 +2866,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openzeppelin/contracts-upgradeable@npm:5.0.1":
-  version: 5.0.1
-  resolution: "@openzeppelin/contracts-upgradeable@npm:5.0.1"
+"@openzeppelin/contracts-upgradeable@npm:5.0.2":
+  version: 5.0.2
+  resolution: "@openzeppelin/contracts-upgradeable@npm:5.0.2"
   peerDependencies:
-    "@openzeppelin/contracts": 5.0.1
-  checksum: 10c0/49869321b1e6bd664d33c143c3be54e9205c7f53eb768e4375728401931d5f4d6c4144e4265d75fbdb8a7acfdd939d9726bd964d97b028484150dfa6497719c1
+    "@openzeppelin/contracts": 5.0.2
+  checksum: 10c0/0bd47a4fa0ba8084c1df9573968ff02387bc21514d846b5feb4ad42f90f3ba26bb1e40f17f03e4fa24ffbe473b9ea06c137283297884ab7d5b98d2c112904dc9
   languageName: node
   linkType: hard
 
@@ -7188,7 +7188,7 @@ __metadata:
     "@nomiclabs/hardhat-ethers": "npm:2.2.3"
     "@nomiclabs/hardhat-etherscan": "npm:3.1.8"
     "@openzeppelin/contracts": "npm:5.0.2"
-    "@openzeppelin/contracts-upgradeable": "npm:5.0.1"
+    "@openzeppelin/contracts-upgradeable": "npm:5.0.2"
     "@openzeppelin/hardhat-upgrades": "npm:1.28.0"
     "@tailwindcss/typography": "npm:0.5.10"
     "@trivago/prettier-plugin-sort-imports": "npm:4.3.0"
