@@ -7230,7 +7230,7 @@ __metadata:
     rustywind: "npm:0.21.0"
     solgraph: "npm:1.0.2"
     solhint: "npm:4.1.1"
-    solidity-coverage: "npm:0.8.9"
+    solidity-coverage: "npm:0.8.10"
     sort-package-json: "npm:2.8.0"
     tailwindcss: "npm:3.4.1"
     ts-node: "npm:10.9.2"
@@ -15901,9 +15901,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"solidity-coverage@npm:0.8.9":
-  version: 0.8.9
-  resolution: "solidity-coverage@npm:0.8.9"
+"solidity-coverage@npm:0.8.10":
+  version: 0.8.10
+  resolution: "solidity-coverage@npm:0.8.10"
   dependencies:
     "@ethersproject/abi": "npm:^5.0.9"
     "@solidity-parser/parser": "npm:^0.18.0"
@@ -15928,7 +15928,7 @@ __metadata:
     hardhat: ^2.11.0
   bin:
     solidity-coverage: plugins/bin.js
-  checksum: 10c0/666953ea36d76f4d1e75519c6211015559c8fa2d40b0e8360315f79fcde398151ea1ad85b57a624962a9a657bcb0ab3f8fdfe60cd92fc3437e9e7b4008b0c0a5
+  checksum: 10c0/7862a9eede7c2dbd05989371d8f578b3785ea39426b2319f502d190a6d3edb16aa385a171884e5cc1248766de831d29776188246855a99b238326d75c2ecc430
   languageName: node
   linkType: hard
 
