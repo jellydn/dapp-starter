@@ -3517,12 +3517,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.19":
-  version: 18.2.19
-  resolution: "@types/react-dom@npm:18.2.19"
+"@types/react-dom@npm:18.2.20":
+  version: 18.2.20
+  resolution: "@types/react-dom@npm:18.2.20"
   dependencies:
     "@types/react": "npm:*"
-  checksum: 10c0/88d7c6daa4659f661d0c97985d9fca492f24b421a34bb614dcd94c343aed7bea121463149e97fb01ecaa693be17b7d1542cf71ddb1705f3889a81eb2639a88aa
+  checksum: 10c0/d352fb9c4fbb773f1db1e463b0228dfb0dc0a670a742983ae840d77f54ad9d4ac38084b23c975487fc37814f44425fc6d1adafbb432a7c48957669c124b5f8df
   languageName: node
   linkType: hard
 
@@ -3537,14 +3537,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.62":
-  version: 18.2.62
-  resolution: "@types/react@npm:18.2.62"
+"@types/react@npm:18.2.63":
+  version: 18.2.63
+  resolution: "@types/react@npm:18.2.63"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/a45a986723b0febdcdcea754cfa426345f588fd9a522ab4136220a0b514ccba8f4986b23c73dd8e863d465ee1e733779bffffdd57c19488a318a5135f030c1e8
+  checksum: 10c0/53d86727b966a3ba097553b5ef75a1f2bea78bd8c54ebcf6d00bd338000112b208ab30536c8c0a9f5fc61055cc3fbabbc7a23910c55092341602845de4c13714
   languageName: node
   linkType: hard
 
@@ -7172,8 +7172,8 @@ __metadata:
     "@types/chai": "npm:4.3.12"
     "@types/mocha": "npm:10.0.6"
     "@types/node": "npm:20.11.24"
-    "@types/react": "npm:18.2.62"
-    "@types/react-dom": "npm:18.2.19"
+    "@types/react": "npm:18.2.63"
+    "@types/react-dom": "npm:18.2.20"
     "@typescript-eslint/eslint-plugin": "npm:7.1.1"
     "@typescript-eslint/parser": "npm:7.1.1"
     "@web3-react/core": "npm:6.1.9"
