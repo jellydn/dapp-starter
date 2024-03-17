@@ -4657,7 +4657,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"array.prototype.flatmap@npm:^1.3.1, array.prototype.flatmap@npm:^1.3.2":
+"array.prototype.flatmap@npm:^1.3.2":
   version: 1.3.2
   resolution: "array.prototype.flatmap@npm:1.3.2"
   dependencies:
@@ -4694,7 +4694,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"array.prototype.tosorted@npm:^1.1.1, array.prototype.tosorted@npm:^1.1.3":
+"array.prototype.tosorted@npm:^1.1.3":
   version: 1.1.3
   resolution: "array.prototype.tosorted@npm:1.1.3"
   dependencies:
@@ -7213,7 +7213,7 @@ __metadata:
     dotenv: "npm:16.4.5"
     eslint: "npm:8.57.0"
     eslint-config-next: "npm:14.1.3"
-    eslint-config-productsway: "npm:1.3.1"
+    eslint-config-productsway: "npm:1.3.2"
     ethers: "npm:5.7.2"
     hardhat: "npm:2.22.1"
     hardhat-gas-reporter: "npm:1.0.10"
@@ -8006,7 +8006,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"es-iterator-helpers@npm:^1.0.12, es-iterator-helpers@npm:^1.0.15, es-iterator-helpers@npm:^1.0.17":
+"es-iterator-helpers@npm:^1.0.15, es-iterator-helpers@npm:^1.0.17":
   version: 1.0.17
   resolution: "es-iterator-helpers@npm:1.0.17"
   dependencies:
@@ -8163,28 +8163,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:9.0.0":
-  version: 9.0.0
-  resolution: "eslint-config-prettier@npm:9.0.0"
+"eslint-config-prettier@npm:9.1.0":
+  version: 9.1.0
+  resolution: "eslint-config-prettier@npm:9.1.0"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: 10c0/bc1f661915845c631824178942e5d02f858fe6d0ea796f0050d63e0f681927b92696e81139dd04714c08c3e7de580fd079c66162e40070155ba79eaee78ab5d0
+  checksum: 10c0/6d332694b36bc9ac6fdb18d3ca2f6ac42afa2ad61f0493e89226950a7091e38981b66bac2b47ba39d15b73fff2cd32c78b850a9cf9eed9ca9a96bfb2f3a2f10d
   languageName: node
   linkType: hard
 
-"eslint-config-productsway@npm:1.3.1":
-  version: 1.3.1
-  resolution: "eslint-config-productsway@npm:1.3.1"
+"eslint-config-productsway@npm:1.3.2":
+  version: 1.3.2
+  resolution: "eslint-config-productsway@npm:1.3.2"
   dependencies:
-    eslint-config-prettier: "npm:9.0.0"
-    eslint-config-xo: "npm:0.43.1"
+    eslint-config-prettier: "npm:9.1.0"
+    eslint-config-xo: "npm:0.44.0"
     eslint-config-xo-react: "npm:0.27.0"
-    eslint-config-xo-typescript: "npm:1.0.1"
-    eslint-plugin-import: "npm:2.29.0"
+    eslint-config-xo-typescript: "npm:4.0.0"
+    eslint-plugin-import: "npm:2.29.1"
     eslint-plugin-jsx-a11y: "npm:6.8.0"
-    eslint-plugin-react: "npm:7.33.2"
+    eslint-plugin-react: "npm:7.34.1"
     eslint-plugin-react-hooks: "npm:4.6.0"
     eslint-plugin-tsdoc: "npm:0.2.17"
   peerDependencies:
@@ -8192,7 +8192,7 @@ __metadata:
     "@typescript-eslint/parser": ^6
     eslint: ^8
     prettier: ^3
-  checksum: 10c0/268ad2aee13a9169ed295f0385d9fa13f0a7e164c951fcd9a637c4946f726610993ae04c38e441a268b66af911c8794dfee6e264bcd60d3253d4b39260af84cd
+  checksum: 10c0/63dd06d239774ae537d9a0ce599b44df1ced5b1100870ef48249d21bed285904b28883c252528e993c74a5a08b1ae1888ebd0168f6a105a8312b6b186047e4c0
   languageName: node
   linkType: hard
 
@@ -8207,26 +8207,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-xo-typescript@npm:1.0.1":
-  version: 1.0.1
-  resolution: "eslint-config-xo-typescript@npm:1.0.1"
+"eslint-config-xo-typescript@npm:4.0.0":
+  version: 4.0.0
+  resolution: "eslint-config-xo-typescript@npm:4.0.0"
   peerDependencies:
-    "@typescript-eslint/eslint-plugin": ">=6.0.0"
-    "@typescript-eslint/parser": ">=6.0.0"
-    eslint: ">=8.0.0"
-    typescript: ">=4.7"
-  checksum: 10c0/d8794d9a64d9849c27c22201e2badaa781a0241d371991759a581d06859659f9a849287739a54a9f0a514ffaf7bd4d538f82ea9c67b5ef704b5ee0353cdfc01e
+    "@typescript-eslint/eslint-plugin": ">=7.0.2"
+    "@typescript-eslint/parser": ">=7.0.2"
+    eslint: ">=8.56.0"
+    typescript: ">=5.0.0"
+  checksum: 10c0/079be08df5e136522298d18d14fa533daaebfc53a0631989459d967962de326fc31336fd738e4d49a41a4b12f34766a543f1eb827f8782b7668e03b57cb20dd4
   languageName: node
   linkType: hard
 
-"eslint-config-xo@npm:0.43.1":
-  version: 0.43.1
-  resolution: "eslint-config-xo@npm:0.43.1"
+"eslint-config-xo@npm:0.44.0":
+  version: 0.44.0
+  resolution: "eslint-config-xo@npm:0.44.0"
   dependencies:
     confusing-browser-globals: "npm:1.0.11"
   peerDependencies:
-    eslint: ">=8.27.0"
-  checksum: 10c0/753026f1eae1648d79921cc51d78d55182966d178093f14e08e09f191ccffabd0292a31c7dc70e65c6c655ac1cdcfa05d7f99e8af4f4164e04834f1bea96dbe0
+    eslint: ">=8.56.0"
+  checksum: 10c0/ca051b569f66ffe0d10e93b0a935b2082aa978eccf6691b40a1ced341150eac7eb9bb913cb370bddbd352c6e20cad7854bd3a33a52356e9effeac54d914deac2
   languageName: node
   linkType: hard
 
@@ -8271,34 +8271,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:2.29.0":
-  version: 2.29.0
-  resolution: "eslint-plugin-import@npm:2.29.0"
-  dependencies:
-    array-includes: "npm:^3.1.7"
-    array.prototype.findlastindex: "npm:^1.2.3"
-    array.prototype.flat: "npm:^1.3.2"
-    array.prototype.flatmap: "npm:^1.3.2"
-    debug: "npm:^3.2.7"
-    doctrine: "npm:^2.1.0"
-    eslint-import-resolver-node: "npm:^0.3.9"
-    eslint-module-utils: "npm:^2.8.0"
-    hasown: "npm:^2.0.0"
-    is-core-module: "npm:^2.13.1"
-    is-glob: "npm:^4.0.3"
-    minimatch: "npm:^3.1.2"
-    object.fromentries: "npm:^2.0.7"
-    object.groupby: "npm:^1.0.1"
-    object.values: "npm:^1.1.7"
-    semver: "npm:^6.3.1"
-    tsconfig-paths: "npm:^3.14.2"
-  peerDependencies:
-    eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8
-  checksum: 10c0/761a4e1fbc2cd318e62350bed4c448f8b11ed83091d6bb7776f096556363a09debd9922b39fd2714c895edc9aaea82e08e684eb632283f880c58a91e4bae6733
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-import@npm:^2.28.1":
+"eslint-plugin-import@npm:2.29.1, eslint-plugin-import@npm:^2.28.1":
   version: 2.29.1
   resolution: "eslint-plugin-import@npm:2.29.1"
   dependencies:
@@ -8369,29 +8342,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:7.33.2":
-  version: 7.33.2
-  resolution: "eslint-plugin-react@npm:7.33.2"
+"eslint-plugin-react@npm:7.34.1":
+  version: 7.34.1
+  resolution: "eslint-plugin-react@npm:7.34.1"
   dependencies:
-    array-includes: "npm:^3.1.6"
-    array.prototype.flatmap: "npm:^1.3.1"
-    array.prototype.tosorted: "npm:^1.1.1"
+    array-includes: "npm:^3.1.7"
+    array.prototype.findlast: "npm:^1.2.4"
+    array.prototype.flatmap: "npm:^1.3.2"
+    array.prototype.toreversed: "npm:^1.1.2"
+    array.prototype.tosorted: "npm:^1.1.3"
     doctrine: "npm:^2.1.0"
-    es-iterator-helpers: "npm:^1.0.12"
+    es-iterator-helpers: "npm:^1.0.17"
     estraverse: "npm:^5.3.0"
     jsx-ast-utils: "npm:^2.4.1 || ^3.0.0"
     minimatch: "npm:^3.1.2"
-    object.entries: "npm:^1.1.6"
-    object.fromentries: "npm:^2.0.6"
-    object.hasown: "npm:^1.1.2"
-    object.values: "npm:^1.1.6"
+    object.entries: "npm:^1.1.7"
+    object.fromentries: "npm:^2.0.7"
+    object.hasown: "npm:^1.1.3"
+    object.values: "npm:^1.1.7"
     prop-types: "npm:^15.8.1"
-    resolve: "npm:^2.0.0-next.4"
+    resolve: "npm:^2.0.0-next.5"
     semver: "npm:^6.3.1"
-    string.prototype.matchall: "npm:^4.0.8"
+    string.prototype.matchall: "npm:^4.0.10"
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
-  checksum: 10c0/f9b247861024bafc396c4bd3c9ac946604b3b23077251c98f23602aa22027a0c33a69157fd49564e4ff7f17b3678e5dc366a46c7ec42a09454d7cbce786d5001
+  checksum: 10c0/7c61b1314d37a4ac2f2474f9571f801f1a1a5d81dcd4abbb5d07145406518722fb792367267757ee116bde254be9753242d6b93c9619110398b3fe1746e4848c
   languageName: node
   linkType: hard
 
@@ -13555,7 +13530,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"object.entries@npm:^1.1.6, object.entries@npm:^1.1.7":
+"object.entries@npm:^1.1.7":
   version: 1.1.7
   resolution: "object.entries@npm:1.1.7"
   dependencies:
@@ -13566,7 +13541,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"object.fromentries@npm:^2.0.6, object.fromentries@npm:^2.0.7":
+"object.fromentries@npm:^2.0.7":
   version: 2.0.7
   resolution: "object.fromentries@npm:2.0.7"
   dependencies:
@@ -13603,7 +13578,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"object.hasown@npm:^1.1.2, object.hasown@npm:^1.1.3":
+"object.hasown@npm:^1.1.3":
   version: 1.1.3
   resolution: "object.hasown@npm:1.1.3"
   dependencies:
@@ -15064,7 +15039,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:^2.0.0-next.4, resolve@npm:^2.0.0-next.5":
+"resolve@npm:^2.0.0-next.5":
   version: 2.0.0-next.5
   resolution: "resolve@npm:2.0.0-next.5"
   dependencies:
@@ -15116,7 +15091,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@npm%3A^2.0.0-next.4#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^2.0.0-next.5#optional!builtin<compat/resolve>":
+"resolve@patch:resolve@npm%3A^2.0.0-next.5#optional!builtin<compat/resolve>":
   version: 2.0.0-next.5
   resolution: "resolve@patch:resolve@npm%3A2.0.0-next.5#optional!builtin<compat/resolve>::version=2.0.0-next.5&hash=c3c19d"
   dependencies:
@@ -16272,7 +16247,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string.prototype.matchall@npm:^4.0.10, string.prototype.matchall@npm:^4.0.8":
+"string.prototype.matchall@npm:^4.0.10":
   version: 4.0.10
   resolution: "string.prototype.matchall@npm:4.0.10"
   dependencies:
@@ -16959,7 +16934,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsconfig-paths@npm:^3.14.2, tsconfig-paths@npm:^3.15.0":
+"tsconfig-paths@npm:^3.15.0":
   version: 3.15.0
   resolution: "tsconfig-paths@npm:3.15.0"
   dependencies:
