@@ -3350,10 +3350,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/chai@npm:*, @types/chai@npm:4.3.12":
+"@types/chai@npm:*":
   version: 4.3.12
   resolution: "@types/chai@npm:4.3.12"
   checksum: 10c0/e5d952726d7f053812579962b07d0e4965c160c6a90bf466580e639cd3a1f1d30da1abbfe782383538a043a07908f9dfb823fa9065b37752a5f27d62234f44d5
+  languageName: node
+  linkType: hard
+
+"@types/chai@npm:4.3.13":
+  version: 4.3.13
+  resolution: "@types/chai@npm:4.3.13"
+  checksum: 10c0/34a8514c4fabe8f743c506481a90269ed761ddab6bf89bd88f122061e6797bf52e7e1e23812ebbd1eda6100b128667c5c3ec9ed1f198688202ddf433d2a8f7ff
   languageName: node
   linkType: hard
 
@@ -3472,12 +3479,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.11.29":
-  version: 20.11.29
-  resolution: "@types/node@npm:20.11.29"
+"@types/node@npm:20.11.30":
+  version: 20.11.30
+  resolution: "@types/node@npm:20.11.30"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10c0/b839bad64b2d0e2b4a2d09a53c019ac06c732ac66ea88f3a86a9d2f28a789caf8fd56b888f577183459733abfa1b77e4bf6986cde18b2ec63e1939427aa0d387
+  checksum: 10c0/867cfaf969c6d8850d8d7304e7ab739898a50ecb1395b61ff2335644f5f48d7a46fbc4a14cee967aed65ec134b61a746edae70d1f32f11321ccf29165e3bc4e6
   languageName: node
   linkType: hard
 
@@ -7187,9 +7194,9 @@ __metadata:
     "@typechain/ethers-v5": "npm:11.1.2"
     "@typechain/ethers-v6": "npm:0.5.1"
     "@typechain/hardhat": "npm:9.1.0"
-    "@types/chai": "npm:4.3.12"
+    "@types/chai": "npm:4.3.13"
     "@types/mocha": "npm:10.0.6"
-    "@types/node": "npm:20.11.29"
+    "@types/node": "npm:20.11.30"
     "@types/react": "npm:18.2.67"
     "@types/react-dom": "npm:18.2.22"
     "@typescript-eslint/eslint-plugin": "npm:7.3.1"
