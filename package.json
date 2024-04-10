@@ -1,6 +1,6 @@
 {
   "name": "dapp-starter",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "scripts": {
     "build": "npx hardhat compile --network localhost && next build",
     "clean": "npx hardhat clean && rimraf -rf src/types",

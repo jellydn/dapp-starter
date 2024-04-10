@@ -59,6 +59,14 @@ pnpm run dev
 pnpm run test
 ```
 
+## Pre-commit
+
+This project uses [Pre-commit](https://pre-commit.com/) to enforce code quality. To install pre-commit, run:
+
+```sh
+pre-commit install
+```
+
 ## Hardhat guideline
 
 This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
