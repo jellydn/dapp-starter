@@ -1,10 +1,9 @@
-/* eslint-disable no-alert */
 import {
   type ExternalProvider,
   type JsonRpcFetchFunc,
   Web3Provider,
 } from "@ethersproject/providers";
-import { useWeb3React, UnsupportedChainIdError } from "@web3-react/core";
+import { UnsupportedChainIdError, useWeb3React } from "@web3-react/core";
 import {
   NoEthereumProviderError,
   UserRejectedRequestError as UserRejectedRequestErrorInjected,
@@ -12,7 +11,7 @@ import {
 import { UserRejectedRequestError as UserRejectedRequestErrorWalletConnect } from "@web3-react/walletconnect-connector";
 import { useEffect, useState } from "react";
 
-import { injected, walletconnect, POLLING_INTERVAL } from "../dapp/connectors";
+import { POLLING_INTERVAL, injected, walletconnect } from "../dapp/connectors";
 import { useEagerConnect, useInactiveListener } from "../dapp/hooks";
 import logger from "../logger";
 import { Header } from "./Header";

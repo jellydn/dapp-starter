@@ -21,9 +21,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install -g yarn
+          npm install -g pnpm
           corepack enable
-          yarn install
+          pnpm install
 
       - name: Run test
-        run: yarn test
+        run: pnpm test

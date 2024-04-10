@@ -21,11 +21,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install -g yarn
-          corepack enable
-          yarn install
+          npm install -g pnpm
+          pnpm install
 
       - name: Run build
         run: |
-          yarn clean
-          yarn build
+          pnpm clean
+          pnpm build

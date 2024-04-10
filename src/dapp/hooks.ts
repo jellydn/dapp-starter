@@ -1,5 +1,5 @@
 import { useWeb3React } from "@web3-react/core";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import logger from "../logger";
 import { injected } from "./connectors";
