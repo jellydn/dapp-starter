@@ -46,12 +46,15 @@ const hardHatConfig: HardhatUserConfig = {
     matictestnet: {
       chainId: 80001,
       url:
-        process.env.MATIC_PROVIDER_URL ?? "https://speedy-nodes-nyc.moralis.io/036063875a28828fa0c00596/polygon/mumbai",
+        process.env.MATIC_PROVIDER_URL ??
+        "https://speedy-nodes-nyc.moralis.io/036063875a28828fa0c00596/polygon/mumbai",
       accounts: [process.env.PRIVATE_KEY ?? ""].filter(Boolean),
     },
     bsctestnet: {
       chainId: 97,
-      url: process.env.BSC_PROVIDER_URL ?? "https://speedy-nodes-nyc.moralis.io/036063875a28828fa0c00596/bsc/testnet",
+      url:
+        process.env.BSC_PROVIDER_URL ??
+        "https://speedy-nodes-nyc.moralis.io/036063875a28828fa0c00596/bsc/testnet",
       accounts: [process.env.PRIVATE_KEY ?? ""].filter(Boolean),
     },
   },

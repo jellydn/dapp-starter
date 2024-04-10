@@ -5,19 +5,23 @@ import useLocalStorage from "../hooks/useLocalStorage";
 export default function ThemeToggle() {
   const [theme, setTheme] = useLocalStorage<"dark" | "light">("theme", "dark");
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: Initialize theme from local storage
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
   }, []);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => {
-      document.documentElement.setAttribute("data-theme", prevTheme === "dark" ? "light" : "dark");
+      document.documentElement.setAttribute(
+        "data-theme",
+        prevTheme === "dark" ? "light" : "dark",
+      );
       return prevTheme === "dark" ? "light" : "dark";
     });
   };
 
   return (
-    <div className="fixed top-0 right-0 mt-2 mr-4 z-10">
+    <div className="fixed top-0 right-0 z-10 mt-2 mr-4">
       <button type="button" className="btn" onClick={toggleTheme}>
         {theme === "dark" ? "🌞" : "🌙"}
       </button>

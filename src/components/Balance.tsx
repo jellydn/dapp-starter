@@ -8,6 +8,7 @@ export function Balance() {
   const { account, library, chainId } = useWeb3React();
   const [balance, setBalance] = useState<number | undefined>();
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: // Ensures refresh if referential identity of library doesn't change across chainIds
   useEffect((): any => {
     if (Boolean(account) && Boolean(library)) {
       let stale = false;
@@ -34,7 +35,7 @@ export function Balance() {
     return () => {
       logger.warn("Balance component not initialized");
     };
-  }, [account, library, chainId]); // Ensures refresh if referential identity of library doesn't change across chainIds
+  }, [account, library, chainId]);
 
   return (
     <div className="btn btn-ghost btn-sm rounded-btn">
@@ -46,6 +47,7 @@ export function Balance() {
         viewBox="0 0 24 24"
         stroke="currentColor"
       >
+        <title>Balance</title>
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -53,7 +55,9 @@ export function Balance() {
           d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
         />
       </svg>
-      <span>{balance === null ? "Error" : balance ? `Ξ${formatEther(balance)}` : ""}</span>
+      <span>
+        {balance === null ? "Error" : balance ? `Ξ${formatEther(balance)}` : ""}
+      </span>
     </div>
   );
 }

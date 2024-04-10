@@ -5,7 +5,10 @@ import { useEventListener } from "./useEventListener";
 
 type SetValue<T> = Dispatch<SetStateAction<T>>;
 
-export function useLocalStorage<T>(key: string, initialValue: T): [T, SetValue<T>] {
+export function useLocalStorage<T>(
+  key: string,
+  initialValue: T,
+): [T, SetValue<T>] {
   // Get from local storage then
   // parse stored json or return initialValue
   const readValue = (): T => {
@@ -32,7 +35,9 @@ export function useLocalStorage<T>(key: string, initialValue: T): [T, SetValue<T
   const setValue: SetValue<T> = (value) => {
     // Prevent build error "window is undefined" but keeps working
     if (typeof window === "undefined") {
-      console.warn(`Tried setting localStorage key “${key}” even though environment is not a client`);
+      console.warn(
+        `Tried setting localStorage key “${key}” even though environment is not a client`,
+      );
     }
 
     try {
@@ -52,9 +57,9 @@ export function useLocalStorage<T>(key: string, initialValue: T): [T, SetValue<T
     }
   };
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: Initialize from local storage
   useEffect(() => {
     setStoredValue(readValue());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleStorageChange = () => {

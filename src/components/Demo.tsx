@@ -1,5 +1,9 @@
 /* eslint-disable no-alert */
-import { type ExternalProvider, type JsonRpcFetchFunc, Web3Provider } from "@ethersproject/providers";
+import {
+  type ExternalProvider,
+  type JsonRpcFetchFunc,
+  Web3Provider,
+} from "@ethersproject/providers";
 import { useWeb3React, UnsupportedChainIdError } from "@web3-react/core";
 import {
   NoEthereumProviderError,
@@ -22,7 +26,10 @@ function getErrorMessage(error?: Error) {
     return "You're connected to an unsupported network.";
   }
 
-  if (error instanceof UserRejectedRequestErrorInjected || error instanceof UserRejectedRequestErrorWalletConnect) {
+  if (
+    error instanceof UserRejectedRequestErrorInjected ||
+    error instanceof UserRejectedRequestErrorWalletConnect
+  ) {
     return "Please authorize this website to access your Ethereum account.";
   }
 
@@ -30,7 +37,9 @@ function getErrorMessage(error?: Error) {
   return "An unknown error occurred. Check the console for more details.";
 }
 
-export function getLibrary(provider: ExternalProvider | JsonRpcFetchFunc): Web3Provider {
+export function getLibrary(
+  provider: ExternalProvider | JsonRpcFetchFunc,
+): Web3Provider {
   const library = new Web3Provider(provider);
   library.pollingInterval = POLLING_INTERVAL;
   return library;
@@ -38,7 +47,8 @@ export function getLibrary(provider: ExternalProvider | JsonRpcFetchFunc): Web3P
 
 export function Demo() {
   const context = useWeb3React<Web3Provider>();
-  const { connector, library, account, activate, deactivate, active, error } = context;
+  const { connector, library, account, activate, deactivate, active, error } =
+    context;
 
   // Handle logic to recognize the connector currently being activated
   const [activatingConnector, setActivatingConnector] = useState<any>();
@@ -54,14 +64,26 @@ export function Demo() {
   // Handle logic to connect in reaction to certain events on the injected ethereum provider, if it exists
   useInactiveListener(!triedEager || Boolean(activatingConnector));
 
-  const activating = (connection: typeof injected | typeof walletconnect) => connection === activatingConnector;
-  const connected = (connection: typeof injected | typeof walletconnect) => connection === connector;
+  const activating = (connection: typeof injected | typeof walletconnect) =>
+    connection === activatingConnector;
+  const connected = (connection: typeof injected | typeof walletconnect) =>
+    connection === connector;
   const disabled =
-    !triedEager || Boolean(activatingConnector) || connected(injected) || connected(walletconnect) || Boolean(error);
+    !triedEager ||
+    Boolean(activatingConnector) ||
+    connected(injected) ||
+    connected(walletconnect) ||
+    Boolean(error);
   return (
     <>
       <Header />
-      <div>{Boolean(error) && <h4 style={{ marginTop: "1rem", marginBottom: "0" }}>{getErrorMessage(error)}</h4>}</div>
+      <div>
+        {Boolean(error) && (
+          <h4 style={{ marginTop: "1rem", marginBottom: "0" }}>
+            {getErrorMessage(error)}
+          </h4>
+        )}
+      </div>
       <div className="grid grid-cols-2 gap-2 py-4 px-2">
         <div className="card bordered">
           <figure>
@@ -73,7 +95,12 @@ export function Demo() {
           </figure>
           <div className="card-body">
             <h2 className="card-title">
-              <a className="link link-hover" href="https://metamask.io/" target="_blank" rel="noreferrer">
+              <a
+                className="link link-hover"
+                href="https://metamask.io/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 MetaMask
               </a>
             </h2>
@@ -89,7 +116,9 @@ export function Demo() {
                 }}
               >
                 <div className="py-4 px-2">
-                  {activating(injected) && <p className="btn loading">loading...</p>}
+                  {activating(injected) && (
+                    <p className="btn loading">loading...</p>
+                  )}
                   {connected(injected) && (
                     <span role="img" aria-label="check">
                       ✅
@@ -113,7 +142,9 @@ export function Demo() {
                             window.alert(`Success!\n\n${signature}`);
                           })
                           .catch((err: Error) => {
-                            window.alert(`Failure!${JSON.stringify(err, null, 2)}`);
+                            window.alert(
+                              `Failure!${JSON.stringify(err, null, 2)}`,
+                            );
                           });
                       }}
                     >
@@ -148,7 +179,12 @@ export function Demo() {
           </figure>
           <div className="card-body">
             <h2 className="card-title">
-              <a className="link link-hover" href="https://walletconnect.org/" target="_blank" rel="noreferrer">
+              <a
+                className="link link-hover"
+                href="https://walletconnect.org/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Wallet Connect
               </a>
             </h2>
@@ -164,7 +200,9 @@ export function Demo() {
                 }}
               >
                 <div className="py-4 px-2">
-                  {activating(walletconnect) && <p className="btn loading">loading...</p>}
+                  {activating(walletconnect) && (
+                    <p className="btn loading">loading...</p>
+                  )}
                   {connected(walletconnect) && (
                     <span role="img" aria-label="check">
                       ✅
@@ -188,7 +226,9 @@ export function Demo() {
                             window.alert(`Success!\n\n${signature}`);
                           })
                           .catch((err: Error) => {
-                            window.alert(`Failure!${JSON.stringify(err, null, 2)}`);
+                            window.alert(
+                              `Failure!${JSON.stringify(err, null, 2)}`,
+                            );
                           });
                       }}
                     >

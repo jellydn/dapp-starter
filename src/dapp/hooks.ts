@@ -9,6 +9,7 @@ export function useEagerConnect() {
 
   const [tried, setTried] = useState(false);
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: // Intentionally only running on mount (make sure it's only mounted once :))
   useEffect(() => {
     injected
       .isAuthorized()
@@ -22,8 +23,7 @@ export function useEagerConnect() {
         }
       })
       .catch(logger.error);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // Intentionally only running on mount (make sure it's only mounted once :))
+  }, []);
 
   // if the connection worked, wait until we get confirmation of that to flip the flag
   useEffect(() => {

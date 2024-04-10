@@ -3,7 +3,9 @@ import dynamic from "next/dynamic";
 
 import Demo, { getLibrary } from "../components/Demo";
 
-const ThemeToggle = dynamic(async () => import("../components/ThemeToggle"), { ssr: false });
+const ThemeToggle = dynamic(async () => import("../components/ThemeToggle"), {
+  ssr: false,
+});
 
 function App() {
   return (
@@ -16,11 +18,16 @@ function App() {
             <div className="text-center hero-content">
               <div className="py-8 px-4 max-w-md">
                 <figure className="mb-5">
-                  <img src="/logo.png" alt="logo" className="mask mask-squircle" />
+                  <img
+                    src="/logo.png"
+                    alt="logo"
+                    className="mask mask-squircle"
+                  />
                 </figure>
                 <h1 className="mb-5 text-5xl font-bold">Hello Dapp Starter</h1>
                 <p className="mb-5">
-                  Edit <code>pages/index.tsx</code> and save to test HMR updates.
+                  Edit <code>pages/index.tsx</code> and save to test HMR
+                  updates.
                 </p>
               </div>
             </div>
@@ -47,10 +54,20 @@ function App() {
             >
               Nextjs Docs
             </a>
-            <a href="https://hardhat.org/" target="_blank" rel="noopener noreferrer" className="link link-hover">
+            <a
+              href="https://hardhat.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link link-hover"
+            >
               Hardhat
             </a>
-            <a href="https://daisyui.com/" target="_blank" rel="noopener noreferrer" className="link link-hover">
+            <a
+              href="https://daisyui.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link link-hover"
+            >
               daisyUI
             </a>
             <a

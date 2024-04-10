@@ -44,19 +44,19 @@
 ## Install
 
 ```sh
-yarn install
+pnmm install
 ```
 
 ## Usage
 
 ```sh
-yarn dev
+pnpm run dev
 ```
 
 ## Run tests
 
 ```sh
-yarn test
+pnpm run test
 ```
 
 ## Hardhat guideline
