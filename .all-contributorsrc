@@ -3,9 +3,7 @@
   "projectOwner": "jellydn",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "files": [
-    "README.md"
-  ],
+  "files": ["README.md"],
   "imageSize": 100,
   "commit": true,
   "commitConvention": "gitmoji",
@@ -15,19 +13,14 @@
       "name": "Dung Duc Huynh (Kaka)",
       "avatar_url": "https://avatars.githubusercontent.com/u/870029?v=4",
       "profile": "https://productsway.com/",
-      "contributions": [
-        "doc",
-        "code"
-      ]
+      "contributions": ["doc", "code"]
     },
     {
       "login": "warengonzaga",
       "name": "Waren Gonzaga",
       "avatar_url": "https://avatars.githubusercontent.com/u/15052701?v=4",
       "profile": "https://bio.warengonzaga.com/",
-      "contributions": [
-        "financial"
-      ]
+      "contributions": ["financial"]
     }
   ],
   "contributorsPerLine": 7
