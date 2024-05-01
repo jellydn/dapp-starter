@@ -59,8 +59,10 @@ const hardHatConfig: HardhatUserConfig = {
     },
   },
   gasReporter: {
+    // Usage: REPORT_GAS=true pnpm run test
     enabled: process.env.REPORT_GAS !== undefined,
     currency: "USD",
+    L1: "polygon",
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,

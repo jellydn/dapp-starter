@@ -51,7 +51,7 @@
     "dotenv": "16.4.5",
     "ethers": "5.7.2",
     "hardhat": "2.22.3",
-    "hardhat-gas-reporter": "1.0.10",
+    "hardhat-gas-reporter": "2.1.1",
     "next-secure-headers": "2.2.0",
     "postcss": "8.4.38",
     "rimraf": "5.0.5",
