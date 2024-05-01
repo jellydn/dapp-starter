@@ -3,11 +3,11 @@
   "version": "0.5.0",
   "scripts": {
     "build": "npx hardhat compile --network localhost && next build",
+    "check": "biome check .",
     "clean": "npx hardhat clean && rimraf -rf src/types",
     "dev": "next dev",
-    "lint": "biome lint .",
     "format": "biome format . --write",
-    "check": "biome check .",
+    "lint": "biome lint .",
     "lint:sol": "npx solhint 'contracts/**/*.sol'",
     "start": "next start",
     "test": "npx hardhat test"

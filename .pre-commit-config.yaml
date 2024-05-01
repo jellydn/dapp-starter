@@ -1,4 +1,9 @@
 repos:
+  - repo: https://github.com/jellydn/sort-package-json
+    rev: "1686d9d2ddfb065c4514c637ee4b9985dfbf01dd" # Use the sha / tag you want to point at
+    hooks:
+      - id: sort-package-json
+
   - repo: https://github.com/pre-commit/mirrors-prettier
     rev: "v4.0.0-alpha.8" # Use the sha or tag you want to point at
     hooks:
@@ -9,4 +14,5 @@ repos:
     rev: "v0.1.0" # Use the sha / tag you want to point at
     hooks:
       - id: biome-check
-        additional_dependencies: ["@biomejs/biome@1.6.4"]
+        exclude: "package.json"
+        additional_dependencies: ["@biomejs/biome@1.7.2"]
