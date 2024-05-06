@@ -29,7 +29,7 @@
     "web3-react": "5.0.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.7.2",
+    "@biomejs/biome": "1.7.3",
     "@nomicfoundation/hardhat-chai-matchers": "1.0.6",
     "@nomicfoundation/hardhat-network-helpers": "1.0.10",
     "@nomicfoundation/hardhat-toolbox": "2.0.2",
@@ -43,7 +43,7 @@
     "@typechain/hardhat": "9.1.0",
     "@types/chai": "4.3.16",
     "@types/mocha": "10.0.6",
-    "@types/node": "20.12.8",
+    "@types/node": "20.12.9",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.0",
     "autoprefixer": "10.4.19",
@@ -64,5 +64,5 @@
     "typechain": "8.3.2",
     "typescript": "5.4.5"
   },
-  "packageManager": "pnpm@9.0.6"
+  "packageManager": "pnpm@9.1.0"
 }
