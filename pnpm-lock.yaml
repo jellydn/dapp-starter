@@ -127,8 +127,8 @@ importers:
         specifier: 8.4.38
         version: 8.4.38
       rimraf:
-        specifier: 5.0.5
-        version: 5.0.5
+        specifier: 5.0.6
+        version: 5.0.6
       rustywind:
         specifier: 0.22.0
         version: 0.22.0
@@ -5227,8 +5227,8 @@ packages:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
     hasBin: true
 
-  rimraf@5.0.5:
-    resolution: {integrity: sha512-CqDakW+hMe/Bz202FPEymy68P+G50RfMQK+Qo5YUqc9SPipvbGjCGKd0RSKEelbsfQuw3g5NZDSrlZZAJurH1A==}
+  rimraf@5.0.6:
+    resolution: {integrity: sha512-X72SgyOf+1lFnGM6gYcmZ4+jMOwuT4E4SajKQzUIlI7EoR5eFHMhS/wf8Ll0mN+w2bxcIVldrJQ6xT7HFQywjg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -13051,9 +13051,9 @@ snapshots:
 
   rimraf@2.7.1:
     dependencies:
-      glob: 7.2.0
+      glob: 7.2.3
 
-  rimraf@5.0.5:
+  rimraf@5.0.6:
     dependencies:
       glob: 10.3.12
 
