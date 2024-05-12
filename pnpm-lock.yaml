@@ -136,8 +136,8 @@ importers:
         specifier: 1.0.2
         version: 1.0.2
       solhint:
-        specifier: 4.5.4
-        version: 4.5.4(typescript@5.4.5)
+        specifier: 5.0.0
+        version: 5.0.0(typescript@5.4.5)
       solidity-coverage:
         specifier: 0.8.12
         version: 0.8.12(hardhat@2.22.3(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.12.11)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))
@@ -5472,8 +5472,8 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
-  solhint@4.5.4:
-    resolution: {integrity: sha512-Cu1XiJXub2q1eCr9kkJ9VPv1sGcmj3V7Zb76B0CoezDOB9bu3DxKIFFH7ggCl9fWpEPD6xBmRLfZrYijkVmujQ==}
+  solhint@5.0.0:
+    resolution: {integrity: sha512-pSRKkzRsruia6/xa9L5VSyd7dMZkiiTi/aYZcvUQo7KK+S16ojPwIbt2jfjbH5WEJ83grzIIE4WrYQfAxGWh/A==}
     hasBin: true
 
   solidity-ast@0.4.56:
@@ -10076,7 +10076,7 @@ snapshots:
       brorand: 1.1.0
       hash.js: 1.1.7
       hmac-drbg: 1.0.1
-      inherits: 2.0.1
+      inherits: 2.0.4
       minimalistic-assert: 1.0.1
       minimalistic-crypto-utils: 1.0.1
 
@@ -13379,7 +13379,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  solhint@4.5.4(typescript@5.4.5):
+  solhint@5.0.0(typescript@5.4.5):
     dependencies:
       '@solidity-parser/parser': 0.18.0
       ajv: 6.12.6
