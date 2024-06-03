@@ -2359,8 +2359,8 @@ packages:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
 
-  caniuse-lite@1.0.30001625:
-    resolution: {integrity: sha512-4KE9N2gcRH+HQhpeiRZXd+1niLB/XNLAhSy4z7fI8EzcbcPoAqjNInxVHTiTwWfTIV4w096XG8OtCOCQQKPv3w==}
+  caniuse-lite@1.0.30001627:
+    resolution: {integrity: sha512-4zgNiB8nTyV/tHhwZrFs88ryjls/lHiqFhrxCW4qSTeuRByBVnPYpDInchOIySWknznucaf31Z4KYqjfbrecVw==}
 
   caseless@0.12.0:
     resolution: {integrity: sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw==}
@@ -2714,6 +2714,15 @@ packages:
       supports-color:
         optional: true
 
+  debug@4.3.5:
+    resolution: {integrity: sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
   decamelize@1.2.0:
     resolution: {integrity: sha512-z2S+W9X73hAUUki+N+9Za2lBlun89zigOyGrsax+KUQ6wKW4ZoWpEYBkGhQjwAjjDCkWxhY0VKEhk8wzY7F5cA==}
     engines: {node: '>=0.10.0'}
@@ -2881,8 +2890,8 @@ packages:
     resolution: {integrity: sha512-kSuqwQ26d7CzuS/t3yRXo2Su2cVH0QfvyKbr2H7Be7O5YDyIq4hQGCNTo5wRdP07bt+E2R/8nPCzey4ojBHf7g==}
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
-  electron-to-chromium@1.4.784:
-    resolution: {integrity: sha512-9CZwh+sDrhDAeOEFh8s3PqwduzTyYIeYwZolc1b9ENAUt3ePu7R1sJSCWr/820ISssRxCJUyHI9Wb7j+0Uo1AA==}
+  electron-to-chromium@1.4.788:
+    resolution: {integrity: sha512-ubp5+Ev/VV8KuRoWnfP2QF2Bg+O2ZFdb49DiiNbz2VmgkIqrnyYaqIOqj8A6K/3p1xV0QcU5hBQ1+BmB6ot1OA==}
 
   elliptic@3.1.0:
     resolution: {integrity: sha512-kjzyQvz5tdIrz+O8EAaDU5oeICcg5mMevSFEEi/cprAl1GID1BoV/1tpRu56rDJ6tiXM2b+ZKh3mNrVhA3Y/2Q==}
@@ -5848,8 +5857,8 @@ packages:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
 
-  type@2.7.2:
-    resolution: {integrity: sha512-dzlvlNlt6AXU7EBSfpAscydQ7gXB+pPGsPnfJnZpiNJBDj7IaJzQlBZYGdEi4R9HmPdBv2XmWJ6YUtoTa7lmCw==}
+  type@2.7.3:
+    resolution: {integrity: sha512-8j+1QmAbPvLZow5Qpi6NCaN8FB60p/6x8/vfNqOk/hC+HuvFZhL4+WfekuhQLiqFZXOgQdrs3B+XxEmCc6b3FQ==}
 
   typechain@8.3.2:
     resolution: {integrity: sha512-x/sQYr5w9K7yv3es7jo4KTX05CLxOf7TRWwoHlrjRh8H82G64g+k7VuWPJlgMo6qrjfCulOdfBjiaDtmhFYD/Q==}
@@ -6352,8 +6361,8 @@ packages:
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
 
-  yaml@2.4.2:
-    resolution: {integrity: sha512-B3VqDZ+JAg1nZpaEmWtTXUlBneoGx6CPM9b0TENK6aoSu5t73dItudwdgmi6tHlIZZId4dZ9skcAQ2UbcyAeVA==}
+  yaml@2.4.3:
+    resolution: {integrity: sha512-sntgmxj8o7DE7g/Qi60cqpLBA3HG3STcDA0kO+WfB05jEKhZMbY7umNm2rBpQvsmZ16/lPXCJGW2672dgOUkrg==}
     engines: {node: '>= 14'}
     hasBin: true
 
@@ -6537,7 +6546,7 @@ snapshots:
       '@babel/traverse': 7.24.6
       '@babel/types': 7.24.6
       convert-source-map: 2.0.0
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.5
       gensync: 1.0.0-beta.2
       json5: 2.2.3
       semver: 6.3.1
@@ -6592,7 +6601,7 @@ snapshots:
       '@babel/core': 7.24.6
       '@babel/helper-compilation-targets': 7.24.6
       '@babel/helper-plugin-utils': 7.24.6
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.5
       lodash.debounce: 4.0.8
       resolve: 1.22.8
     transitivePeerDependencies:
@@ -7221,7 +7230,7 @@ snapshots:
       '@babel/helper-split-export-declaration': 7.24.6
       '@babel/parser': 7.24.6
       '@babel/types': 7.24.6
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.5
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -7586,7 +7595,7 @@ snapshots:
   '@json-rpc-tools/provider@1.7.6(bufferutil@4.0.8)(utf-8-validate@5.0.10)':
     dependencies:
       '@json-rpc-tools/utils': 1.7.6
-      axios: 0.21.4(debug@4.3.4)
+      axios: 0.21.4(debug@4.3.5)
       safe-json-utils: 1.1.1
       ws: 7.5.9(bufferutil@4.0.8)(utf-8-validate@5.0.10)
     transitivePeerDependencies:
@@ -7865,7 +7874,7 @@ snapshots:
       '@ethersproject/address': 5.7.0
       cbor: 8.1.0
       chalk: 2.4.2
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.5
       fs-extra: 7.0.1
       hardhat: 2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.0)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10)
       lodash: 4.17.21
@@ -7881,11 +7890,11 @@ snapshots:
 
   '@openzeppelin/contracts@5.0.2': {}
 
-  '@openzeppelin/defender-base-client@1.54.6(debug@4.3.4)(encoding@0.1.13)':
+  '@openzeppelin/defender-base-client@1.54.6(debug@4.3.5)(encoding@0.1.13)':
     dependencies:
       amazon-cognito-identity-js: 6.3.12(encoding@0.1.13)
       async-retry: 1.3.3
-      axios: 1.7.2(debug@4.3.4)
+      axios: 1.7.2(debug@4.3.5)
       lodash: 4.17.21
       node-fetch: 2.7.0(encoding@0.1.13)
     transitivePeerDependencies:
@@ -7896,11 +7905,11 @@ snapshots:
     dependencies:
       '@nomiclabs/hardhat-ethers': 2.2.3(ethers@5.7.2(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.0)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))
       '@nomiclabs/hardhat-etherscan': 3.1.8(hardhat@2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.0)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10))
-      '@openzeppelin/defender-base-client': 1.54.6(debug@4.3.4)(encoding@0.1.13)
-      '@openzeppelin/platform-deploy-client': 0.8.0(debug@4.3.4)(encoding@0.1.13)
+      '@openzeppelin/defender-base-client': 1.54.6(debug@4.3.5)(encoding@0.1.13)
+      '@openzeppelin/platform-deploy-client': 0.8.0(debug@4.3.5)(encoding@0.1.13)
       '@openzeppelin/upgrades-core': 1.33.1
       chalk: 4.1.2
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.5
       ethers: 5.7.2(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       hardhat: 2.22.5(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.14.0)(typescript@5.4.5))(typescript@5.4.5)(utf-8-validate@5.0.10)
       proper-lockfile: 4.1.2
@@ -7908,11 +7917,11 @@ snapshots:
       - encoding
       - supports-color
 
-  '@openzeppelin/platform-deploy-client@0.8.0(debug@4.3.4)(encoding@0.1.13)':
+  '@openzeppelin/platform-deploy-client@0.8.0(debug@4.3.5)(encoding@0.1.13)':
     dependencies:
       '@ethersproject/abi': 5.7.0
-      '@openzeppelin/defender-base-client': 1.54.6(debug@4.3.4)(encoding@0.1.13)
-      axios: 0.21.4(debug@4.3.4)
+      '@openzeppelin/defender-base-client': 1.54.6(debug@4.3.5)(encoding@0.1.13)
+      axios: 0.21.4(debug@4.3.5)
       lodash: 4.17.21
       node-fetch: 2.7.0(encoding@0.1.13)
     transitivePeerDependencies:
@@ -7924,7 +7933,7 @@ snapshots:
       cbor: 9.0.2
       chalk: 4.1.2
       compare-versions: 6.1.0
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.5
       ethereumjs-util: 7.1.5
       minimist: 1.2.8
       proper-lockfile: 4.1.2
@@ -7960,7 +7969,7 @@ snapshots:
   '@scure/bip32@1.3.2':
     dependencies:
       '@noble/curves': 1.2.0
-      '@noble/hashes': 1.3.3
+      '@noble/hashes': 1.3.2
       '@scure/base': 1.1.6
 
   '@scure/bip32@1.3.3':
@@ -7976,7 +7985,7 @@ snapshots:
 
   '@scure/bip39@1.2.1':
     dependencies:
-      '@noble/hashes': 1.3.3
+      '@noble/hashes': 1.3.2
       '@scure/base': 1.1.6
 
   '@scure/bip39@1.2.2':
@@ -8446,7 +8455,7 @@ snapshots:
 
   agent-base@6.0.2:
     dependencies:
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
 
@@ -8646,7 +8655,7 @@ snapshots:
   autoprefixer@10.4.19(postcss@8.4.38):
     dependencies:
       browserslist: 4.23.0
-      caniuse-lite: 1.0.30001625
+      caniuse-lite: 1.0.30001627
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.1
@@ -8661,15 +8670,15 @@ snapshots:
 
   aws4@1.13.0: {}
 
-  axios@0.21.4(debug@4.3.4):
+  axios@0.21.4(debug@4.3.5):
     dependencies:
-      follow-redirects: 1.15.6(debug@4.3.4)
+      follow-redirects: 1.15.6(debug@4.3.5)
     transitivePeerDependencies:
       - debug
 
-  axios@1.7.2(debug@4.3.4):
+  axios@1.7.2(debug@4.3.5):
     dependencies:
-      follow-redirects: 1.15.6(debug@4.3.4)
+      follow-redirects: 1.15.6(debug@4.3.5)
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -9316,13 +9325,13 @@ snapshots:
 
   browserslist@3.2.8:
     dependencies:
-      caniuse-lite: 1.0.30001625
-      electron-to-chromium: 1.4.784
+      caniuse-lite: 1.0.30001627
+      electron-to-chromium: 1.4.788
 
   browserslist@4.23.0:
     dependencies:
-      caniuse-lite: 1.0.30001625
-      electron-to-chromium: 1.4.784
+      caniuse-lite: 1.0.30001627
+      electron-to-chromium: 1.4.788
       node-releases: 2.0.14
       update-browserslist-db: 1.0.16(browserslist@4.23.0)
 
@@ -9460,7 +9469,7 @@ snapshots:
 
   camelcase@6.3.0: {}
 
-  caniuse-lite@1.0.30001625: {}
+  caniuse-lite@1.0.30001627: {}
 
   caseless@0.12.0: {}
 
@@ -9832,7 +9841,7 @@ snapshots:
   d@1.0.2:
     dependencies:
       es5-ext: 0.10.64
-      type: 2.7.2
+      type: 2.7.3
 
   daisyui@4.11.1(postcss@8.4.38):
     dependencies:
@@ -9880,6 +9889,10 @@ snapshots:
       ms: 2.1.2
     optionalDependencies:
       supports-color: 8.1.1
+
+  debug@4.3.5:
+    dependencies:
+      ms: 2.1.2
 
   decamelize@1.2.0: {}
 
@@ -10046,7 +10059,7 @@ snapshots:
       - debug
       - utf-8-validate
 
-  electron-to-chromium@1.4.784: {}
+  electron-to-chromium@1.4.788: {}
 
   elliptic@3.1.0:
     dependencies:
@@ -10061,7 +10074,7 @@ snapshots:
       brorand: 1.1.0
       hash.js: 1.1.7
       hmac-drbg: 1.0.1
-      inherits: 2.0.4
+      inherits: 2.0.1
       minimalistic-assert: 1.0.1
       minimalistic-crypto-utils: 1.0.1
 
@@ -10243,7 +10256,7 @@ snapshots:
       d: 1.0.2
       es5-ext: 0.10.64
       event-emitter: 0.3.5
-      type: 2.7.2
+      type: 2.7.3
 
   esprima@2.7.3: {}
 
@@ -10701,7 +10714,7 @@ snapshots:
 
   ext@1.7.0:
     dependencies:
-      type: 2.7.2
+      type: 2.7.3
 
   extend-shallow@2.0.1:
     dependencies:
@@ -10821,9 +10834,9 @@ snapshots:
 
   flow-stoplight@1.0.0: {}
 
-  follow-redirects@1.15.6(debug@4.3.4):
+  follow-redirects@1.15.6(debug@4.3.5):
     optionalDependencies:
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.5
 
   for-each@0.3.3:
     dependencies:
@@ -11209,7 +11222,7 @@ snapshots:
       '@ethersproject/bytes': 5.7.0
       '@ethersproject/units': 5.7.0
       '@solidity-parser/parser': 0.18.0
-      axios: 1.7.2(debug@4.3.4)
+      axios: 1.7.2(debug@4.3.5)
       brotli-wasm: 2.0.1
       chalk: 4.1.2
       cli-table3: 0.6.5
@@ -11247,7 +11260,7 @@ snapshots:
       chalk: 2.4.2
       chokidar: 3.6.0
       ci-info: 2.0.0
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.5
       enquirer: 2.4.1
       env-paths: 2.2.1
       ethereum-cryptography: 1.2.0
@@ -11266,7 +11279,7 @@ snapshots:
       raw-body: 2.5.2
       resolve: 1.17.0
       semver: 6.3.1
-      solc: 0.7.3(debug@4.3.4)
+      solc: 0.7.3(debug@4.3.5)
       source-map-support: 0.5.21
       stacktrace-parser: 0.1.10
       tsort: 0.0.1
@@ -11411,14 +11424,14 @@ snapshots:
   https-proxy-agent@4.0.0:
     dependencies:
       agent-base: 5.1.1
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
 
   https-proxy-agent@5.0.1:
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
 
@@ -12283,7 +12296,7 @@ snapshots:
       '@next/env': 14.2.3
       '@swc/helpers': 0.5.5
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001625
+      caniuse-lite: 1.0.30001627
       graceful-fs: 4.2.11
       postcss: 8.4.31
       react: 18.3.1
@@ -12624,7 +12637,7 @@ snapshots:
   postcss-load-config@4.0.2(postcss@8.4.38)(ts-node@10.9.2(@types/node@20.14.0)(typescript@5.4.5)):
     dependencies:
       lilconfig: 3.1.1
-      yaml: 2.4.2
+      yaml: 2.4.3
     optionalDependencies:
       postcss: 8.4.38
       ts-node: 10.9.2(@types/node@20.14.0)(typescript@5.4.5)
@@ -13032,7 +13045,7 @@ snapshots:
 
   rimraf@2.7.1:
     dependencies:
-      glob: 7.2.3
+      glob: 7.2.0
 
   rimraf@5.0.7:
     dependencies:
@@ -13330,11 +13343,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  solc@0.7.3(debug@4.3.4):
+  solc@0.7.3(debug@4.3.5):
     dependencies:
       command-exists: 1.2.9
       commander: 3.0.2
-      follow-redirects: 1.15.6(debug@4.3.4)
+      follow-redirects: 1.15.6(debug@4.3.5)
       fs-extra: 0.30.0
       js-sha3: 0.8.0
       memorystream: 0.3.1
@@ -13850,12 +13863,12 @@ snapshots:
       mime-types: 2.1.35
     optional: true
 
-  type@2.7.2: {}
+  type@2.7.3: {}
 
   typechain@8.3.2(typescript@5.4.5):
     dependencies:
       '@types/prettier': 2.7.3
-      debug: 4.3.4(supports-color@8.1.1)
+      debug: 4.3.5
       fs-extra: 7.0.1
       glob: 7.1.7
       js-sha3: 0.8.0
@@ -14436,7 +14449,7 @@ snapshots:
 
   wide-align@1.1.5:
     dependencies:
-      string-width: 4.2.3
+      string-width: 1.0.2
     optional: true
 
   widest-line@3.1.0:
@@ -14557,7 +14570,7 @@ snapshots:
 
   yallist@3.1.1: {}
 
-  yaml@2.4.2: {}
+  yaml@2.4.3: {}
 
   yargs-parser@13.1.2:
     dependencies:
