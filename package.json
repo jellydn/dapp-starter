@@ -31,7 +31,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.7.3",
     "@nomicfoundation/hardhat-chai-matchers": "1.0.6",
-    "@nomicfoundation/hardhat-network-helpers": "1.0.10",
+    "@nomicfoundation/hardhat-network-helpers": "1.0.11",
     "@nomicfoundation/hardhat-toolbox": "2.0.2",
     "@nomiclabs/hardhat-ethers": "2.2.3",
     "@nomiclabs/hardhat-etherscan": "3.1.8",
@@ -50,7 +50,7 @@
     "chai": "4.4.1",
     "dotenv": "16.4.5",
     "ethers": "5.7.2",
-    "hardhat": "2.22.4",
+    "hardhat": "2.22.5",
     "hardhat-gas-reporter": "2.2.0",
     "next-secure-headers": "2.2.0",
     "postcss": "8.4.38",
