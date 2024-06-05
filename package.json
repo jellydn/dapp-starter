@@ -21,7 +21,7 @@
     "@web3-react/injected-connector": "6.0.7",
     "@web3-react/network-connector": "6.2.9",
     "@web3-react/walletconnect-connector": "6.2.13",
-    "daisyui": "4.11.1",
+    "daisyui": "4.12.2",
     "loglevel": "1.9.1",
     "next": "14.2.3",
     "react": "18.3.1",
@@ -43,7 +43,7 @@
     "@typechain/hardhat": "9.1.0",
     "@types/chai": "4.3.16",
     "@types/mocha": "10.0.6",
-    "@types/node": "20.14.1",
+    "@types/node": "20.14.2",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "autoprefixer": "10.4.19",
@@ -64,5 +64,5 @@
     "typechain": "8.3.2",
     "typescript": "5.4.5"
   },
-  "packageManager": "pnpm@9.1.4"
+  "packageManager": "pnpm@9.2.0"
 }
