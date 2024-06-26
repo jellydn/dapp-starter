@@ -21,7 +21,7 @@
     "@web3-react/injected-connector": "6.0.7",
     "@web3-react/network-connector": "6.2.9",
     "@web3-react/walletconnect-connector": "6.2.13",
-    "daisyui": "4.12.8",
+    "daisyui": "4.12.10",
     "loglevel": "1.9.1",
     "next": "14.2.4",
     "react": "18.3.1",
