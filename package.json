@@ -23,7 +23,7 @@
     "@web3-react/walletconnect-connector": "6.2.13",
     "daisyui": "4.12.10",
     "loglevel": "1.9.1",
-    "next": "14.2.4",
+    "next": "14.2.5",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "web3-react": "5.0.5"
@@ -43,7 +43,7 @@
     "@typechain/hardhat": "9.1.0",
     "@types/chai": "4.3.16",
     "@types/mocha": "10.0.7",
-    "@types/node": "20.14.10",
+    "@types/node": "20.14.11",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "autoprefixer": "10.4.19",
@@ -59,7 +59,7 @@
     "solgraph": "1.0.2",
     "solhint": "5.0.1",
     "solidity-coverage": "0.8.12",
-    "tailwindcss": "3.4.4",
+    "tailwindcss": "3.4.6",
     "ts-node": "10.9.2",
     "typechain": "8.3.2",
     "typescript": "5.5.3"
