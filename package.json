@@ -57,7 +57,7 @@
     "rimraf": "6.0.1",
     "rustywind": "0.22.0",
     "solgraph": "1.0.2",
-    "solhint": "5.0.2",
+    "solhint": "5.0.3",
     "solidity-coverage": "0.8.12",
     "tailwindcss": "3.4.7",
     "ts-node": "10.9.2",
