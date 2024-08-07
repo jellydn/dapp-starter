@@ -16,7 +16,7 @@
     "@ethersproject/abi": "5.7.0",
     "@ethersproject/providers": "5.7.2",
     "@ethersproject/units": "5.7.0",
-    "@tailwindcss/typography": "0.5.13",
+    "@tailwindcss/typography": "0.5.14",
     "@web3-react/core": "6.1.9",
     "@web3-react/injected-connector": "6.0.7",
     "@web3-react/network-connector": "6.2.9",
@@ -59,7 +59,7 @@
     "solgraph": "1.0.2",
     "solhint": "5.0.3",
     "solidity-coverage": "0.8.12",
-    "tailwindcss": "3.4.7",
+    "tailwindcss": "3.4.8",
     "ts-node": "10.9.2",
     "typechain": "8.3.2",
     "typescript": "5.5.4"
