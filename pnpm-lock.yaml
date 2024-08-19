@@ -1333,8 +1333,8 @@ packages:
     resolution: {integrity: sha512-POx3AsnKwKSV/ZLOU/gheksj0Lq7Is1q2F3pKmcFjGZiibf+4kjGxr4eSMrT+2qgKYZQH1ZLQZ+SkbguD8fTvA==}
     deprecated: '@openzeppelin/platform-deploy-client is deprecated. Please use @openzeppelin/defender-sdk-deploy-client'
 
-  '@openzeppelin/upgrades-core@1.35.0':
-    resolution: {integrity: sha512-XwwhJyPxACQ7rMhKAPCL6rhTXhbeumeQ3opmurEsHg025vHnISHwTPHd5VxzmOwbMBIJ7em1lnRTu+J2/IUWFQ==}
+  '@openzeppelin/upgrades-core@1.35.1':
+    resolution: {integrity: sha512-FzbOzMrrNtXpL+DoM6jtOGZOvUdp6F4KTsb0niqfrd2BxMecL9fUA0aupi09p1Of+9BELcYozX/Gt7tr91Z2TA==}
     hasBin: true
 
   '@pedrouid/environment@1.0.1':
@@ -1931,8 +1931,8 @@ packages:
   axios@0.21.4:
     resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
 
-  axios@1.7.3:
-    resolution: {integrity: sha512-Ar7ND9pU99eJ9GpoGQKhKf58GpUOgnzuaB7ueNQ5BMi0p+LZ5oaEnfF999fAArcTIBwXTCHAmGcHOZJaWPq9Nw==}
+  axios@1.7.4:
+    resolution: {integrity: sha512-DukmaFRnY6AzAALSH4J2M3k6PkaC+MfaAGdEERRWcC9q3/TWQwLpHR8ZRLKTdQ3aBDL64EdluRDjJqKw+BPZEw==}
 
   babel-code-frame@6.26.0:
     resolution: {integrity: sha512-XqYMR2dfdGMW+hd0IUZ2PwK+fGeFkOxZJ0wY+JaQAHzt1Zx8LcvpiZD2NiGkEG8qx0CfkAOr5xt76d1e8vG90g==}
@@ -2875,8 +2875,8 @@ packages:
     resolution: {integrity: sha512-kSuqwQ26d7CzuS/t3yRXo2Su2cVH0QfvyKbr2H7Be7O5YDyIq4hQGCNTo5wRdP07bt+E2R/8nPCzey4ojBHf7g==}
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
-  electron-to-chromium@1.5.6:
-    resolution: {integrity: sha512-jwXWsM5RPf6j9dPYzaorcBSUg6AiqocPEyMpkchkvntaH9HGfOOMZwxMJjDY/XEs3T5dM7uyH1VhRMkqUU9qVw==}
+  electron-to-chromium@1.5.11:
+    resolution: {integrity: sha512-R1CccCDYqndR25CaXFd6hp/u9RaaMcftMkphmvuepXr5b1vfLkRml6aWVeBhXJ7rbevHkKEMJtz8XqPf7ffmew==}
 
   elliptic@3.1.0:
     resolution: {integrity: sha512-kjzyQvz5tdIrz+O8EAaDU5oeICcg5mMevSFEEi/cprAl1GID1BoV/1tpRu56rDJ6tiXM2b+ZKh3mNrVhA3Y/2Q==}
@@ -2887,8 +2887,8 @@ packages:
   elliptic@6.5.4:
     resolution: {integrity: sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ==}
 
-  elliptic@6.5.6:
-    resolution: {integrity: sha512-mpzdtpeCLuS3BmE3pO3Cpp5bbjlOPY2Q0PgoF+Od1XZrHLYI28Xe3ossCmYCQt11FQKEYd9+PF8jymTvtWJSHQ==}
+  elliptic@6.5.7:
+    resolution: {integrity: sha512-ESVCtTwiA+XhY3wyh24QqRGBoP3rEdDUl3EDUUo9tft074fi19IrdpH7hLCMMP3CIj7jb3W96rn8lt/BqIlt5Q==}
 
   emoji-regex@7.0.3:
     resolution: {integrity: sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA==}
@@ -3714,8 +3714,8 @@ packages:
   ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
 
-  ignore@5.3.1:
-    resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
+  ignore@5.3.2:
+    resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
 
   immediate@3.2.3:
@@ -4898,8 +4898,8 @@ packages:
     resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
     engines: {node: '>=4'}
 
-  postcss-selector-parser@6.1.1:
-    resolution: {integrity: sha512-b4dlw/9V8A71rLIDsSwVmak9z2DuBUB7CA1/wSdelNEzqsjoSPeADTWNO09lpH49Diy3/JIZ2bSPB1dI3LJCHg==}
+  postcss-selector-parser@6.1.2:
+    resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
     engines: {node: '>=4'}
 
   postcss-value-parser@4.2.0:
@@ -7963,7 +7963,7 @@ snapshots:
     dependencies:
       amazon-cognito-identity-js: 6.3.12(encoding@0.1.13)
       async-retry: 1.3.3
-      axios: 1.7.3(debug@4.3.6)
+      axios: 1.7.4(debug@4.3.6)
       lodash: 4.17.21
       node-fetch: 2.7.0(encoding@0.1.13)
     transitivePeerDependencies:
@@ -7976,7 +7976,7 @@ snapshots:
       '@nomiclabs/hardhat-etherscan': 3.1.8(hardhat@2.22.8(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.16.0)(typescript@5.5.4))(typescript@5.5.4)(utf-8-validate@5.0.10))
       '@openzeppelin/defender-base-client': 1.54.6(debug@4.3.6)(encoding@0.1.13)
       '@openzeppelin/platform-deploy-client': 0.8.0(debug@4.3.6)(encoding@0.1.13)
-      '@openzeppelin/upgrades-core': 1.35.0
+      '@openzeppelin/upgrades-core': 1.35.1
       chalk: 4.1.2
       debug: 4.3.6(supports-color@8.1.1)
       ethers: 5.7.2(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -7997,7 +7997,7 @@ snapshots:
       - debug
       - encoding
 
-  '@openzeppelin/upgrades-core@1.35.0':
+  '@openzeppelin/upgrades-core@1.35.1':
     dependencies:
       '@nomicfoundation/slang': 0.15.1
       cbor: 9.0.2
@@ -8698,7 +8698,7 @@ snapshots:
 
   async-eventemitter@0.2.4:
     dependencies:
-      async: 2.6.4
+      async: 2.6.2
 
   async-limiter@1.0.1: {}
 
@@ -8746,7 +8746,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  axios@1.7.3(debug@4.3.6):
+  axios@1.7.4(debug@4.3.6):
     dependencies:
       follow-redirects: 1.15.6(debug@4.3.6)
       form-data: 4.0.0
@@ -9385,7 +9385,7 @@ snapshots:
       browserify-rsa: 4.1.0
       create-hash: 1.2.0
       create-hmac: 1.1.7
-      elliptic: 6.5.6
+      elliptic: 6.5.7
       hash-base: 3.0.4
       inherits: 2.0.4
       parse-asn1: 5.1.7
@@ -9396,12 +9396,12 @@ snapshots:
   browserslist@3.2.8:
     dependencies:
       caniuse-lite: 1.0.30001651
-      electron-to-chromium: 1.5.6
+      electron-to-chromium: 1.5.11
 
   browserslist@4.23.3:
     dependencies:
       caniuse-lite: 1.0.30001651
-      electron-to-chromium: 1.5.6
+      electron-to-chromium: 1.5.11
       node-releases: 2.0.18
       update-browserslist-db: 1.1.0(browserslist@4.23.3)
 
@@ -9817,7 +9817,7 @@ snapshots:
   create-ecdh@4.0.4:
     dependencies:
       bn.js: 4.12.0
-      elliptic: 6.5.6
+      elliptic: 6.5.7
     optional: true
 
   create-hash@1.2.0:
@@ -10113,7 +10113,7 @@ snapshots:
       - debug
       - utf-8-validate
 
-  electron-to-chromium@1.5.6: {}
+  electron-to-chromium@1.5.11: {}
 
   elliptic@3.1.0:
     dependencies:
@@ -10142,7 +10142,7 @@ snapshots:
       minimalistic-assert: 1.0.1
       minimalistic-crypto-utils: 1.0.1
 
-  elliptic@6.5.6:
+  elliptic@6.5.7:
     dependencies:
       bn.js: 4.12.0
       brorand: 1.1.0
@@ -10372,7 +10372,7 @@ snapshots:
   eth-lib@0.1.29(bufferutil@4.0.8)(utf-8-validate@5.0.10):
     dependencies:
       bn.js: 4.12.0
-      elliptic: 6.5.6
+      elliptic: 6.5.7
       nano-json-stream-parser: 0.1.2
       servify: 0.1.12
       ws: 3.3.3(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -10386,7 +10386,7 @@ snapshots:
   eth-lib@0.2.8:
     dependencies:
       bn.js: 4.12.0
-      elliptic: 6.5.6
+      elliptic: 6.5.7
       xhr-request-promise: 0.1.3
     optional: true
 
@@ -10417,7 +10417,7 @@ snapshots:
   eth-sig-util@3.0.0:
     dependencies:
       buffer: 5.7.1
-      elliptic: 6.5.6
+      elliptic: 6.5.7
       ethereumjs-abi: 0.6.5
       ethereumjs-util: 5.2.1
       tweetnacl: 1.0.3
@@ -10562,7 +10562,7 @@ snapshots:
     dependencies:
       bn.js: 4.12.0
       create-hash: 1.2.0
-      elliptic: 6.5.6
+      elliptic: 6.5.7
       ethereum-cryptography: 0.1.3
       rlp: 2.2.7
 
@@ -10570,7 +10570,7 @@ snapshots:
     dependencies:
       bn.js: 4.12.0
       create-hash: 1.2.0
-      elliptic: 6.5.6
+      elliptic: 6.5.7
       ethereum-cryptography: 0.1.3
       ethjs-util: 0.1.6
       rlp: 2.2.7
@@ -10581,7 +10581,7 @@ snapshots:
       '@types/bn.js': 4.11.6
       bn.js: 4.12.0
       create-hash: 1.2.0
-      elliptic: 6.5.6
+      elliptic: 6.5.7
       ethereum-cryptography: 0.1.3
       ethjs-util: 0.1.6
       rlp: 2.2.7
@@ -11191,7 +11191,7 @@ snapshots:
       dir-glob: 3.0.1
       fast-glob: 3.3.2
       glob: 7.2.3
-      ignore: 5.3.1
+      ignore: 5.3.2
       merge2: 1.4.1
       slash: 3.0.0
 
@@ -11280,7 +11280,7 @@ snapshots:
       '@ethersproject/bytes': 5.7.0
       '@ethersproject/units': 5.7.0
       '@solidity-parser/parser': 0.18.0
-      axios: 1.7.3(debug@4.3.6)
+      axios: 1.7.4(debug@4.3.6)
       brotli-wasm: 2.0.1
       chalk: 4.1.2
       cli-table3: 0.6.5
@@ -11508,7 +11508,7 @@ snapshots:
 
   ieee754@1.2.1: {}
 
-  ignore@5.3.1: {}
+  ignore@5.3.2: {}
 
   immediate@3.2.3: {}
 
@@ -12710,14 +12710,14 @@ snapshots:
   postcss-nested@6.2.0(postcss@8.4.41):
     dependencies:
       postcss: 8.4.41
-      postcss-selector-parser: 6.1.1
+      postcss-selector-parser: 6.1.2
 
   postcss-selector-parser@6.0.10:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-selector-parser@6.1.1:
+  postcss-selector-parser@6.1.2:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
@@ -13213,13 +13213,13 @@ snapshots:
       bn.js: 4.12.0
       create-hash: 1.2.0
       drbg.js: 1.0.1
-      elliptic: 6.5.6
+      elliptic: 6.5.7
       nan: 2.20.0
       safe-buffer: 5.2.1
 
   secp256k1@4.0.3:
     dependencies:
-      elliptic: 6.5.6
+      elliptic: 6.5.7
       node-addon-api: 2.0.2
       node-gyp-build: 4.8.1
 
@@ -13446,7 +13446,7 @@ snapshots:
       cosmiconfig: 8.3.6(typescript@5.5.4)
       fast-diff: 1.3.0
       glob: 8.1.0
-      ignore: 5.3.1
+      ignore: 5.3.2
       js-yaml: 4.1.0
       latest-version: 7.0.0
       lodash: 4.17.21
@@ -13737,7 +13737,7 @@ snapshots:
       postcss-js: 4.0.1(postcss@8.4.41)
       postcss-load-config: 4.0.2(postcss@8.4.41)(ts-node@10.9.2(@types/node@20.16.0)(typescript@5.5.4))
       postcss-nested: 6.2.0(postcss@8.4.41)
-      postcss-selector-parser: 6.1.1
+      postcss-selector-parser: 6.1.2
       resolve: 1.22.8
       sucrase: 3.35.0
     transitivePeerDependencies:
@@ -14513,7 +14513,7 @@ snapshots:
 
   wide-align@1.1.5:
     dependencies:
-      string-width: 4.2.3
+      string-width: 1.0.2
     optional: true
 
   widest-line@3.1.0:
