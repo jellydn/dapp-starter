@@ -23,7 +23,7 @@
     "@web3-react/walletconnect-connector": "6.2.13",
     "daisyui": "4.12.10",
     "loglevel": "1.9.1",
-    "next": "14.2.6",
+    "next": "14.2.7",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "web3-react": "5.0.5"
@@ -41,7 +41,7 @@
     "@typechain/ethers-v5": "11.1.2",
     "@typechain/ethers-v6": "0.5.1",
     "@typechain/hardhat": "9.1.0",
-    "@types/chai": "4.3.17",
+    "@types/chai": "4.3.18",
     "@types/mocha": "10.0.7",
     "@types/node": "20.16.1",
     "@types/react": "18.3.4",
@@ -64,5 +64,5 @@
     "typechain": "8.3.2",
     "typescript": "5.5.4"
   },
-  "packageManager": "pnpm@9.8.0"
+  "packageManager": "pnpm@9.9.0"
 }
