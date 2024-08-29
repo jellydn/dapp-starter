@@ -62,7 +62,7 @@ importers:
         version: 1.0.11(hardhat@2.22.9(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.16.2)(typescript@5.5.4))(typescript@5.5.4)(utf-8-validate@5.0.10))
       '@nomicfoundation/hardhat-toolbox':
         specifier: 2.0.2
-        version: 2.0.2(4meijap4hq6prnafgnbwbevtqa)
+        version: 2.0.2(i4o5kef4jpk7ksxcpxw65wkww4)
       '@nomiclabs/hardhat-ethers':
         specifier: 2.2.3
         version: 2.2.3(ethers@5.7.2(bufferutil@4.0.8)(utf-8-validate@5.0.10))(hardhat@2.22.9(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.16.2)(typescript@5.5.4))(typescript@5.5.4)(utf-8-validate@5.0.10))
@@ -139,8 +139,8 @@ importers:
         specifier: 5.0.3
         version: 5.0.3(typescript@5.5.4)
       solidity-coverage:
-        specifier: 0.8.12
-        version: 0.8.12(hardhat@2.22.9(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.16.2)(typescript@5.5.4))(typescript@5.5.4)(utf-8-validate@5.0.10))
+        specifier: 0.8.13
+        version: 0.8.13(hardhat@2.22.9(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.16.2)(typescript@5.5.4))(typescript@5.5.4)(utf-8-validate@5.0.10))
       tailwindcss:
         specifier: 3.4.10
         version: 3.4.10(ts-node@10.9.2(@types/node@20.16.2)(typescript@5.5.4))
@@ -5482,8 +5482,8 @@ packages:
   solidity-ast@0.4.56:
     resolution: {integrity: sha512-HgmsA/Gfklm/M8GFbCX/J1qkVH0spXHgALCNZ8fA8x5X+MFdn/8CP2gr5OVyXjXw6RZTPC/Sxl2RUDQOXyNMeA==}
 
-  solidity-coverage@0.8.12:
-    resolution: {integrity: sha512-8cOB1PtjnjFRqOgwFiD8DaUsYJtVJ6+YdXQtSZDrLGf8cdhhh8xzTtGzVTGeBf15kTv0v7lYPJlV/az7zLEPJw==}
+  solidity-coverage@0.8.13:
+    resolution: {integrity: sha512-RiBoI+kF94V3Rv0+iwOj3HQVSqNzA9qm/qDP1ZDXK5IX0Cvho1qiz8hAXTsAo6KOIUeP73jfscq0KlLqVxzGWA==}
     hasBin: true
     peerDependencies:
       hardhat: ^2.11.0
@@ -7849,7 +7849,7 @@ snapshots:
       ethereumjs-util: 7.1.5
       hardhat: 2.22.9(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.16.2)(typescript@5.5.4))(typescript@5.5.4)(utf-8-validate@5.0.10)
 
-  '@nomicfoundation/hardhat-toolbox@2.0.2(4meijap4hq6prnafgnbwbevtqa)':
+  '@nomicfoundation/hardhat-toolbox@2.0.2(i4o5kef4jpk7ksxcpxw65wkww4)':
     dependencies:
       '@ethersproject/abi': 5.7.0
       '@ethersproject/providers': 5.7.2(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -7866,7 +7866,7 @@ snapshots:
       ethers: 5.7.2(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       hardhat: 2.22.9(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.16.2)(typescript@5.5.4))(typescript@5.5.4)(utf-8-validate@5.0.10)
       hardhat-gas-reporter: 2.2.1(bufferutil@4.0.8)(hardhat@2.22.9(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.16.2)(typescript@5.5.4))(typescript@5.5.4)(utf-8-validate@5.0.10))(typescript@5.5.4)(utf-8-validate@5.0.10)
-      solidity-coverage: 0.8.12(hardhat@2.22.9(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.16.2)(typescript@5.5.4))(typescript@5.5.4)(utf-8-validate@5.0.10))
+      solidity-coverage: 0.8.13(hardhat@2.22.9(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.16.2)(typescript@5.5.4))(typescript@5.5.4)(utf-8-validate@5.0.10))
       ts-node: 10.9.2(@types/node@20.16.2)(typescript@5.5.4)
       typechain: 8.3.2(typescript@5.5.4)
       typescript: 5.5.4
@@ -8698,7 +8698,7 @@ snapshots:
 
   async-eventemitter@0.2.4:
     dependencies:
-      async: 2.6.2
+      async: 2.6.4
 
   async-limiter@1.0.1: {}
 
@@ -10128,7 +10128,7 @@ snapshots:
       brorand: 1.1.0
       hash.js: 1.1.7
       hmac-drbg: 1.0.1
-      inherits: 2.0.1
+      inherits: 2.0.4
       minimalistic-assert: 1.0.1
       minimalistic-crypto-utils: 1.0.1
 
@@ -10438,7 +10438,7 @@ snapshots:
 
   ethashjs@0.0.8:
     dependencies:
-      async: 2.6.2
+      async: 2.6.4
       buffer-xor: 2.0.2
       ethereumjs-util: 7.1.5
       miller-rabin: 4.0.1
@@ -10525,7 +10525,7 @@ snapshots:
 
   ethereumjs-block@2.2.2:
     dependencies:
-      async: 2.6.2
+      async: 2.6.4
       ethereumjs-common: 1.5.0
       ethereumjs-tx: 2.1.2
       ethereumjs-util: 5.2.1
@@ -10533,7 +10533,7 @@ snapshots:
 
   ethereumjs-blockchain@4.0.4:
     dependencies:
-      async: 2.6.2
+      async: 2.6.4
       ethashjs: 0.0.8
       ethereumjs-block: 2.2.2
       ethereumjs-common: 1.5.0
@@ -10610,7 +10610,7 @@ snapshots:
 
   ethereumjs-vm@4.2.0:
     dependencies:
-      async: 2.6.2
+      async: 2.6.4
       async-eventemitter: 0.2.4
       core-js-pure: 3.38.1
       ethereumjs-account: 3.0.0
@@ -12112,7 +12112,7 @@ snapshots:
 
   merkle-patricia-tree@3.0.0:
     dependencies:
-      async: 2.6.2
+      async: 2.6.4
       ethereumjs-util: 5.2.1
       level-mem: 3.0.1
       level-ws: 1.0.0
@@ -13464,7 +13464,7 @@ snapshots:
     dependencies:
       array.prototype.findlast: 1.2.5
 
-  solidity-coverage@0.8.12(hardhat@2.22.9(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.16.2)(typescript@5.5.4))(typescript@5.5.4)(utf-8-validate@5.0.10)):
+  solidity-coverage@0.8.13(hardhat@2.22.9(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.16.2)(typescript@5.5.4))(typescript@5.5.4)(utf-8-validate@5.0.10)):
     dependencies:
       '@ethersproject/abi': 5.7.0
       '@solidity-parser/parser': 0.18.0
@@ -14343,7 +14343,7 @@ snapshots:
 
   web3-provider-engine@14.2.1(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@5.0.10):
     dependencies:
-      async: 2.6.2
+      async: 2.6.4
       backoff: 2.5.0
       clone: 2.1.2
       cross-fetch: 2.2.6(encoding@0.1.13)
