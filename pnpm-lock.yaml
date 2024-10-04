@@ -33,8 +33,8 @@ importers:
         specifier: 6.2.13
         version: 6.2.13(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@5.0.10)
       daisyui:
-        specifier: 4.12.11
-        version: 4.12.11(postcss@8.4.47)
+        specifier: 4.12.12
+        version: 4.12.12(postcss@8.4.47)
       loglevel:
         specifier: 1.9.2
         version: 1.9.2
@@ -2663,8 +2663,8 @@ packages:
     resolution: {integrity: sha512-MOqHvMWF9/9MX6nza0KgvFH4HpMU0EF5uUDXqX/BtxtU8NfB0QzRtJ8Oe/6SuS4kbhyzVJwjd97EA4PKrzJ8bw==}
     engines: {node: '>=0.12'}
 
-  daisyui@4.12.11:
-    resolution: {integrity: sha512-D9OJTlnU1ATiDsKkw5/TB0997Hm73zu9SFeUTthDtKd06OEJQlOLoYrGXlP2YhHZDW4VAcQnmhEphTgPFUYqSw==}
+  daisyui@4.12.12:
+    resolution: {integrity: sha512-xmCZ4piuWOjhNyB0VDKczB5vKFCipTA7UxaZNOzCz6cT8kvWgv5BDtUo+Hk9gOFufByOlfuBdzLpfhY5GsebTQ==}
     engines: {node: '>=16.9.0'}
 
   dashdash@1.14.1:
@@ -9905,7 +9905,7 @@ snapshots:
       es5-ext: 0.10.64
       type: 2.7.3
 
-  daisyui@4.12.11(postcss@8.4.47):
+  daisyui@4.12.12(postcss@8.4.47):
     dependencies:
       css-selector-tokenizer: 0.8.0
       culori: 3.3.0
