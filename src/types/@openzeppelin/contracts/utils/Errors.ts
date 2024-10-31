@@ -9,20 +9,20 @@ import type {
   TypedEvent,
   TypedListener,
   OnEvent,
-} from "../../../../common";
+} from "../../../common";
 
-export interface ERC1967UtilsInterface extends utils.Interface {
+export interface ErrorsInterface extends utils.Interface {
   functions: {};
 
   events: {};
 }
 
-export interface ERC1967Utils extends BaseContract {
+export interface Errors extends BaseContract {
   connect(signerOrProvider: Signer | Provider | string): this;
   attach(addressOrName: string): this;
   deployed(): Promise<this>;
 
-  interface: ERC1967UtilsInterface;
+  interface: ErrorsInterface;
 
   queryFilter<TEvent extends TypedEvent>(
     event: TypedEventFilter<TEvent>,

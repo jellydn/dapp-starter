@@ -11,18 +11,18 @@ import type {
   OnEvent,
 } from "../../../../common";
 
-export interface MathInterface extends utils.Interface {
+export interface SafeCastInterface extends utils.Interface {
   functions: {};
 
   events: {};
 }
 
-export interface Math extends BaseContract {
+export interface SafeCast extends BaseContract {
   connect(signerOrProvider: Signer | Provider | string): this;
   attach(addressOrName: string): this;
   deployed(): Promise<this>;
 
-  interface: MathInterface;
+  interface: SafeCastInterface;
 
   queryFilter<TEvent extends TypedEvent>(
     event: TypedEventFilter<TEvent>,

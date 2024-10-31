@@ -19,7 +19,7 @@ task("accounts", "Prints the list of accounts", async (_taskArgs, hre) => {
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
 const hardHatConfig: HardhatUserConfig = {
-  solidity: "0.8.20",
+  solidity: "0.8.27",
   paths: {
     artifacts: "./src/artifacts",
   },
