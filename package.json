@@ -50,7 +50,7 @@
     "chai": "4.5.0",
     "dotenv": "16.4.5",
     "ethers": "5.7.2",
-    "hardhat": "2.22.15",
+    "hardhat": "2.22.16",
     "hardhat-gas-reporter": "2.2.1",
     "next-secure-headers": "2.2.0",
     "postcss": "8.4.49",
