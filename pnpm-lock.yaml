@@ -8711,7 +8711,7 @@ snapshots:
 
   async-eventemitter@0.2.4:
     dependencies:
-      async: 2.6.4
+      async: 2.6.2
 
   async-limiter@1.0.1: {}
 
