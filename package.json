@@ -63,5 +63,5 @@
     "typechain": "8.3.2",
     "typescript": "5.7.2"
   },
-  "packageManager": "pnpm@9.14.2"
+  "packageManager": "pnpm@9.14.3"
 }
