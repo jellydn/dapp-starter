@@ -24,8 +24,8 @@
     "daisyui": "4.12.14",
     "loglevel": "1.9.2",
     "next": "15.0.4",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "web3-react": "5.0.5"
   },
   "devDependencies": {
@@ -44,8 +44,8 @@
     "@types/chai": "4.3.20",
     "@types/mocha": "10.0.10",
     "@types/node": "22.10.1",
-    "@types/react": "18.3.14",
-    "@types/react-dom": "18.3.2",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1",
     "autoprefixer": "10.4.20",
     "chai": "4.5.0",
     "dotenv": "16.4.7",
