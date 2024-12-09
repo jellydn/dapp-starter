@@ -45,7 +45,7 @@
     "@types/mocha": "10.0.10",
     "@types/node": "22.10.1",
     "@types/react": "19.0.1",
-    "@types/react-dom": "19.0.1",
+    "@types/react-dom": "19.0.2",
     "autoprefixer": "10.4.20",
     "chai": "4.5.0",
     "dotenv": "16.4.7",
