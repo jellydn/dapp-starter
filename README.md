@@ -44,7 +44,7 @@
 ## Install
 
 ```sh
-pnmm install
+pnpm install
 ```
 
 ## Usage
