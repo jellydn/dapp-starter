@@ -12,12 +12,12 @@ jobs:
         uses: styfle/cancel-workflow-action@0.12.1
 
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.4.0
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.4.0
         with:
-          node-version: 18
+          node-version: 18.20.8
 
       - name: Install dependencies
         run: |
