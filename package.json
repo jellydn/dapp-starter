@@ -53,7 +53,7 @@
     "hardhat": "2.22.17",
     "hardhat-gas-reporter": "2.2.2",
     "next-secure-headers": "2.2.0",
-    "postcss": "8.4.49",
+    "postcss": "8.5.23",
     "rimraf": "6.0.1",
     "solgraph": "1.0.2",
     "solhint": "5.0.3",
